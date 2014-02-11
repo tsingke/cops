@@ -1,4 +1,4 @@
-Cache Oblivious Parallel SIMD Viterbi (COPS)
+COPS: Cache Oblivious Parallel SIMD Viterbi
 =====================================
 
 A cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models (HMMER), using inter-task parallelism on the SSE units of x86 processors, and multi-threading. Developed for the latest version (3.1b1) of the HMMER suite: http://hmmer.janelia.org/
@@ -43,21 +43,21 @@ The options are:
 
 **Run:**
 
-./ < prog >  [options]  < HMM model file >  < DB sequence file >
+    ./ < prog >  [options]  < HMM model file >  < DB sequence file >
 
 The tools may also run against a set of randomly generated sequences. To enable this, specify a non-existent sequence file.
 
 Options allowed:
 
--c           Check results against trusted implementation
+    -c             Check results against trusted implementation
 
--N (int)     No. of seqs to generate
+    -N < int >     No. of seqs to generate
 
--L (int)     Sequence length of generated sequences
+    -L < int >     Sequence length of generated sequences
 
--M (int)     Maximum partition length. Only for COPS implementations. Defaults to 112
+    -M < int >     Maximum partition length. Only for COPS implementations. Defaults to 112
 
--R (int)     No. of rounds to search the whole sequence set. Useful for benchmarking speeds. Default is 1
+    -R < int >     No. of rounds to search the whole sequence set. Useful for benchmarking speeds. Default is 1
 
 
 
