@@ -10,7 +10,7 @@ https://kdbio.inesc-id.pt/~lsr/COPS/#home
 
 
 
-**Build & Install:*
+**Build & Install:**
 
 1) Download HMMER 3.1b1 from here:
 http://selab.janelia.org/software/hmmer3/3.1b1/hmmer-3.1b1-linux-intel-ia32.tar.gz
@@ -41,23 +41,23 @@ The options are:
     
 
 
-*Run:*
+**Run:**
 
-./<prog> [options]  <HMM model file>  <DB sequence file>
+./ < prog >  [options]  < HMM model file >  < DB sequence file >
 
 The tools may also run against a set of randomly generated sequences. To enable this, specify a non-existent sequence file.
 
 Options allowed:
 
--c     Check results against trusted implementation
+-c           Check results against trusted implementation
 
--N <int>     No. of seqs to generate
+-N (int)     No. of seqs to generate
 
--L <int>     Sequence length of generated sequences
+-L (int)     Sequence length of generated sequences
 
--M <int>     Maximum partition length. Only for COPS implementations. Defaults to 112
+-M (int)     Maximum partition length. Only for COPS implementations. Defaults to 112
 
--R <int>     No. of rounds to search the whole sequence set. Useful for benchmarking speeds. Default is 1
+-R (int)     No. of rounds to search the whole sequence set. Useful for benchmarking speeds. Default is 1
 
 
 
