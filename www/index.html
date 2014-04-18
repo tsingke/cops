@@ -1,0 +1,148 @@
+<!--
+This file is part of the COPS web page.
+
+ COPS web page by Miguel Ferreira, Nuno Roma, and Luis M. S. Russo / KDBIO /
+INESC-ID is licensed under a Creative Commons Attribution 3.0 Unported
+License.  Permissions beyond the scope of this license may be available at #email.
+
+ Software is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ License available at http://creativecommons.org/licenses/by/3.0/
+-->
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-15">
+<title>COPS</title>
+<!-- CSS style -->
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<!-- JS scripts -->
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body onload="load()" onhashchange="setSections();">
+
+<div id="email"  class="area" onclick="setHash('email')">
+  <h2>@</h2>
+<div id="emailTxt" class="txt">
+  <h3>E-mail</h3>
+  <p>Please send your questions, comments, suggestions and/or bug reports to: <a href="mailto:lsr@kdbio.inesc-id.pt" >lsr@kdbio.inesc-id.pt</a></p>
+  <p><font color="red">Important:</font> the subject must start with <font style="background-color:Yellow;" face="Courier" background-color="">COPS</font></p>
+</div>
+</div>
+
+<div id="down" class="area" >
+  <h2>Download</h2>
+
+<div id="downTxt" class="txt">
+  <p> We are currently distributing the source code for linux, along with some example files.
+	To compile use make in the source directory. The <a href="./sourceCOPS.tgz" >sourceCOPS.tgz</a> package contains the COPS code.</p>
+	COPS runs on top of the latest version of HMMER (HMMER 3.1b1).
+	HMMER 3.1b1 can be downloaded from their website:
+	<a href="http://selab.janelia.org/software/hmmer3/3.1b1/hmmer-3.1b1.tar.gz">HMMER 3.1b1</a>
+
+  <!--p> We are also distributing sample binaries for Linux 64bit, compiled for a 
+	Core2 processor, in the <a href="./binsCOPS.tgz">binsCOPS.tgz</a> package. </p-->
+
+</div> </div>
+
+  
+<div id="doc"  class="area">
+  <h2>Docs</h2>
+<div id="docTxt" class="txt">
+
+<p> To deploy COPS, unarchive the code into the HMMER 'src' directory.
+	The COPS directoy is expected to be in hmmer/src/cops.</p>
+<p>Run 'make' to compile the standalone tools:</p>
+<p>&nbsp;&nbsp;&nbsp;	- viterbicops			(16-bit integer words version)</p>
+<p>&nbsp;&nbsp;&nbsp;	- viterbicops-float	(32-bit floats version)</p>
+<p>&nbsp;&nbsp;&nbsp;	- viterbihmmer		(test stub of HMMER's ViterbiFilter)</p>
+
+<p>For any of the tools:</p>
+
+  <div class="cmd">
+	./&lt;prog&gt;  [options]  &lt;HMM model file&gt;  &lt;DB sequence file&gt;
+  </div>
+
+<p>The tools may also run against a set of randomly generated sequences.
+To enable this, specify a non-existent sequence file.</p>
+
+<p>Options allowed: </p>
+
+<p>	-c	&nbsp;&nbsp;&nbsp;	Check results against trusted implementation</p>
+
+<p>	-N	&lt;int&gt;	&nbsp;&nbsp;&nbsp; No. of seqs to generate</p>
+
+<p>	-L	&lt;int&gt;	&nbsp;&nbsp;&nbsp;	 Sequence length of generated sequences</p>
+
+<p>	-M	&lt;int&gt;	&nbsp;&nbsp;&nbsp;	 Maximum partition length. Only for COPS implementations. Defaults to 112</p>
+
+<p>	-R	&lt;int&gt; &nbsp;&nbsp;&nbsp;	 No. of rounds to search the whole sequence set.
+					Useful for benchmarking speeds. Default is 1</p>
+
+<p/>
+<p>Examples:</p>
+
+	<div class="cmd">
+		./viterbicops example/M0200-MER107.hmm example/human-dna-10Klines.fasta 
+	</div>
+<p/>
+
+	<div class="cmd">
+		./viterbicops-float -c example/M1011-Prox1.hmm  example/human-dna-10Klines.fasta 
+	</div>
+<p/>
+
+	<div class="cmd">
+		./viterbicops -N 10000 -L 1000  example/M2204-CR1_Mam.hmm  dummyfile
+	</div>
+<p/>
+  
+  <p><a href="http://www.stack.nl/~dimitri/doxygen/index.html"
+  target="_blank">Doxygen</a> documentation for <a
+  href="./html/index.html" target="_blank">COPS</a> is available.</p>
+
+  </div>
+
+  </div>
+  
+<div id="home" class="area" >
+  <h2>Home</h2>
+
+<div id="homeTxt" class="txt">
+  <p><strong>COPS</strong>
+	is a Cache-Oblivious Parallel SIMD implementation 
+	of the Viterbi Decoding algorithm for the x86's SSE2 instruction set.
+	It is built on top of the popular <a href="http://hmmer.janelia.org/"> HMMER suite</a>.
+
+  <p>COPS uses Inter-sequence parallelism to process multiple sequences in each SSE2 vector.</p>
+
+  <p>Software in this page is distributed in the hope that it will be
+  useful, but WITHOUT ANY WARRANTY; without even the implied
+  warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.</p>
+
+  </div> </div>
+
+<h1>Cache-Oblivious Parallel SIMD Viterbi</h1>
+<div class="footer">
+  <p class="footer">  
+  <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">
+  <img alt="Creative Commons License" style="border-width:0;margin:0px 20px 0px 0px" src="http://i.creativecommons.org/l/by/3.0/80x15.png" align="left"></a>
+  <span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">COPS web page</span>
+  by <a xmlns:cc="http://creativecommons.org/ns#" href="http://arxiv.org/abs/1207.4598"
+  property="cc:attributionName" rel="cc:attributionURL" target="_blank">Miguel Ferreira, Nuno Roma and Lu&iacute;s M. S. Russo</a>
+  / <a href="http://www.inesc-id.pt/intranet/laboratoriogrupo/kdbio/kdbio.php" target="_blank">KDBIO / INESC-ID</a>
+  is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/" target="_blank">Creative Commons Attribution 3.0 Unported License</a>.
+  <br />Permissions beyond the scope of this license may be available at
+  <a xmlns:cc="http://creativecommons.org/ns#" href="#email" rel="cc:morePermissions" onclick="setHash('email');">#email</a>.
+  <br/>
+  Last update: <script type="text/javascript"> document.write(document.lastModified); </script></p>
+  <address></address>
+</div>
+
+</body>
+
+</html>
+

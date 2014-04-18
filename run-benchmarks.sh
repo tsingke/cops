@@ -15,6 +15,9 @@ partition=120
 runsize=5000000
 # Max expected model length. Controls the number of rounds
 maxhmmlen=3000
+# Source directory
+srcdir=src/
+
 
 ###########################################################
 ###########################################################
@@ -46,7 +49,7 @@ runseqs=$(( $runsize / $avgseqlen ))
 echo "=== Database with size $dbsize, $dbnseqs sequences of average length $avgseqlen. Use $runseqs sequences"
 
 export COPS_PARTITION=$partition
-make
+make -C $srcdir
 
 echo "=== All programs compiled"
 
@@ -69,8 +72,8 @@ do
 	
 	echo "Call with $nrounds rounds"
 		
-	./viterbihmmer		 -N $runseqs -R $nrounds $ff $dbfile
-	./viterbicops		 -N $runseqs -R $nrounds $ff $dbfile
+	$srcdir/viterbihmmer		 -N $runseqs -R $nrounds $ff $dbfile
+	$srcdir/viterbicops		 -N $runseqs -R $nrounds $ff $dbfile
 #	./viterbicops-floats -N $runseqs -R $nrounds $ff $dbfile
 done
 

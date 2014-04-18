@@ -1,0 +1,49 @@
+\hypertarget{viterbi__serial_8h}{\section{viterbi\-\_\-serial.\-h File Reference}
+\label{viterbi__serial_8h}\index{viterbi\-\_\-serial.\-h@{viterbi\-\_\-serial.\-h}}
+}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{viterbi__serial_8h_aa4774221c8c56dbce10ab651ee6428fd}{p7\-\_\-\-Viterbi\-\_\-general} (E\-S\-L\-\_\-\-D\-S\-Q $\ast$dsq, int L, P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$gm, float $\ast$opt\-\_\-res)
+\item 
+int \hyperlink{viterbi__serial_8h_a2b817c47f81160e5aeacb14476cf3c2e}{p7\-\_\-\-Viterbi\-\_\-unilocal} (E\-S\-L\-\_\-\-D\-S\-Q $\ast$dsq, int L, P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$gm, float $\ast$opt\-\_\-res)
+\item 
+int \hyperlink{viterbi__serial_8h_a477bb8ab3dc501b1b877f800443fd4f5}{p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word} (E\-S\-L\-\_\-\-D\-S\-Q $\ast$dsq, int L, P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$gm, float $\ast$opt\-\_\-ret)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Serial implementation of Viterbi decoding 
+
+\subsection{Function Documentation}
+\hypertarget{viterbi__serial_8h_aa4774221c8c56dbce10ab651ee6428fd}{\index{viterbi\-\_\-serial.\-h@{viterbi\-\_\-serial.\-h}!p7\-\_\-\-Viterbi\-\_\-general@{p7\-\_\-\-Viterbi\-\_\-general}}
+\index{p7\-\_\-\-Viterbi\-\_\-general@{p7\-\_\-\-Viterbi\-\_\-general}!viterbi_serial.h@{viterbi\-\_\-serial.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-\_\-general}]{\setlength{\rightskip}{0pt plus 5cm}int p7\-\_\-\-Viterbi\-\_\-general (
+\begin{DoxyParamCaption}
+\item[{E\-S\-L\-\_\-\-D\-S\-Q $\ast$}]{dsq, }
+\item[{int}]{L, }
+\item[{P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$}]{gm, }
+\item[{float $\ast$}]{opt\-\_\-res}
+\end{DoxyParamCaption}
+)}}\label{viterbi__serial_8h_aa4774221c8c56dbce10ab651ee6428fd}
+Viterbi Serial, for any alignment mode \hypertarget{viterbi__serial_8h_a2b817c47f81160e5aeacb14476cf3c2e}{\index{viterbi\-\_\-serial.\-h@{viterbi\-\_\-serial.\-h}!p7\-\_\-\-Viterbi\-\_\-unilocal@{p7\-\_\-\-Viterbi\-\_\-unilocal}}
+\index{p7\-\_\-\-Viterbi\-\_\-unilocal@{p7\-\_\-\-Viterbi\-\_\-unilocal}!viterbi_serial.h@{viterbi\-\_\-serial.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-\_\-unilocal}]{\setlength{\rightskip}{0pt plus 5cm}int p7\-\_\-\-Viterbi\-\_\-unilocal (
+\begin{DoxyParamCaption}
+\item[{E\-S\-L\-\_\-\-D\-S\-Q $\ast$}]{dsq, }
+\item[{int}]{L, }
+\item[{P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$}]{gm, }
+\item[{float $\ast$}]{opt\-\_\-res}
+\end{DoxyParamCaption}
+)}}\label{viterbi__serial_8h_a2b817c47f81160e5aeacb14476cf3c2e}
+Viterbi Serial optimized for Unilocal alignments \hypertarget{viterbi__serial_8h_a477bb8ab3dc501b1b877f800443fd4f5}{\index{viterbi\-\_\-serial.\-h@{viterbi\-\_\-serial.\-h}!p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word@{p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word}}
+\index{p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word@{p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word}!viterbi_serial.h@{viterbi\-\_\-serial.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word}]{\setlength{\rightskip}{0pt plus 5cm}int p7\-\_\-\-Viterbi\-\_\-unilocal\-\_\-word (
+\begin{DoxyParamCaption}
+\item[{E\-S\-L\-\_\-\-D\-S\-Q $\ast$}]{dsq, }
+\item[{int}]{L, }
+\item[{P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$}]{gm, }
+\item[{float $\ast$}]{opt\-\_\-ret}
+\end{DoxyParamCaption}
+)}}\label{viterbi__serial_8h_a477bb8ab3dc501b1b877f800443fd4f5}
+Viterbi Serial optimized for Unilocal alignments and discretized with 16bit integers Emulates saturated arithmetic. Very slow. 

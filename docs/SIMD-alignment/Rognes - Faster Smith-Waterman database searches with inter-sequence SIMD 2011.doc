@@ -1,0 +1,747 @@
+{\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch0\stshfloch39\stshfhich39\stshfbi0\deflang1033\deflangfe1033{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f39\fswiss\fcharset0\fprq2{\*\panose 00000000000000000000}Calibri;}{\f43\froman\fcharset238\fprq2 Times New Roman CE;}
+{\f44\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f46\froman\fcharset161\fprq2 Times New Roman Greek;}{\f47\froman\fcharset162\fprq2 Times New Roman Tur;}{\f48\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}
+{\f49\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f50\froman\fcharset186\fprq2 Times New Roman Baltic;}{\f51\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f433\fswiss\fcharset238\fprq2 Calibri CE;}
+{\f434\fswiss\fcharset204\fprq2 Calibri Cyr;}{\f436\fswiss\fcharset161\fprq2 Calibri Greek;}{\f437\fswiss\fcharset162\fprq2 Calibri Tur;}{\f440\fswiss\fcharset186\fprq2 Calibri Baltic;}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;
+\red0\green255\blue255;\red0\green255\blue0;\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;
+\red128\green128\blue0;\red128\green128\blue128;\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\sa200\sl276\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 
+\f39\fs22\lang2070\langfe2070\cgrid\langnp2070\langfenp2070 \snext0 Normal;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \f39\fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{\*\cs15 \additive \rtlch\fcs1 \af0 
+\ltrch\fcs0 \ul\cf2 \sbasedon10 \styrsid4208202 Hyperlink;}}
+{\*\latentstyles\lsdstimax156\lsdlockeddef0{\lsdlockedexcept Normal;heading 1;heading 2;heading 3;heading 4;heading 5;heading 6;heading 7;heading 8;heading 9;toc 1;toc 2;toc 3;toc 4;toc 5;toc 6;toc 7;toc 8;toc 9;caption;Title;Default Paragraph Font;Subtitle;Strong;Emphasis;Table Grid;}}
+{\*\rsidtbl \rsid1474\rsid131568\rsid931950\rsid1384030\rsid3744307\rsid4208202\rsid5860627\rsid9190438\rsid9639161\rsid10696867\rsid11890467\rsid14828780\rsid16022433\rsid16412334}{\*\generator Microsoft Word 11.0.0000;}{\info{\author hellopdf.com Inc}
+{\operator miguel}{\creatim\yr2007\mo12\dy11\hr12}{\revtim\yr2012\mo1\dy21\hr20\min22}{\printim\yr2011\mo8\dy9\hr13\min32}{\version13}{\edmins76}{\nofpages11}{\nofwords5914}{\nofchars33711}{\nofcharsws39546}{\vern24615}{\*\password 00000000}}
+{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}}\paperw11907\paperh16840\margl851\margr851\margt851\margb851\gutter0\ltrsect 
+\widowctrl\ftnbj\aenddoc\hyphhotz425\donotembedsysfont0\donotembedlingdata1\grfdocevents0\validatexml0\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors0\horzdoc\dgmargin\dghspace110\dgvspace120\dghorigin851\dgvorigin851\dghshow0
+\dgvshow3\jcompress\viewkind1\viewscale90\rsidroot11890467 \fet0{\*\wgrffmtfilter 2450}\ilfomacatclnup0\ltrpar \sectd \ltrsect\psz9\linex0\sectdefaultcl\sectrsid9190438\sftnbj {\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2
+\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang 
+{\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 \rtlch\fcs1 \af0\afs22\alang1025 \ltrch\fcs0 \f39\fs22\lang2070\langfe2070\cgrid\langnp2070\langfenp2070 {\rtlch\fcs1 \ab\af0\afs28 
+\ltrch\fcs0 \b\f0\fs28\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Faster Smith-Waterman database searches with inter-sequence SIMD}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\f0\fs28\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\f0\fs28\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 parallelisation}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \f0\fs28\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 BMC Bioinformatics 2011,}{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 
+\b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 12}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  :221 doi:10.1186/1471-2105-12-221}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Torbjorn Rognes (}{\field\flddirty{\*\fldinst {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  HYPERLINK "mailto:torognes@ifi.uio.no" }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9639161\charrsid9639161 {\*\datafield 
+00d0c9ea79f9bace118c8200aa004ba90b0200000003000000e0c9ea79f9bace118c8200aa004ba90b4e0000006d00610069006c0074006f003a0074006f0072006f0067006e006500730040006900660069002e00750069006f002e006e006f000000795881f43b1d7f48af2c825dc485276300000000a5ab0000}}
+}{\fldrslt {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \cs15\f0\fs24\ul\expnd0\expndtw-1\cf2\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 torognes@ifi.uio.no}}}\sectd \psz9\linex0\sectdefaultcl\sectrsid9190438\sftnbj {\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 )}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 ISSN}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 1471-2105}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Article type}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Methodology article}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Submission date}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 5 March 2011}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Acceptance date}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 1 June 2011}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Publication date}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 1 June 2011}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Article URL}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf2\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf2\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+http://www.biomedcentral.com/1471-2105/12/221}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Department of Informatics, University of Oslo, PO Box 1080 Blindern, NO-0316 Oslo, Norway }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Centre for Molecular Biology and Neuroscience (CMBN), Department of Microbiology, Rikshospitalet, Oslo University Hospital, PO Box 4950 Nydalen, NO-0424 Oslo, Norway }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Sencel Bioinformatics AS, PO Box 180 Vinderen, NO-0319 Oslo, Norway }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid9190438 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Email addresses: }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 TR:}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf2\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 torognes@ifi.uio.no}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\adjustright\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Abstract }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid9190438 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Background }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The Smith-Waterman algorithm for local sequence alignment is more sensitive than heuristic 
+methods for database searching, but also more time-consuming. The fastest approach to parallelisation with SIMD technology has previously been described by Farrar in 2007. The aim of this study was to explore whether further speed could be gained by other
+ approaches to parallelisation. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid9190438 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Results }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+A faster approach and implementation is described and benchmarked. In the new tool SWIPE, residues from sixteen different database sequences are compar ed in parallel to one query residue. Using a 375 residue query
+ sequence a speed of 106 billion cell updates per second (GCUPS) was achieved on a dual Intel Xeon X5650 six-core processor system, which is over six times more rapid than software based on Far rar\rquote s \lquote striped\rquote 
+ approach. SWIPE was about 2.5 times faster whe
+n the programs used only a single thread. For shorter queries, the incr ease in speed was larger. SWIPE was about twice as fast as BLAST when using the BLOSUM50 score matrix, while BLAST was about twice as fast as SWIPE for the BLOSUM62 matrix. The softwa
+re is designed for 64 bit Linux on processors with SSSE3. Source code is available from http://dna.uio.no/swipe/ under the GNU Affero General Public License.  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Conclusions }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Efficient paralle}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 lisation using SIMD}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ makes it possible to run Smith-Waterman databa
+se searches more than six times faster than before. The approach described here could significantly widen the potential application of Smith-Waterman searches. Other applications that require optimal local alignment scores could also benefit from improved
+ performance.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Background }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The alignment of two biological sequences is a fundamental operation that forms part}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 of many bioinformatics applications, i}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 ncluding sequence database sear}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ching, multiple sequence alignment, genome assembly, and short read mapping. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Smith and Waterman [1] described a simple and general algorithm requiring O(}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  N}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ) time and O(}{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  N}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ 2 ) memory to identify the optimal local sequence alignment score using}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 a substitution score matrix and a general gap penalty function. G
+otoh [ 2] showed that with affine gap penalties the optimal local alignment score could be computed in just O(}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  N}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  2 ) time and O(}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  N}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ) memory. }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 When the optimal alignment score needs to be computed many times, for example when searching a sequence database
+, the computation time becomes substantial. Several approaches have been pursued to reduce the time needed. Heuristic approaches like BLAST [3,4] are considerably faster, but are not guaranteed to discover the optimal alignment. }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Reconfigur
+able hardware in the form of FPGA (Field-Programmable Gate Array) can also accelerate the speed of alignment score computations. Li}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[5] reported speeds equivalent to about 23.8 billion cell updates per second (GCUPS) with DNA sequences, on a state-o
+f-the-art FPGA board. Search speed is often reported in GCUPS, which indicates the billion (giga) number of cells in the alignment matrix (query sequence length times total number of database residues), processed per second. }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The algorithm can also be imp
+lemented with various forms of parallelisation in software running on more common hardware. Pairwise alignment of separate sequences is in principle \'93embarrassingly\'94
+ parallel because the computations for each pair of sequence are completely independent. Alpern}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 
+\ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[6] suggested improving speed by performing several independent alignment score computations in parallel by dividing the bits of wide registers into several narrower units and using instructions to perform arithmetic operations on these units i
+ndividually. This form of parallelism within a register was later made much simpler and easier by microprocessor manufacturers with the introduction of technologies like MMX, SSE, SSE2, MAX, MVI, VIS, and AltiVec, which are now generally referred to as SI
+M
+D technology. Several implementations take advantage of the SSE2 instructions available on Intel processors [7]. The approach where parallelisation is carried out across multiple database sequences is also known as inter-task par allelisation, in contrast
+ to intra-task parallelisation where the parallelisation occurs within a single pair of sequences. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Efforts have since mostly concen}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 trated}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  on parallelisation within a single alignment of one pair of sequences. Figure 1 illustrates the main approaches. Woz
+niak [8] suggested computing cells along the minor diagonal in the alignment matrix in }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 p}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+arallel because these calculations are independent. Rognes and Seeberg [9] found that using cells along the query sequence was faster despite some data dependences, bec
+ause loading values along the minor diagonal was too complicated. Farrar [10] introduced a \'93striped\'94
+ approach where computations were carried out in parallel in several separate stripes covering different parts of the query sequence to reduce the impact of some of the computational dependencies. Farrar\rquote 
+s striped approach is generally the fastest, and he has reported speeds of more than 11 and 20 GCUPS on four and eight cores, respectively [11]. Szalkowski}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[12] described the SWPS3 implementation which uses the striped approach of Farrar, claiming speeds of up to}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+15.7 GCUPS on a quad-core processor. The performance was highly dependent on query length though. Using the P07327 query sequence, with a typical protein length of 375 residues, SWPS3 performance was roughly 9 GCUPS. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The Cell processor manufactured by Sony, Toshiba and IBM, have one main core (Power Processing Element}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 , PPE) and 8 minor cores (Syner}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 gistic Processing Elements, SPEs). These cores have SIMD vector processing capabilities. Cell pr
+ocessors are found in some IBM servers (QS20) as well as the Sony PlayStation 3 (PS3) (only 6 SPEs available). Several implementations for this processor have been described. SWPS3 by Szalkowski}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[12] used the Farrar approach and claimed speeds on the PS3 of up to 8 GCUPS. Also here the performance was highly }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 d}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 ependent on query length. With the P07327 query sequence, SWPS3 performance was less than 2 GCUPS on the PS3. }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Wirawan}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[13] also employed the Farrar approach in their implementation call
+ed CBESW and claimed speeds on the PS3 of over 3.6 GCUPS, while the performance was 2.2 GCUPS with the P07327 query sequence. Farrar also reported speeds of 15.5 GCUPS on an IBM QS20 and up to 11.6 GCUPS on the PS3 using the same query [11]. Rudnicki}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[ 14] described an implementation that used parallelisation over multiple database sequences on the PS3 and reported speeds approaching 9 GCUPS. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Graphics pro}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 cessors (GPUs) can also acceler}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 ate alignments. Several implementations have employed the CUDA interface to Nvidia GPUs. The CUDASW++ tool by Liu}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et}{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 al.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 [15] reportedly performed 9.5 GCUPS on the single-GPU GeForce GTX 280 and 14.5 GCUPS on the dual-GPU GeForce GTX 295. Ligowski and Rudnick
+i [16] reported speeds of up to 14.5 GCUPS on the dual-GPU GeForce 9800 GX2. In 2010, Liu}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 
+\ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[17] reported speeds up to 17 and 30 GCUPS by CUDASW++ 2.0 on the single-GPU GeForce GTX 280 and the dual-GPU GeForce GTX 295, respectively. Recently, Ligowski}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[18] reported a speed of 42.6 GCUPS on the GeForce GTX 480. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The main advantage of the inter-task parallelisation approach where multiple database sequences are processed in parallel as described by Alpern}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[6] is that it simply avoids all data dependences within the alignment matrix. This approach does not seem to have been explored much in later implementations using SIMD technology apart from the work by Rudnicki}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[14]. However, in the GPU-based tools [15,16] this approach is common. The aim of the present study was to explore the use of this approach further using SIMD on ordinary CPUs. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Here the algorithm is implemented on Intel processors with SSSE3 [7] with parallelisation over multiple database sequences as illustrated in figure
+ 1D. Instead of aligning one database sequence against the query sequence at a time, residues from multiple database sequences are retrieved and processed in parallel. Rapid extraction and organisation of data from the database sequences have made this ap
+proach feasible. The approach has been implemented in a tool called SWIPE. The approach also involves computing four consecutive cells along the database sequences before proceeding to the next query residue in order to reduce the number of memory }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 accesses needed. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The performance of the new implementation ha
+s been extensively tested using different scoring matrices, gap penalties, query sequences and number of threads. The speed of SWIPE was almost constant at more than 100 GCUPS on a dual Intel Xeon X5650 six-core processor system for a wide range of query 
+lengths. SWIPE was about six times faster than SWPS3 and Farrar\rquote 
+s own implementation for a typical length query, but the factor varied between 2 and 18 depending on query length and number of threads used. Two versions of BLAST were tested and the speed was
+ found to be highly dependent on the score matrix. SWIPE was about twice as fast as BLAST using the BLOSUM50 matrix, while BLAST was about twice as fast as SWIPE using the BLOSUM62 matrix. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\adjustright\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid4208202 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid10696867\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Methods }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Benchmarking }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Benchmarking was performed on compute 
+nodes in the Titan high performance cluster at the University of Oslo. Entire nodes were reserved to ensure that no other major processes were running. All data was initially copied to a fast local disk to reduce the influence of the computer networks and
+ 
+minimize file reading time. The output from all programs was redirected to /dev/null to minimize performance differences due to the amount of output. All combinations of programs, number of threads, query sequences, score matrices, gap open penalties and 
+gap extension penalties were run 15 times and the median total wall clock execution time was recorded. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Software }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Table 1 lists the software packages that wer e benchmarked, including their version numbers and command line options used. }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid10696867 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 SWIPE was written 
+mainly in C++ with some parts hand coded in inline assembler and some using SSE2 and SSSE3 intrinsics. It was compiled for 64 bit Linux using the Intel C++ compiler version 11.1. Source code is available at }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf2\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 http://dna.uio.no/swipe/}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 under the GNU Affero G
+eneral Public License, version 3. An executable binary and score matrix files are also available at the same location.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid10696867\charrsid10696867  }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid9190438\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The source code for Farrar\rquote 
+s STRIPED software was downloaded from the author\rquote s website and compiled with the GNU gcc compiler as specifi
+ed in the supplied Makefile [11]. The Makefile was also modified to compile STRIPED using the Intel compiler, to see if there were any differences in performance. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The binary }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 of SWPS3 }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+was downloaded from the authors\rquote  website and used directly. [12] }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Precompiled binaries for BLAST and BLAST+ were downloaded from the NCBI FTP site. [4] }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Hardware }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Performance tests were carried out on Dell PowerEdge M610 blade servers with 48GB RAM and dual Intel Xeon X5650 six-core processors running at 2.67GHz. The X5650 pr
+ocessors have simultaneous multithreading capability also known as hyper-threading (HT). With HT enabled, each of these computers has a total of 24 logical cores.  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Threads }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The programs were run using 1 to 24 threads. To take full advantage of the hardwa
+re a number of threads equal to the number of logical cores is usually the most appropriate. There are however important differences between software on the effect of HT and in the ability to make ef ficient use of the cores available. To simplify compari
+sons, some of the tests were only performed with 1 or 24 threads. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Database sequences }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par UniProt Knowledgebase Release 
+11.0 [19] consisting of both Swiss-Prot release 53.0 and TrEMBL release 36.0 of 29 May 2007 was used for the performance tests. This database consists of 4 646 608 protein sequences with a total of 1 517 383 530 amino acid residues. The longest sequence c
+ontains 36 805 residues. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid10696867 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+This database was chosen because the size was large enough to be realistic but smaller than the apparent 2GB file size limit of some software. The database also did not contain any of the special J, O or U amino acid residue symbol
+s that some of the software could not handle. Finally, this release of the database should be available for download in the foreseeable future, making it suitable also for future benchmarking.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The current version of SWIPE will not work with databases split by formatdb into separate volumes. SWIPE theref}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+ore cannot search databases lar}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 ger than about 4 billion amino acids. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The database was converted into FASTA format by a simple Perl script and then formatted with NCBI formatdb version 2.2.24 into t
+he NCBI BLAST binary database format [4]. This binary format was read by SWIPE, BLAST and BLAST+, while STRIPED and SWPS3 read the FASTA-formatted database file directly. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\adjustright\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid9190438\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Query sequences }{
+\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The 32 query sequences with accession numbers P56980, O29181, P036
+30, P02232, P01111, P05013, P14942, P00762, P53765, Q8ZGB4, P03989 (replacing the identical but obsolete P10318), P07327, P01008, P10635, P58229, P25705, P03435, P42357, P21177, Q38941, O60341, P27895, P07756, P04775, P19096, P28167, P0C6B8, P20930, P0851
+9
+, Q7TMA5, P33450 and Q9UKN1, ranging in length from 24 to 5478 residues were retrieved from the UniProt database [18]. Most of them have previously been used several times for performance testing. To simplify comparisons, some of the tests were only perfo
+rmed with the 375 residues long P07327 query, representing a protein of roughly average length.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid10696867\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Score matrices and gap penalties }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 All 82 different combinations of amino acid substitution score matrices and gap penalties accepted by BLAST were tested. The
+ matrices used were BLOSUM45, BLOSUM50, BLOSUM62, BLOSUM80, and BLOSUM90 from the BLOSUM series [20] as well as PAM30, PAM70, and PAM250 from the PAM series [21]. Matrices were obtained from the NCBI FTP site. Rows and columns for stop codons (*) were rem
+o
+ved from the matrices for compatibility with the SWPS3 program. SWPS3 would only run successfully using the BLOSUM45, 50 and 62 matrices. To simplify comparisons, some of the tests were only performed with the BLOSUM62 matrix and gap open and extension pe
+nalties of 11 and 1, respectively, which is the BLAST default. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid10696867\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 respectively.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 P}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  [}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  q}{
+\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1384030\charrsid10696867 i}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 
+\ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 d}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1384030\charrsid10696867 j}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ] is the score of aligning residues}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 q}{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1384030\charrsid10696867 i}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 d}{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1384030\charrsid10696867 j}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 with each other according to the substitution score matrix}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 P}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  .}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Q}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 is the sum of gap open and extension penalties while}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 R}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+is the gap extension gap penalty.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 S}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 is the overall optimal local alignment score. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1384030\charrsid10696867 
+\par T}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 he calculations are carried out column by column. Only parts of the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 F}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+matrices need to be kept in memory: a single element of the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 F}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 matrix as well as two arrays containing}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 m}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+elements each, corr esponding to one column of the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 matrices. }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 
+\b\f0\fs24\ul\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\ul\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1384030\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Implementation }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Parallelisation over sixteen database sequences }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Residues from 16 different database sequences are processed in par allel as indicated in figure 
+1D. These 16 residues are all simultaneously compared to the same query residue. The operations are carried out using vectors consisting of 16 independent bytes. The 16 residues are fed into sixteen independent channels. When the first of these sixteen da
+tabase sequences ends, the first residue of the next database sequence is loaded into the channel. The databases sequences are r ead in the order they are found in the original database file. In contrast to the approach by Rudnicki}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+et al.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 [14], the database is not sorted by sequence length. Figure 2 illustrates this approach. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Compact core code of ten instructions }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 
+\b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The basis for the computations of the values in each cell in the alignment matrices are the recurrence relations described in the Algorithm s
+ection. The computations can be written in as little as ten assembly instructions that constitute the core of the inner loop of the computations, as shown in figure 3. These ten instructions compute in parallel the values for each vector of 16 cells in in
+dependent alignment matrices. The exact selection of instructions and their order is important; this part of the code was therefore hand coded in assembler to maximise performance. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 In the figure,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+represents the main score vector. The}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 vector is saved in the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 N}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+vector for the next cell on the diagonal.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 F}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 represent the score vectors for alignments ending in a gap in the query and database sequence, respectively.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 P}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 is the vector of substitution scores for the database sequences versus the query residue}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 q}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+(see temporary score profiles below).}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Q}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 represents the vector of gap open plus gap extension penalty.}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  R}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ represents the gap extension penalty vector.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 S}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 represents the current best score vector.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 All vectors, except }{
+\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 N}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 are initialised prio
+r to this code. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Processing four consecutive cells along the database sequences }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 During the computations of the matrix cells, the values in the two arrays with the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+values usually have to be read and written once for each matrix cell. These arrays are usually small enough to be cached at a close cache level, so the memory access time should not be a major concern, but they still need to be written and read back for e
+ach cell. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9639161 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Since there are sixteen 128-bit xxm registers available and ample space for keeping the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 F}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+values of a few cells in the registers, it is possible to reduce running time somewhat by computing a few consecutive cells along the database sequences before moving on to the next query residue. Four consecutive cells was found to perform well. }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9639161 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Unrolling the inner loop once along the query sequence was also found to work well. The basic computing blocks then consist of two times four cells that are processed in each inner loop iteration as shown in figure  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid10696867 
+\par 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid10696867\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Updating scores and padding blocks }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+When a new database sequence begins in one of the channels, the score of the previous database sequence must be recorded. In addition, the}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 S}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+scores from the previous sequence must be reset. When a new column is going to be processed, it is checked whether any database sequence ended in the previous column. If}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+that is the case, special processing is carried out. The scor e of the sequences that ended are recorded. A mask is created and later used to reset the values of}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 S}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+in the appropriate channels before the new column is processed. The channels are filled, and one or more new sequences are started. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 A somewhat simpler and faster proc
+essing step is carried out for the new column if no sequences ended in the previous column. In the simpler processing step no scores need to be saved, no new sequences are started, and no mask need to be created or used. Since most columns are of the simp
+l
+er type the overall performance is mostly dependent on the speed of processing the simple columns. To simplify computations, each channel is padded with 1-3 null symbols after the end of a sequence if its length is not a multiple of 4, to ensure that a ne
+w
+ database sequence will only begin at the beginning of a new block of cells. This padding is indicated in pink in figure 2. The padding increases the total number of cell a little bit, but allows the checks described above to be carried out only on every 
+fourth residue. 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid5860627\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Computation of temporary score profiles }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid5860627\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 To make computations fast, it is essentia
+l that the vectors of substitution score values can be loaded quickly. Each score vector cor responds to the score of a single query residue against 16 residues from different database sequences. A kind of temporary score profile is created as outlined in
+ figure 5. This score profile is valid for matching any query residue with 4 successive residues from 16 database sequences. For every fourth residue in the database sequences a new score profile must be constructed.  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The temporary score profiles are creat
+ed from the ordinary substitution score matrices (e.g. BLOSUM62) and the 4x16 database sequence residues using a series of packed shuffle instructions (pshufb). The shuffle instruction is only available on Intel processors with Supplemental Streaming SIMD
+ 
+Extensions 3 (SSSE3). On processors without SSSE3 (i.e. AMD processors and older Intel processors), the computations may be replaced by a kind of matrix transpose operation using a series of unpack instructions (punpcklbw, punpckhbw) with only a modest sp
+eed penalty. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid3744307 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid10696867\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Score range and selection of arithmetic instructions}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Computations are initially performed using only a 7 bit score range. This allows 16 alignment score matrices to be computed in parallel using SSE2 instructions. Additions and subtractions
+ are performed using signed and saturated arithmetics, while the maximum operations are carried out on unsigned numbers. Only the 7 bit score range from -128 to -1 (signed numbers) or 128 to 255 (unsigned numbers) is used. All scores are biased by an offs
+e
+t of 128. This range of values will ensure that signed saturated addition and subtraction works well on the lower boundary. Also, the unsigned maximum works well in this range. The range enables the use of the packed maximum unsigned byte instruction (pma
+xub) and packed add and subtract signed saturated bytes instructions (paddsb and psubsb), which are available on all SSE2 processors and gives the highest speed. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 An 8 bit range, which would allow the same number (16) of parallel computations as a 7-bit ra
+nge, and at the same time allow a wider score range, is not used because it is slower. Either the range from -128 to 127, or the range from 0 to 255 could be used. There are both signed and unsigned versions of the instructions for parallel computation of
+ 
+the maximum of bytes (pmaxub, pmaxsb) and for parallel addition and subtraction of bytes (paddusb, psubusb, paddsb, psubsb), but the pmaxsb instruction for the maximum of signed bytes was only recently available in SSE4.1 and is slower than pmaxub. Unsign
+ed additions and subtractions (paddusb and psubusb) may be used, but the addition of the score matrix vector then requires two instructions. First the score vector including a bias must be added; then the bias must be subtracted.  }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Versions using 16-bit and
+ 63-bit score ranges are also implemented and used when overflow is detected in computations with lower score ranges. The 16-bit version allows 8 parallel computations. When potential overflow is detected in computations with a narrow score range, the ali
+gnment score for}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 that database sequence is recalculated using the next wider score range (first 16-bit and then }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid1474\charrsid10696867 63-bit if necessary). Because r}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ather few sequences will usually reach a score that cannot be represented by 7 bits, the additional computation time for wider score ranges are usually negligible. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Recalculations with a wider score range are carried out on a subset of sequences after all sequences in a chunk of database sequences (see below) have been processed using the narrower score range. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Reading the sequence database }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Database sequences were stored in the NCBI BLAST database format, produced by the formatdb tool. This is a binary format where the sequence information is split into at least 3 files: indices (.pin), headers (.phr) and
+ sequences (.psq). The file format allows efficient reading of sequences into memory. Protein sequences are stored using byte values in the range 1-24 and 26-27 representing amino acid residues A-I, K-N, P-T, V-Z, U, O and J, respectively. Sequences are s
+eparated by a zero byte, which simplifies the check for sequence ends. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Database sequences are retrieved using memory mapping of the .pin and .psq files. This is an efficient and convenient method of accessing the sequences, in which the operating system m
+anages reading data into memory from disk as necessary, concurrently with program execution. The sequence database is divided into 100 chunks per thread. Each chunk contains approximately the same number of sequences. The sequences in one chunk are mapped
+ into memory and processed before the next chunk is mapped. This results in a small memory footprint of the program. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Multiple threads }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid931950\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 SWIPE uses multiple threads (pthreads) that work on different parts of the sequence database. The number of threads 
+is specified when starting the program and should in general be equal to the number of cor es of the computer. For the latest generations of Intel processors with hyper-threading, a number of threads equal to the number of logical cores is usually most ef
+f
+ective. Chunks of database sequences are assigned to the threads as they are ready for more work, so the threads may not process exactly the same number of chunks each. Results from the threads are inserted into a common hit list after each chunk is proce
+ssed. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid10696867\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Testing }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The SWIPE software was benchmarked against BLAST, BLAST+, STRIPED and SWPS3 under many different conditions to measure speed. The performance using a variable number of threads and the effect of query sequence length was studied. Additiona
+lly, the impact of different scoring systems, both substitution score matrices and gap open and extension penalties was examined. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid14828780\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Threads 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Figure 6A indicat}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid14828780\charrsid10696867 es the performance of the progr}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ams running with 1 to 24 threads, the 375 residue long P073
+27 query sequence, the BLOSUM62 matrix, and with gap open and extension penalties of 11 and 1, respectively. SWIPE runs at 9.1 GCUPS using a single thread and reaches its maximum performance with 19 threads at 106.2 GCUPS, but there is almost no gain from
+ additional threads beyond 12. 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+It scales very well and the maximum speed-up (the ratio of maximum speed to single thread speed) is 11.6. SWPS3 runs at 3.4 GCUPS using a single thread and reaches its best performance at 12 threads with 16.4 GCUPS, but has 
+little gain beyond 9 threads. The maximum speed-up is 4.8. Surprisingly, the speed using two threads is inferior to that with a single thread. STRIPED compiled with the GNU compiler runs at 3.1 GCUPS with a single thread and reaches its maximum performanc
+e with 23 threads at 14.7 GCUPS, but gains little beyond 12 thread}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 s. The maximum speed-up is 4.8.
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Compiling STRIPED with the Intel compiler resulted in a 21% speed increase to 3.7 GCUPS when running on a single thread, but just 2% to 15.0 GCUPS with 23 thr
+eads. This corresponds to a maximum speed-up of 4.0. BLAST and BLAST+ run at 14.7 and 15.5 GCUPS, with a single thread, respectively, scale very well and reach their maximum performance when 24 threads are running with speeds of 208.4 and 178.9 GCUPS, res
+pectively. The maximum speed-ups of BLAST and BLAST+ are 14.2 and 11.5, respectively. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Query length }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid14828780\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Figure 6B and 6C illustrates the performance with queries of varying length using either 24 threads (B) or a single thread (C). 32 different sequences with lengths ranging from 24 to 5478 amino acid residues were used as queries.}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+SWIPE had a rather flat performance curve. For queries shorter than about 100 residues there was a gradual loss in performance, especially when running with many threads. The speed was also slightly reduced for very long queries when using many threads. T
+he performance ranged from 23.1 to 110.1 GCUPS for 24 threads and from 3.9 to 9.8 GCUPS for a single thread.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The SWPS3 program was very dependent on query length with speeds ranging from 0.94 to 49.0 GCUPS on 24 threads and between 1.1 and 4.6 GCUPS on a single thread.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The STRIPED program compiled with the Intel compiler was also quite dependent on the query length, in particular when running on 24 threads, with speeds ranging from 1.2 to 46.6 GCUPS. On a single thread, the speed of STRIPED varied betwee
+n 0.8 and 5.7 GCUPS. STRIPED compiled with the GNU compiler was in general slightly slower, particularly with longer queries. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The speed of the BLAST programs seemed somewhat f
+aster with longer query sequences with speeds ranging from 52.8 to 374.1 and 30.6 to 360.2 GCUPS for BLAST and BLAST+, respectively, but the performance varied a bit from sequence to sequence. There was a noticeable drop in performance with queries shorte
+r than about 100 residues. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Scoring systems }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par Figure 7 shows the performance under different scoring systems. All combinations of matrices and gap penalties allowed by BLAST were tested. The 375 residue long P07327 query sequence and 24 threads were used.
+ The performance of SWIPE is almost constant at about 102-106 GCUPS. The performances of STRIPED and SWPS3 are also almost constant at about 14-15 and 15 GCUPS, respectively. The performance of BLAST was highly depend}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid131568\charrsid10696867 ent on the scoring matrix used.
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 SWIPE was }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid14828780\charrsid10696867 almost twice as fast as ordinar}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+y BLAST using the BLOSUM50 matrix. The speeds of the two programs were quite similar with the PAM250 matrix, while BLAST was faster for the other matrices. In general, BLAST+ was about 10-20% slower than ordinary BLAST. G
+ap penalties had little impact on performance in general, but relatively low gap penalties seemed to reduce the speed of BLAST, BLAST+, and STRIPED in a few cases (e.g. BLOSUM62 with gap penalties 9 and 1), while the impact on SWIPE and SWPS3 was negligib
+le. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\adjustright\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\kerning2\langnp1033\insrsid14828780 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\kerning2\langnp1033\insrsid10696867\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\kerning2\langnp1033\insrsid14828780\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Discussion }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The SWIPE software greatly increases the speed of sequence database searches based on the Smith-Waterman algorithm compared to earlier SIMD implementations, being more than six times faster in realistic cases. SWIPE was found to be per
+forming at a speed of 106 GCUPS with a 375 residue query sequence on a dual Intel Xeon X5650 six-core processor system. The speed was a bit dependent on the query length, but independent of the scoring system used. The maximum speed corresponds to the pro
+cessing of more than 3.3 cells per physical core in each clock cycle. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Using GPUs, speeds of up to 42.6 GCUPS have been reported for CUDASW++ 2.0 on a Nvidia GeForce GTX 480 graphics card [18]. This is comparable to the expected performance of SWIPE on a quad-core CPU. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par SWIPE scaled almost linearly with the number of threads used up to 12 threads, corresponding to the number of physical cores available. The X5650 processors features hyper-threading which makes it possible to obtain extra performance using 
+more than one thread per physical core, unless all execution units of busy. Almost no increase in performance beyond 12 threads was observed, so apparently the execution units are fairly busy when }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid131568\charrsid10696867 SWIPE is running on 12 threads.
+\par 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 SWIPE scaled much better t
+han SWPS3 and STRIPED with multiple threads. The maximum speed of SWIPE was 6.5 times faster than SWPS3, the fastest of these, using the 375 residue query. When all programs were running on a single thread, SWIPE was about 2.5 times faster. There seems to
+ 
+be two equally important factors responsible for the differences in speed. Based on the single thread performance numbers, it seems like the use of the inter-sequence par allelisation approach instead of the striped approach is responsible for about half 
+of the increase in speed. Efficient thread parallelisation seems responsible for the other half. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 In the comparisons with the STRIPED software it should be noted that Farrar (2007) apparently reported the \'93scan time\'94
+ and not the complete running time for t
+he program, excluding the time needed to read the database sequences into memory. The full running time is reported here. For the other programs, it is difficult to separate the scan time from the rest of the time used. STRIPED reads the FASTA formatted f
+iles directly and not files formatted by NCBI\rquote 
+s formatdb tool. It appears that STRIPED initially parses the entire FASTA file and reads the database into memory using non-threaded code, resulting in low performance when using several threads and measuring t
+he complete running time. Excluding the time for database reading leads to shorter run times and higher performance numbers. On the other hand, it is probably faster to read files in the binary NCBI format than parsing the FASTA text format.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The
+ performance of SWIPE was not very dependent on query length, except for rather short and very long queries. Overhead costs incurred for each database residue probably reduced the performance of SWIPE for the shortest queries. For the longest queries ther
+e was a performance decrease when many threads were running. This is probably due to the effects of memory caches, of which some are shared between cores. The programs based on Farrar\rquote 
+s approach were considerably more dependent on query length and performed
+ better with increasing query length. The reason for this is probably that as the width of the stripes increase, the relative importance of the dependency between the stripes is reduced. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 SWIPE was about twice as fast as BLAST using the BLOSUM50 matrix, 
+while BLAST was twice as fast as SWIPE using the BLOSUM62 matrix. BLAST performance was found to be very dependent on the scoring matrix. The reason may be that BLAST in its heuristics uses an initial hit score threshold (}{\rtlch\fcs1 \ai\af0\afs24 
+\ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  T}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+ ) that has a fixed default val}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid14828780\charrsid10696867 ue (11) independent of the score matrix specified. Scor}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 e matrices with relatively high expected values, e.g. BLOSUM50, will then trigger more initial hits than other matrices, e.g. PAM30. }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+If one would like to search using a query profile (position-specifi
+c scoring matrix) instead of a query sequence, the computation of the temporary score profile need to be carried out for every position of the query, not just for the 20 possible amino acid residues. This has not been implemented, but the resulting}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 reduction in speed has been estimated to 30%. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The software described here should be considered a prototype indicating the performance potential of the approach. A later version that at least computes the actual alignments (not just the alignment score) and the
+ statistical significance of the matches is planned. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Conclusions }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Efficient parallelisation using SIMD on standard hardware now allows Smith-Waterman database searches to run considerably faster than before. In the new tool SWIPE, residues from six
+teen different database sequences are compared in parallel to one query residue. Using a 375 residue query sequence a speed of 106 billion cell updates per second (GCUPS) was achieved on a dual Intel Xeon X5650 six-core processor system, which is more tha
+n six times faster than software based on Farrar\rquote 
+s approach, the previous fastest implementation. Furthermore, for the first time, the speed of a Smith-Waterman based search has been shown to clearly exceed that of BLAST at least with one particular scoring matrix.}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Since the slow speed has been the major drawback limiting the usefulness of Smith-Waterman based searches, the approach described here could significantly widen the potential application of such searches. Other applications that require optimal 
+local alignment scores, like short read mapping [22] or genome sequence assembly [23] could also benefit from improved performance of this method. The approach used here may probably also be applied to HMM-based searches. 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\adjustright\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid3744307\charrsid10696867 
+\par 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Acknowledgements }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid9190438 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 This work wa
+s supported by the Research Council of Norway with a CoE grant to CMBN. Thanks to the Research Computing Services group at the Center for Information Technology at the University of Oslo for access to the Titan cluster and other services. }{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid9190438\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par Figure Legends }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid131568 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Figure 1 Approaches to vectorisation of Smith-Waterman alignments }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par Alignment matrices are shown with the elements that form the first five vectors processed indicated in black, blue, red, green and yellow. For simplicity, vectors of only 4 elem
+ents are shown, while 16 elements would normally be used. (A) Vectors along the anti-diagonal, described by Wozniak}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 
+\i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[8]. (B) Vectors along the query, described by Rognes and Seeberg [9]. (C) Striped approach, described by Farrar [10]. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 (D) Multi-sequence vectors, described by Alpern}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 et al.}{\rtlch\fcs1 
+\af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+[6] and in this paper. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Figure 2 Blocks of database residues processed together }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+The residues of the first five vectors processed are indicated on grey, blue, red, green and yellow background. Four symbols from e
+ach of the database sequences form blocks that are processed as a group. Padding of some sequence blocks are indicated with dashes on a pink background. An additional database sequence change is indicated with a pink vertical bar. Arrows below the sequenc
+es indicate positions were new sequences begin. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 Figure 3 Core instructions }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+These are the ten core instructions executed for each vector of cells in the alignment matrices. In this code, the first (left) operand is the source and the second ( right) operand is the destination. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\adjustright\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\kerning2\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Figure 4 Block of cells computed in each iteration }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 In each iteration of the inner loop blocks of eight cells in the alignment matrices computed. The}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 H}{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 E}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867  ,}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 
+\ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 F}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{
+\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 and}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \ai\af0\afs24 \ltrch\fcs0 \i\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 S}{\rtlch\fcs1 \af0\afs24 
+\ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid4208202\charrsid10696867  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+values are updated for each cell. The computations start in the upper left cell, proceed right three times and then continue from the left on the second row. }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Figure 5 Creation of a temporary score profile for 64 database sequence residues }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 A standard score matrix and 4 residues from 16 different database sequences for
+m the basis for a kind of temporary partial database sequences score profile. The score profile enables rapid comparison of any query residue with these 64 database residues.  }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 
+\f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Figure 6 Performance dependency on number of threads and query length }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The spe
+ed in billion cell updates per second (GCUPS) of the BLAST ( red), BLAST+ (orange), SWIPE (black), and SWPS3 (green) programs, as well as STRIPED compiled with the GNU (light blue) and Intel (dark blue) compiler, using a variable number of threads and que
+r
+ies of varying length. (A) Number of threads ranging from 1 to 24 and the 375 residue long P07327 query sequence. (B) Query sequences ranging from 24 to 5478 residues in length and 24 threads. (C) Query sequences of varying length and 1 thread. All scales
+ are logarithmic. The BLOSUM62 matrix and gap open and extension penalties of 11 and 1, respectively, were used in all cases. 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\cf5\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }\pard \ltrpar\qj \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \ab\af0\afs24 \ltrch\fcs0 \b\f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+Figure 7 Performance with different scoring systems }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\expnd0\expndtw-1\cf1\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 The speed in billion cell updates per second (GCUPS) (logarithmic scale) is 
+shown for the BLAST (red), BLAST+ (orange), SWIPE (black), and SWPS3 (green) programs, as well as STRIPED compiled with the GNU (light blue) and Intel (dark blue) compiler, using different scoring systems. All combinations of scoring matrices and gap pena
+l
+ties accepted by BLAST were tested. The matrix name is indicated above each graph, while the open and extension gap penalties are indicated on the x-axis. The query sequence was P07327 and 24 threads were running. SWPS3 would not run successfully in all c
+ases. 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid3744307 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid3744307\charrsid10696867 
+\par }{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\lang1033\langfe2070\langnp1033\insrsid16412334\charrsid10696867 
+\par 
+\par }\pard \ltrpar\ql \li0\ri-1\nowidctlpar\wrapdefault\faauto\rin-1\lin0\itap0\pararsid9190438 {\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\insrsid9190438\charrsid10696867 paddsb P[q], H\tab // H = H + P[q]
+\par pmaxub F, H \tab // H = max(H, F)
+\par pmaxub E, H \tab // H = max(H, E)
+\par pmaxub H, S \tab // S = max(S, H)
+\par psubsb R, F \tab // F = F \endash  R
+\par psubsb R, E \tab // E = E \endash  R
+\par movdqa H, N \tab // N = H
+\par psubsb Q, H \tab // H = H \endash  Q
+\par pmaxub H, E \tab // E = max(H, E)
+\par pmaxub H, F\tab // F = max(H, F)}{\rtlch\fcs1 \af0\afs24 \ltrch\fcs0 \f0\fs24\ul\insrsid4208202\charrsid10696867 
+\par }}

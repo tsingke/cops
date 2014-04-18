@@ -61,3 +61,7 @@ Options allowed:
 
 
 
+REFS pra SSE, AVX, HMMER; ALignment, papers etc
+
+
+The version published on the website is the one submitted to BMC Bioinformatics, and does not include the multi-threaded version (since this version is not so clearly universally competitive vs non-multi-threaded implementations)

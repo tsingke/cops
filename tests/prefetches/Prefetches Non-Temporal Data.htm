@@ -1,0 +1,310 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"><title>5.3. Non-Temporal Data</title><link rel="stylesheet" href="style.css" type="text/css"><meta name="generator" content="DocBook XSL Stylesheets V1.74.0"><link rel="home" href="index.html" title="Acumem ThreadSpotter&#8482;"><link rel="up" href="ch_problems.html" title="Chapter 5. Memory Performance Problems and Solutions"><link rel="prev" href="ch05s02.html" title="5.2. Data Access Pattern Problems"><link rel="next" href="multithreading_problems.html" title="5.4. Multithreading Problems"></head><body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF"><div class="navheader"><table width="100%" summary="Navigation header"><tr><th colspan="3" align="center">5.3. Non-Temporal Data</th></tr><tr><td width="20%" align="left"><a accesskey="p" href="ch05s02.html"><img src="images/prev.png" alt="Prev"></a> </td><th width="60%" align="center">Chapter 5. Memory Performance Problems and Solutions</th><td width="20%" align="right"> <a accesskey="n" href="multithreading_problems.html"><img src="images/next.png" alt="Next"></a></td></tr></table><hr></div><div class="section" lang="en"><div class="titlepage"><div><div><h2 class="title" style="clear: both"><a name="concept_non_temporal"></a>5.3. Non-Temporal Data</h2></div></div></div><p>
+      Some algorithms have data uses where we know that the accessed data
+      cannot be reused before it gets evicted from the cache. Such data is said
+      to be <em class="firstterm">non-temporal</em>. It may, for example, be an
+      algorithm that does transformations on data streams, reading the data
+      once from one location and writing it once to another location, so that
+      there are no data reuses at all.
+    </p><p>
+      It can also be an algorithm that is run on a data set that does not fit
+      in the cache, and where the reuse of data cannot be improved using
+      blocking or any of the other methods described in
+      <a class="xref" href="ch05s02.html#unexploited_data_reuse_opportunities" title="5.2.3. Unexploited Data Reuse Opportunities">Section 5.2.3, &#8220;Unexploited Data Reuse Opportunities&#8221;</a>.
+    </p><p>
+      Or, in the case of an algorithm where we have managed to improve the
+      reuse of data using, for example, blocking, we may know that the data in
+      each block will still be evicted between iterations of the algorithm.
+    </p><p>
+      In these cases we know that the data will be evicted from the cache
+      before it is reused, and that trying to cache the data is pointless. The
+      processor, on the other hand, does not know this and will try to cache
+      the non-temporal data like any other data. The non-temporal data will
+      occupy space in the cache, and may thereby cause unrelated data that
+      could otherwise be successfully cached to be evicted.
+    </p><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id509443"></a>5.3.1. Example of Non-Temporal Data Optimization</h3></div></div></div><p>
+        As a simple example, assume that we have a program that uses two
+        arrays. The first array is 2 MB large, and the second array is 8 MB
+        large. The program first iterates through the 2 MB array from beginning
+        to end, then iterates through the 8 MB array from beginning to end, and
+        then repeats this a number of times.
+      </p><p>
+        Now assume that this program is run on a processor with a 3 MB
+        cache. When it starts from the beginning of the 2 MB array it has just
+        iterated through the 8 MB array, so the 2 MB array will have been
+        evicted from the cache and it will have to fetch each cache line in the
+        array from memory. When it then starts from the beginning of the 8 MB
+        array, it will have touched the 2 MB array and rest of the 8 MB array
+        since it last touched each cache line, so each cache line will have
+        been evicted and have to be fetched from memory.
+      </p><p>
+        We get a cache line fetch for each cache line each time we go through
+        each of the arrays. However, we know that the larger array is not going
+        to fit in the cache anyway. If we could tell the processor not to try
+        to cache it at all, the smaller array would actually fit in the
+        cache. Instead of getting cache line fetches in both the small and
+        large arrays, we could at least get cache hits in the small array.
+      </p><p>
+        In this situation like this we would like to be able to tell the
+        processor not to try to cache the larger of the arrays, and most modern
+        processors actually implement instructions that allow us to do
+        that. These instructions are said to have non-temporal hints, and allow
+        you to tell the processor what data is non-temporal and should not be
+        cached.
+      </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id509464"></a>5.3.2. Singlethreaded Uses of Non-Temporal Hints</h3></div></div></div><p>
+        The most common use of non-temporal hints in singlethreaded programs is
+        to avoid caching a data structure that we know will not fit in the
+        cache in order to avoid evicting another data structure that does fit
+        in the cache, as in the example above.
+      </p><p>
+        However, it is also possible to use non-temporal hints to reduce the
+        number of cache line fetches if we have single data structure that is
+        too big to fit in the cache. For example, assume that we have a program
+        that repeatedly iterates over a single 8 MB array, and that we know it
+        will run on a processor with a 6 MB cache using LRU replacement.
+      </p><p>
+        If we do not use non-temporal hints, this program will get a cache miss
+        for each cache line it accesses in every iteration. The cache will
+        contain the most recently accessed 6 MB of data, but when we access a
+        cache line we will always have accessed 8 MB of data since we last
+        accessed it.
+      </p><p>
+        It seems unnecessary that we should get a 100% miss ratio when our data
+        set is quite close to fitting in the cache. To improve on this we can
+        tell the processor not to try to cache the last 2 MB of the array using
+        non-temporal hints. This way the first 6 MB of the array will fit into
+        the cache, and we will now only get cache misses for the last 2 MB. We
+        get a 25% miss ratio instead of 100%.
+      </p><p>
+        In reality you should probably not try use the entire cache like this,
+        since there it will most likely be other small data structure and code
+        that need some space. For example, using 5 MB of the cache and leaving
+        1 MB for other things may better in this case.
+      </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id509493"></a>5.3.3. Multithreaded Uses of Non-Temporal Hints</h3></div></div></div><p>
+        The types of non-temporal optimizations possible in singlethreaded
+        programs are of course also possible in multithreaded programs, but
+        there are also other optimization opportunities if the threads share
+        some level of the cache hierarchy.
+      </p><p>
+        If one thread with a small data set that fits into the cache and
+        another thread with a large data set that does not fit in the cache
+        share a cache, the thread with the large data set may cause the data of
+        the other thread to be evicted. Both threads then get cache misses and
+        lose performance.
+      </p><p>
+        We know that the thread with the larger data set will get cache misses
+        anyway, so by adding a non-temporal hint its accesses we can prevent
+        its data from being cached and the data of the other thread from being
+        evicted. Instead of both threads missing in the cache, only the thread
+        with the large data set that would miss anyway now misses.
+      </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id509511"></a>5.3.4. Concurrent Uses of Non-Temporal Hints</h3></div></div></div><p>
+        If you know that a program is going to be run concurrently with other
+        programs, or multiple instances of the program are going to be run
+        concurrently, it is possible to make similar optimizations to those in
+        multithreaded programs. By adding non-temporal hints to accesses that
+        would miss in the cache anyway, you can reduce the cache pressure and
+        the number of cache misses in other programs.
+      </p><p>
+        The difference is that in the case of multithreaded programs, Acumem ThreadSpotter&#8482;
+        calculates how much of the cache each thread uses in the analysis and
+        reflects this in the report. This is not possible with multiple
+        programs as each program is analyzed separately. It is therefore useful
+        to specify a smaller cache size than the actual cache when doing the
+        analysis, to simulate the effect of sharing the cache with the other
+        programs.
+      </p><p>
+        If you will be running multiple instances of the same program, it might
+        make sense to divide the cache size by the number of instances sharing
+        the cache. For example, with four threads sharing a 6 MB cache, you
+        could specify a 1.5 MB cache when doing the analysis.
+      </p><p>
+        If you will be running several different programs concurrently, it
+        might make sense to specify an even smaller cache size than that, to
+        take into account that different programs may claim different amounts
+        of the cache. For example, with four programs sharing a 6 MB cache, you
+        could specify a 1 MB cache when doing the analysis.
+      </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id509533"></a>5.3.5. Types of Non-Temporal Hint Instructions</h3></div></div></div><p>
+        Modern x86 processors implement two types of instructions with
+        non-temporal hints; non-temporal prefetches and non-temporal stores.
+      </p><p>
+        Non-temporal prefetches are easy to use. Simply doing a non-temporal
+        prefetch of a cache line indicates to the processor that the data is
+        non-temporal and should not be allowed to evict other data from the
+        cache.
+      </p><p>
+        Non-temporal stores can offer further performance benefits compared to
+        non-temporal prefetches in some situations. They are, however, much
+        more complicated to use, and can easily cause severe performance
+        degradations, or even bugs in multithreaded programs, if misused.
+      </p><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="concept_non_temporal_prefetch"></a>5.3.5.1. Non-Temporal Prefetches</h4></div></div></div><p>
+          The <code class="code">prefetchnta</code> instruction is a prefetch with
+          non-temporal hint. In addition to fetching the cache line into the
+          cache like a regular prefetch, it also tells the processor that the
+          data in the cache line is non-temporal and should not be allowed to
+          evict other data from the cache.
+        </p><p>
+          A useful way to think about non-temporal prefetches is that they
+          fetch the cache line straight into the first-level cache and mark it
+          as non-temporal, and that when the cache line marked as non-temporal
+          is evicted from the first-level cache it is not added to the
+          higher-level caches. This means that non-temporal prefetches cannot
+          be used to keep non-temporal data out of the first-level cache, but
+          only higher-level caches.
+        </p><p>
+          This is not the way that all processors actually implement
+          non-temporal prefetches. Some may not prefetch the cache line
+          straight into the first-level cache, or they may use a small part of
+          the higher-level caches for non-temporal data, but model above works
+          well for these processors too.
+        </p><p>
+          This means that a program can prefetch a cache line with
+          a <code class="code">prefetchnta</code> instruction and use it for a short period
+          while it is in the first-level cache. Once it is evicted it is then
+          completely evicted from the cache hierarchy.
+        </p><p>
+          As with regular prefetch instructions, it is enough to do one
+          non-temporal prefetch of each cache line. Doing multiple prefetches
+          of the same cache line may cause a small performance penalty.
+        </p><p>
+          Note that using non-temporal prefetches incorrectly may increase the
+          number of cache line fetches and decrease performance. Doing
+          non-temporal prefetches of cache lines that would otherwise not have
+          been evicted from the cache will force fetches of those cache
+          lines. You should therefore only add non-temporal prefetches where
+          the instructions later reusing the data have a very high fetch
+          ratio. Measure the performance before and after adding a
+          non-temporal prefetch to verify that it is effective.
+        </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id509590"></a>5.3.5.2. Non-Temporal Stores</h4></div></div></div><p>
+          Non-temporal stores have an additional benefit over non-temporal
+          prefetches. A cache line written using non-temporal stores will not
+          be added to the caches, just as if it had been accessed by a
+          non-temporal prefetch. But a non-temporal store also hints to the
+          processor that the program intends to write the entire cache line,
+          completely replacing the current content, so that the cache line does
+          not need to first be fetched from memory.
+        </p><p>
+          Since the processor now only has to write the finished cache line
+          to memory, and not fetch it first, this essentially reduces the
+          memory bandwidth used by half.
+        </p><p>
+          The following non-temporal store instructions are available on x86
+          processors:
+        </p><div class="itemizedlist"><ul type="disc"><li><p>
+              For general-purpose registers the <code class="code">movnti</code> instruction
+              can be used.
+            </p></li><li><p>
+              For MMX registers the <code class="code">movntq</code>, <code class="code">maskmovq</code>
+              and <code class="code">maskmovdqu</code> instructions can be used.
+            </p></li><li><p>
+              For XMM registers the <code class="code">movntdq</code>, <code class="code">movntpd</code>
+              and <code class="code">movntps</code> instructions can be used.
+            </p></li></ul></div><p>
+          The processor collects the data written to a cache line using
+          non-temporal stores in special non-temporal store buffers. Once an
+          entire cache line has been written, the processor writes it straight
+          back to memory without first fetching it into or adding it to the
+          caches.
+        </p><p>
+          Processors have a very small number of these non-temporal store
+          buffers, typically 4-6 cache lines. If a program has more than this
+          number of partially written cache lines in flight, the processor has
+          to start writing partially written cache lines back memory. This is a
+          very slow operation and may lead to severe performance
+          degradations. Programs should therefore only keep a very small number
+          of partially written cache lines in flight, ideally only one or two
+          cache lines.
+        </p><p>
+          A typical use for non-temporal stores is copying memory regions that
+          are too large to fit in the cache. Using ordinary stores for that
+          would waste memory bandwidth by unnecessarily fetching all the data
+          in the destination region into the cache before overwriting it. Any
+          useful data that is in the cache before the copy would also be
+          replaced with data from the source and destination regions.
+        </p><p>
+          Such a routine can instead use non-temporal prefetches on the source
+          region and write to the destination region using non-temporal
+          stores. Using non-temporal stores to write to the destination region
+          saves memory bandwidth by overwriting the destination area without
+          first fetching it into the cache, and using non-temporal accesses for
+          both the source and destination region preserves any useful data that
+          was already in the cache before the copy.
+        </p><p>
+          Another typical use is initialization of data structures too large to
+          fit in the cache, for example, setting a large array to all zeros.
+        </p><p>
+          A major drawback of non-temporal stores is that they are fairly
+          complex to work with. If they are improperly used they can easily
+          cause performance degradations, or even hard-to-debug bugs in the
+          case of multithreaded programs.
+        </p><p>
+          Here is a list of potential problems to keep in mind:
+        </p><div class="itemizedlist"><ul type="disc"><li><p>
+              The program should write entire cache lines at a time using
+              non-temporal stores. Writing partial cache lines may lead to
+              severe performance degradations.
+            </p></li><li><p>
+              The program should not mix non-temporal stores and regular stores
+              to the same cache line. Doing so may lead to severe performance
+              degradations.
+            </p></li><li><p>
+              The program should not read from a cache line while it is being
+              written using non-temporal stores. Doing so may lead to severe
+              performance degradations.
+            </p></li><li><p>
+              The program should only write each part of the cache line
+              once. Writing the same part of the cache line multiple times may
+              lead to severe performance degradations.
+            </p></li><li><p>
+              The program should only keep a very small number of partially
+              written cache lines in flight. Keeping too many cache lines in
+              flight may lead to severe performance degradations.
+            </p></li><li><p>
+              Some of the non-temporal store instructions require the
+              destination address to be 16-byte aligned. Using such
+              instructions for unaligned stores may cause the program to crash.
+            </p></li><li><p>
+              Non-temporal stores use a weaker memory consistency model than
+              regular stores. This means that fencing operations must be used
+              in conjunction with non-temporal stores to ensure correct
+              operation in multithreaded programs. See the processor manual for
+              more information.
+            </p><p>
+              </p><div class="note" style="margin-left: 0.5in; margin-right: 0.5in;"><table border="0" summary="Note"><tr><td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="images/note.png"></td><th align="left">Note</th></tr><tr><td align="left" valign="top">
+                If you are unsure what this means, avoid using non-temporal
+                stores in multithreaded programs to avoid hard-to-debug bugs.
+              </td></tr></table></div><p>
+            </p></li></ul></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h3 class="title"><a name="id509750"></a>5.3.6. Using Non-Temporal Hint Instructions</h3></div></div></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id509756"></a>5.3.6.1. Adding Non-Temporal Hints to the Code</h4></div></div></div><p>
+          No major programming language currently supports the concept of
+          non-temporal data, so instructions with non-temporal hints have to be
+          added to a program manually. There are two ways to do this; compiler
+          intrinsic functions or inline assembly.
+        </p><p>
+          A compiler intrinsic function is built-in function provided by the
+          compiler, that is substituted for the desired instruction in the
+          generated machine code. The name and arguments of these functions
+          vary between compilers, so you have to consult the documentation of
+          your compiler for specifics.
+        </p><p>
+          If your compiler does not provide an intrinsic function for the
+          instruction you want to use, or if you for some reason want to avoid
+          the intrinsic function, you can insert the instruction using inline
+          assembly instead. Again, the syntax of inline assembly statements
+          varies between compilers, so you have to consult the documentation of
+          your compiler for specifics.
+        </p></div><div class="section" lang="en"><div class="titlepage"><div><div><h4 class="title"><a name="id509781"></a>5.3.6.2. Processor Compatibility</h4></div></div></div><p>
+          Another thing to consider when using instructions with non-temporal
+          hints is processor compatibility. The instructions with non-temporal
+          hints were added in the SSE and SSE2 instruction set extensions, so
+          not all processors support them.
+        </p><p>
+          Using instructions with non-temporal hints in 64-bit code is risk
+          free, as all 64-bit processors implement all the instructions.
+        </p><p>
+          As for 32-bit code, AMD processors from the Athlon 64 and
+          Opteron and newer, and Intel processors from the Pentium 4
+          and newer, support all non-temporal hint instructions in that mode.
+        </p><p>
+          If you want your code to run on older 32-bit processors, you either
+          have to avoid these instructions, or check if the processor supports
+          the instructions at run-time and implement separate routines for
+          processors with and without them.
+        </p></div></div></div><div class="navfooter"><hr><table width="100%" summary="Navigation footer"><tr><td width="40%" align="left"><a accesskey="p" href="ch05s02.html"><img src="images/prev.png" alt="Prev"></a> </td><td width="20%" align="center"><a accesskey="u" href="ch_problems.html"><img src="images/up.png" alt="Up"></a></td><td width="40%" align="right"> <a accesskey="n" href="multithreading_problems.html"><img src="images/next.png" alt="Next"></a></td></tr><tr><td width="40%" align="left" valign="top">5.2. Data Access Pattern Problems </td><td width="20%" align="center"><a accesskey="h" href="index.html"><img src="images/home.png" alt="Home"></a></td><td width="40%" align="right" valign="top"> 5.4. Multithreading Problems</td></tr></table></div></body></html>

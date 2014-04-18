@@ -1,0 +1,73 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Altivec-accelerated version of HMMer for PowerPC G4</title>
+<basefont size="4">
+</head>
+
+<body leftmargin="10" topmargin="10" alink="#FF0000" bgcolor="FFFFFF" link="#0000EF" marginheight="10" marginwidth="10" vlink="#990000">
+
+<h1>Altivec accelerations</h1>
+<p>The main reason I use Altivec is to improve the performance of our Molecular Dynamics package <a href="http://www.gromacs.org/">Gromacs</a>
+ on Apple computers. I've had great help from Apple in doing this, and 
+Gromacs is now Altivec-accelerated by default on any platform that 
+supports it. Molecular Dynamics is however by definition very hard to 
+vectorize, so just for fun I wanted to try optimizing an easier 
+application.</p>
+
+<h1>HMMer</h1>
+<p>Hidden Markov Models provide a more sensitive way of searching 
+databases compared to simple algorithms like BLAST. Unfortunately they 
+are also much slower, but BLAST cannot detect most distant similarities.
+ The most commonly used program for HMM searches is <a href="http://csb.stanford.edu/%7Elindahl/altivec/hmmer.wustl.edu">HMMer</a>
+ by Sean Eddy, and since it is distributed under the GNU General Public 
+License I decided to have a go at rewriting the core routines in 
+Altivec.</p>
+Actually, things went way better than I could ever imagine. After 2-3 
+days of work the hmmsearch program was almost 9 times faster compared to
+ the non-altivec version, and 6-7 times faster than x86 versions. (Here 
+are some benchmarks for <a href="http://csb.stanford.edu/%7Elindahl/altivec/hmmsearch.pdf">hmmsearch</a> and <a href="http://csb.stanford.edu/%7Elindahl/altivec/hmmpfam.pdf">hmmpfam</a>).
+ I've contributed these routines back to Sean Eddy, and they will appear
+ as an optional configuration parameter in the next released version of 
+HMMer.<p></p>
+<br>
+<br>
+Until then, you can get the source tarball here:
+<a href="http://csb.stanford.edu/%7Elindahl/altivec/hmmer-2.2g-altivec.tar.gz">hmmer-2.2g-altivec.tar.gz</a>
+<br>
+If you are having problems downloading it, make sure you don't use a web
+ browser (e.g. netscape) that uncompresses the file on the fly. If you 
+do, you might have to ask your local system guru for help...
+<br><br>
+Please note that neither I or Sean can provide support, but the changes 
+are very minor, so it should not be more complicated to install than the
+ normal non-altivec version. Normally you should only have to open a 
+terminal (locate the file) and type:
+<pre>$&gt; tar -xzvf hmmer-2.2g-altivec.tar.gz
+
+$&gt; cd hmmer-2.2g-altivec
+
+$&gt; ./configure
+
+$&gt; make
+
+</pre>
+
+That's it. The binaries should be present in hmmer-2.2g-altivec/binaries. Consult the <a href="http://csb.stanford.edu/%7Elindahl/altivec/hmmer.wustl.edu">HMM website</a> for more information!
+<br>
+<br><br>
+
+Cheers,<br>
+<br>
+Erik Lindahl
+<br>
+<br>
+You can reach me as:  lindahl (at) stanford (dot) edu.<br>
+<br>
+
+(But again, please understand that I cannot provide support for HMMer)
+<br>
+<br>
+Updated 10-Dec-02
+
+
+</body></html>

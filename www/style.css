@@ -1,0 +1,132 @@
+/* 
+This file is part of the COPS web page.
+
+ COPS web page by Miguel Ferreira, Nuno Roma, and Luis M. S. Russo / KDBIO /
+INESC-ID is licensed under a Creative Commons Attribution 3.0 Unported
+License.  Permissions beyond the scope of this license may be available at #email.
+
+ Software is distributed in the hope that it will be useful, but
+WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+ License available at http://creativecommons.org/licenses/by/3.0/
+*/
+
+/* All the base rectangles are by default green */
+
+h1
+{
+  font-family:"Lucida Console", Monaco, monospace;
+  color:Green;
+  font-size:xx-large;
+  text-decoration:none;
+}
+
+h2 /* Use to label the rectangles */
+{ 
+  text-align:right;
+  position:relative;
+  top:-22px;
+  font-size:large;
+  color:DarkBlue;
+}
+
+div.area
+{ 
+  padding:10px;
+  border-width:5px;
+  border-style:solid;
+  border-color:LightGray;
+  background:WhiteSmoke;
+  margin:0px;
+  opacity:0.6;
+}
+
+div.area:hover
+{ 
+  border-color:#FFFF00;
+  background:#FFFFAC;
+}
+
+div.activeArea
+{ 
+  padding:10px;
+  border-width:5px;
+  border-style:solid;
+  border-color:#97B99C;
+  background:#D0FFD7;
+  margin:0px;
+  opacity:1.0;
+  z-index:5;
+}
+
+div.txt
+{ 
+  visibility:hidden;
+}
+
+div.cmd
+{
+  width:95%;
+  background-color:Black;
+  color:White;
+  font-weight:bold;
+  font-family:"Courier New", Courier, monospace;
+}
+
+#down, #doc, #home, #email
+{ 
+  position:absolute;
+  left:10px;
+}
+
+#email
+{ 
+  width:700px;
+  height:380px;
+  top:200px;
+}
+
+#down
+{ 
+  width:650px;
+  height:420px;
+  top:160px;
+}
+
+#doc
+{ 
+  width:520px;
+  height:460px;
+  top:120px;
+}
+
+#docTxt
+{ 
+  height:410px;
+  overflow:scroll;
+}
+
+#home
+{
+  width:440px;
+  height:500px;
+  top:80px;
+}
+
+div.footer
+{ 
+  position:absolute;
+  left:10px;
+  top:610px;
+  width:700px;
+  height:30px;
+}
+
+p.footer
+{ 
+  font-size:5pt;
+  color:#000000;
+  background-color:transparent;
+  margin-top:10px;
+}

@@ -1,0 +1,276 @@
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 32, #Parts 32
+Total Comp Lines: 1024 | Wasted Comp Lines: 22
+# Opt CPU time: 43.81u 0.00s 00:00:43.80 Elapsed: 00:00:43.80
+# 100200M cells in 2287.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2287.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 40, #Parts 26
+Total Comp Lines: 1040 | Wasted Comp Lines: 38
+# Opt CPU time: 42.17u 0.00s 00:00:42.16 Elapsed: 00:00:42.16
+# 100200M cells in 2376.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2376.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 48, #Parts 21
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 41.87u 0.00s 00:00:41.86 Elapsed: 00:00:41.86
+# 100200M cells in 2393.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2393.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 56, #Parts 18
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 40.82u 0.00s 00:00:40.82 Elapsed: 00:00:40.82
+# 100200M cells in 2454.5 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2454.5
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 64, #Parts 16
+Total Comp Lines: 1024 | Wasted Comp Lines: 22
+# Opt CPU time: 40.59u 0.00s 00:00:40.59 Elapsed: 00:00:40.59
+# 100200M cells in 2468.6 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2468.6
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 72, #Parts 14
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 40.35u 0.00s 00:00:40.35 Elapsed: 00:00:40.35
+# 100200M cells in 2483.0 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2483.0
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 80, #Parts 13
+Total Comp Lines: 1040 | Wasted Comp Lines: 38
+# Opt CPU time: 40.56u 0.00s 00:00:40.56 Elapsed: 00:00:40.56
+# 100200M cells in 2470.1 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2470.1
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 88, #Parts 12
+Total Comp Lines: 1056 | Wasted Comp Lines: 54
+# Opt CPU time: 40.20u 0.00s 00:00:40.20 Elapsed: 00:00:40.20
+# 100200M cells in 2492.5 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2492.5
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 96, #Parts 11
+Total Comp Lines: 1056 | Wasted Comp Lines: 54
+# Opt CPU time: 40.22u 0.00s 00:00:40.21 Elapsed: 00:00:40.21
+# 100200M cells in 2491.6 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2491.6
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 104, #Parts 10
+Total Comp Lines: 1040 | Wasted Comp Lines: 38
+# Opt CPU time: 39.97u 0.00s 00:00:39.97 Elapsed: 00:00:39.97
+# 100200M cells in 2506.6 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2506.6
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 112, #Parts 9
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 40.53u 0.00s 00:00:40.52 Elapsed: 00:00:40.52
+# 100200M cells in 2472.4 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2472.4
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 120, #Parts 9
+Total Comp Lines: 1080 | Wasted Comp Lines: 78
+# Opt CPU time: 41.32u 0.00s 00:00:41.31 Elapsed: 00:00:41.31
+# 100200M cells in 2425.1 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2425.1
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 128, #Parts 8
+Total Comp Lines: 1024 | Wasted Comp Lines: 22
+# Opt CPU time: 42.66u 0.00s 00:00:42.66 Elapsed: 00:00:42.66
+# 100200M cells in 2348.7 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2348.7
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 136, #Parts 8
+Total Comp Lines: 1088 | Wasted Comp Lines: 86
+# Opt CPU time: 41.51u 0.00s 00:00:41.51 Elapsed: 00:00:41.51
+# 100200M cells in 2413.9 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2413.9
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 144, #Parts 7
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 42.11u 0.00s 00:00:42.10 Elapsed: 00:00:42.10
+# 100200M cells in 2379.7 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2379.7
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 152, #Parts 7
+Total Comp Lines: 1064 | Wasted Comp Lines: 62
+# Opt CPU time: 42.28u 0.00s 00:00:42.28 Elapsed: 00:00:42.28
+# 100200M cells in 2369.7 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2369.7
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 160, #Parts 7
+Total Comp Lines: 1120 | Wasted Comp Lines: 118
+# Opt CPU time: 42.96u 0.00s 00:00:42.96 Elapsed: 00:00:42.96
+# 100200M cells in 2332.2 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2332.2
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 168, #Parts 6
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 44.23u 0.00s 00:00:44.22 Elapsed: 00:00:44.22
+# 100200M cells in 2265.7 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2265.7
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 176, #Parts 6
+Total Comp Lines: 1056 | Wasted Comp Lines: 54
+# Opt CPU time: 44.09u 0.00s 00:00:44.08 Elapsed: 00:00:44.08
+# 100200M cells in 2272.8 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2272.8
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 184, #Parts 6
+Total Comp Lines: 1104 | Wasted Comp Lines: 102
+# Opt CPU time: 45.64u 0.00s 00:00:45.63 Elapsed: 00:00:45.63
+# 100200M cells in 2195.6 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2195.6
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 192, #Parts 6
+Total Comp Lines: 1152 | Wasted Comp Lines: 150
+# Opt CPU time: 48.15u 0.00s 00:00:48.14 Elapsed: 00:00:48.14
+# 100200M cells in 2081.2 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2081.2
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 200, #Parts 6
+Total Comp Lines: 1200 | Wasted Comp Lines: 198
+# Opt CPU time: 48.47u 0.00s 00:00:48.46 Elapsed: 00:00:48.46
+# 100200M cells in 2067.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2067.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 208, #Parts 5
+Total Comp Lines: 1040 | Wasted Comp Lines: 38
+# Opt CPU time: 49.45u 0.00s 00:00:49.44 Elapsed: 00:00:49.44
+# 100200M cells in 2026.4 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2026.4
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 216, #Parts 5
+Total Comp Lines: 1080 | Wasted Comp Lines: 78
+# Opt CPU time: 49.93u 0.00s 00:00:49.93 Elapsed: 00:00:49.93
+# 100200M cells in 2006.8 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	2006.8
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 224, #Parts 5
+Total Comp Lines: 1120 | Wasted Comp Lines: 118
+# Opt CPU time: 50.75u 0.00s 00:00:50.74 Elapsed: 00:00:50.74
+# 100200M cells in 1974.5 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1974.5
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 232, #Parts 5
+Total Comp Lines: 1160 | Wasted Comp Lines: 158
+# Opt CPU time: 50.85u 0.00s 00:00:50.85 Elapsed: 00:00:50.85
+# 100200M cells in 1970.5 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1970.5
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 240, #Parts 5
+Total Comp Lines: 1200 | Wasted Comp Lines: 198
+# Opt CPU time: 50.89u 0.00s 00:00:50.88 Elapsed: 00:00:50.88
+# 100200M cells in 1969.1 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1969.1
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 248, #Parts 5
+Total Comp Lines: 1240 | Wasted Comp Lines: 238
+# Opt CPU time: 51.99u 0.00s 00:00:51.99 Elapsed: 00:00:51.99
+# 100200M cells in 1927.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1927.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 256, #Parts 4
+Total Comp Lines: 1024 | Wasted Comp Lines: 22
+# Opt CPU time: 55.34u 0.00s 00:00:55.33 Elapsed: 00:00:55.33
+# 100200M cells in 1810.8 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1810.8
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 264, #Parts 4
+Total Comp Lines: 1056 | Wasted Comp Lines: 54
+# Opt CPU time: 51.19u 0.00s 00:00:51.19 Elapsed: 00:00:51.19
+# 100200M cells in 1957.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1957.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 272, #Parts 4
+Total Comp Lines: 1088 | Wasted Comp Lines: 86
+# Opt CPU time: 50.92u 0.00s 00:00:50.91 Elapsed: 00:00:50.91
+# 100200M cells in 1967.9 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1967.9
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 280, #Parts 4
+Total Comp Lines: 1120 | Wasted Comp Lines: 118
+# Opt CPU time: 50.71u 0.00s 00:00:50.71 Elapsed: 00:00:50.71
+# 100200M cells in 1975.9 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1975.9
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 288, #Parts 4
+Total Comp Lines: 1152 | Wasted Comp Lines: 150
+# Opt CPU time: 50.48u 0.00s 00:00:50.47 Elapsed: 00:00:50.47
+# 100200M cells in 1985.0 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1985.0
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 296, #Parts 4
+Total Comp Lines: 1184 | Wasted Comp Lines: 182
+# Opt CPU time: 50.20u 0.00s 00:00:50.19 Elapsed: 00:00:50.19
+# 100200M cells in 1996.2 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1996.2
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 304, #Parts 4
+Total Comp Lines: 1216 | Wasted Comp Lines: 214
+# Opt CPU time: 50.26u 0.00s 00:00:50.26 Elapsed: 00:00:50.26
+# 100200M cells in 1993.5 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1993.5
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 312, #Parts 4
+Total Comp Lines: 1248 | Wasted Comp Lines: 246
+# Opt CPU time: 50.71u 0.00s 00:00:50.71 Elapsed: 00:00:50.71
+# 100200M cells in 1975.8 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1975.8
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 320, #Parts 4
+Total Comp Lines: 1280 | Wasted Comp Lines: 278
+# Opt CPU time: 51.09u 0.00s 00:00:51.09 Elapsed: 00:00:51.09
+# 100200M cells in 1961.1 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1961.1
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 328, #Parts 4
+Total Comp Lines: 1312 | Wasted Comp Lines: 310
+# Opt CPU time: 51.26u 0.00s 00:00:51.25 Elapsed: 00:00:51.25
+# 100200M cells in 1954.9 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1954.9
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 336, #Parts 3
+Total Comp Lines: 1008 | Wasted Comp Lines: 6
+# Opt CPU time: 52.08u 0.00s 00:00:52.08 Elapsed: 00:00:52.08
+# 100200M cells in 1924.0 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1924.0
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 344, #Parts 3
+Total Comp Lines: 1032 | Wasted Comp Lines: 30
+# Opt CPU time: 51.20u 0.00s 00:00:51.19 Elapsed: 00:00:51.19
+# 100200M cells in 1957.1 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1957.1
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 352, #Parts 3
+Total Comp Lines: 1056 | Wasted Comp Lines: 54
+# Opt CPU time: 51.20u 0.00s 00:00:51.19 Elapsed: 00:00:51.19
+# 100200M cells in 1957.2 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1957.2
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 360, #Parts 3
+Total Comp Lines: 1080 | Wasted Comp Lines: 78
+# Opt CPU time: 51.13u 0.00s 00:00:51.12 Elapsed: 00:00:51.12
+# 100200M cells in 1959.8 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1959.8
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 368, #Parts 3
+Total Comp Lines: 1104 | Wasted Comp Lines: 102
+# Opt CPU time: 52.70u 0.00s 00:00:52.70 Elapsed: 00:00:52.70
+# 100200M cells in 1901.2 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1901.2
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 376, #Parts 3
+Total Comp Lines: 1128 | Wasted Comp Lines: 126
+# Opt CPU time: 51.46u 0.00s 00:00:51.46 Elapsed: 00:00:51.46
+# 100200M cells in 1947.1 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1947.1
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 384, #Parts 3
+Total Comp Lines: 1152 | Wasted Comp Lines: 150
+# Opt CPU time: 52.53u 0.00s 00:00:52.53 Elapsed: 00:00:52.53
+# 100200M cells in 1907.3 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1907.3
+
+Viterbi Stream Word with 1 Threads, model hmms-usar2/M1002-SrfB.hmm: Modelsize 1002, #Segms: 126, SeqL: 2000, Nseqs 50000, Part 392, #Parts 3
+Total Comp Lines: 1176 | Wasted Comp Lines: 174
+# Opt CPU time: 51.05u 0.00s 00:00:51.04 Elapsed: 00:00:51.04
+# 100200M cells in 1962.9 Mc/s
+XXXXX	Vitstream	1thrs	hmms-usar2/M1002-SrfB.hmm	1962.9
+

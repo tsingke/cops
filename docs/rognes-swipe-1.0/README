@@ -1,0 +1,30 @@
+SWIPE
+Smith-Waterman database searches with inter-sequence SIMD parallelisation
+Version 1.0
+
+This software is released with the GNU Affero Public License 3.0.
+See COPYING for details.
+
+The software is available from http://dna.uio.no/swipe/
+
+Developed by Torbjorn Rognes <torognes@ifi.uio.no>
+
+Copyright (C) 2008-2011 Torbjorn Rognes, University of Oslo,
+Oslo University Hospital and Sencel Bioinformatics AS
+
+Please cite:
+Rognes T
+Faster Smith-Waterman database searches with inter-sequence SIMD parallelisation
+(in prep.)
+
+Usage: swipe [options]
+
+-d s  sequence database file name (base name)  (required)
+-i s  query sequence file name (- means stdin) (default stdin)
+-M s  score matrix file                        (default BLOSUM62)
+-G n  gap opening penalty                      (default 11)
+-E n  gap extension penalty                    (default 1)
+-v n  maximum number of matches to display     (default 10)
+-j n  minimum score of matches to display      (default 1)
+-a n  number of threads (1-64)                 (default 1)
+-h    show this help message

@@ -1,0 +1,863 @@
+<head>
+
+<title>
+Microparallelism and High-Performance Protein Matching
+</title>
+
+</head>
+<body>
+
+<center>
+<h1><a name = "Top">Microparallelism and
+High-Performance Protein Matching</a></h1>
+
+<a href = "bowen.html"><strong>Bowen Alpern</strong></a>,
+<a href = "larry.html"><strong>Larry Carter</strong></a>, and
+<a href = "kangsu.html"><strong>Kang Su Gatlin</strong></a> <p>
+</center>
+
+<h2><a name = "Abstract">Abstract</a></h2>
+
+The Smith-Waterman algorithm is a computationally-intensive
+string-matching operation that is fundamental to the analysis of
+proteins and genes.  In this paper, we explore the use of some
+standard and novel techniques for improving its performance. <p>
+
+We begin by tuning the algorithm using conventional techniques.  These
+make modest performance improvements by providing efficient cache
+usage and inner-loop code. <p>
+
+One novel technique uses the z-buffer operations of the Intel i860
+architecture to perform 4 independent computations in parallel.  This
+achieves a five-fold speedup over the optimized code (six-fold over
+the original). We also describe a related technique that could be used
+by processors that have 64-bit integer operations, but no z-buffer. <p>
+
+Another new technique uses floating-point multiplies and adds in
+place of the standard algorithm's integer additions and maximum
+operations. This gains more than a three-fold speedup on the IBM
+POWER2 processor. This method doesn't give the identical answers as
+the original program, but experimental evidence shows that the
+inaccuracies are small and do not affect which strings are chosen as
+good matches by the algorithm. <p>
+
+<h2><a name = "Outline">Outline </a> </h2>
+
+<ol>
+
+<li><a href = "#Introduction">Introduction </a>
+     <ol>
+     <li><a href = "#Smith-Waterman">The Smith-Waterman Algorithm </a>
+     <li><a href = "#ISG"> The Protein Matching Iteration Space Graph</a>
+     </ol>
+
+<li><a href = "#Tuning">Tuning the Smith-Waterman Code</a>
+     <ol>
+     <li><a href = "#Blocking">Blocking</a>
+     <li><a href = "#Inner">Inner Loop Improvements</a>
+     <li><a href = "#Parallelism">Parallelism</a>
+     </ol>
+
+<li><a href = "#Microparallel">Microparallel Protein Matching</a>
+     <ol>
+     <li><a href = "#Zbuffer">Z-Buffer Microparallelism</a>
+     <li><a href = "#Integers">64-Bit Integer Microparallelism</a>
+     </ol>
+
+<li><a href = "#Floating-Point">Floating-Point Protein Matching</a>
+
+<li><a href = "#Scalability">Scalability and Load-Balancing</a>
+
+</ol>
+
+<p>
+
+<h2><a name = "Introduction">Introduction</a></h2>
+
+An important and time-consuming computation in molecular sequence
+analysis is finding the alignment of two proteins (or nucleic acids)
+that maximizes the number of identical or closely-related amino acids
+(or neucleotides) in corresponding positions. A score computed from such
+an alignment gives insight into the evolution or function of
+the molecules. As the Human Genome project and other efforts are producing
+large databases of sequences, the computational requirements of this string
+matching problem are growing rapidly. <p>
+
+The <dfn> protein matching</dfn> problem requires comparing a <dfn>
+query</dfn> protein q against a database D of <dfn> reference</dfn>
+proteins r[k].  Each protein is represented as a sequence of
+characters over a 23 character alphabet of amino acids.  (The related
+<dfn> gene matching problem</dfn> involves a 16 character alphabet of
+the subsets of the four nucleotides.)  Let |p| be the
+length of protein p, |D| be the number of proteins in the data
+base, and ||D|| be the size of the data base, that is, the sum of
+the lengths of its proteins.  A typical size for a problem of interest
+today might be |q| = 1000, |D| = 10,000, and ||D|| =
+200,000,000 (the reference molecules are often longer than the query
+strings). <p>
+
+<a href = "#SW81">Smith and Waterman</a> and <a href =
+"#G82">Gotoh</a> develop a dynamic programming algorithm that finds
+the optimal matching between two strings.  The algorithm finds regions
+where the two proteins share genetic material.  The score for a shared
+region is the cumulative sum of the the values (given by a table) of
+matching the amino acids in the corresponding positions.  The matching
+regions may be separated by <dfn>gaps</dfn> of non-matching material
+in one or both of the strings. Since a long gap can be introduced by a
+single mutation event, the algorithm assigns a penalty of the form
+U+kV for a gap of length k, where U is typically larger than V.  This
+level of generality has been found to be sufficient to provide
+accurate answers.  <p>
+
+Orthogonal to the problem of speeding up any particular algorithm is
+the challenge of finding better algorithms. Due to the importance of
+sequence comparison problem, there is considerable interest in
+approximate string-matching algorithms that give satisfactory answers
+with less computations. Such programs include <a href =
+"#CR93">FLASH</a>, <a href = "#P91">FASTA</a>, and <a href =
+"#Aetc90">BLAST</a>. Although these algorithms show promising
+results, the Smith-Waterman algorithm is still of great use when
+the most accurate answers are needed.<p>
+
+The Smith-Waterman algorithm has a O(|q| ||D||) running
+time. For the typical problem size mentioned above, the computation
+takes many hours on the most powerful workstations; however, it is
+easy to take advantage of parallel supercomputers or workstation
+clusters since the query protein can be scored against each of the |D|
+reference protein independently.<p>
+
+This paper presents techniques for parallelizing the
+Smith-Waterman algorithm at the very lowest level of the
+computational hierarchy -- the bits within a computer word.  We demonstrate
+a speedup of more than a factor of five using one of the techniques. While
+theorists may scoff that this is only a constant factor improvement,
+to a computational scientist, it can make the difference between
+certain experiments being impractical or practical. <p>
+
+In order for speedup numbers to be meaningful, care must be taken that
+comparisons are made with the &quot;best sequential code&quot; [<a
+href = "#Bailey">Bailey</a>]. Consequently, the next section details
+the conventional performance tuning of the algorithm.  <a href =
+"#Microparallel">Section 3</a> presents two microparallel techniques
+and their application to protein matching. One uses the z-buffer
+instructions of the Intel I860, the processor chip used by the Intel
+Paragon; the other, 64-bit integer instructions of the DEC alpha and
+PowerPC 620 chips.  <a href = "#Floating-Point">Section 4</a> presents
+another technique based on interpreting ADD and MIN operations as
+floating-point multiply and add instructions.  The <a href =
+"#Scalability">concluding section</a> briefly touches upon load-balancing and
+scalability issues. <p>
+
+<h3><a name = "Smith-Waterman">The Smith-Waterman Algorithm</a></h3>
+
+The protein matching algorithm is shown in <a href = "#figure1">
+figure 1</a>.  For expository reasons and to facilitate changing the
+loop structure, the pseudocode uses three-dimensional arrays, although
+much less storage is actually required.  Also, the code uses
+the syntax ADD and MAX for the operations that will later be
+implemented using microparallelism. <p>
+
+The Smith-Waterman algorithm is a dynamic programming algorithm
+related to the problem of computing the minimum edit distance between
+two strings.  Three scores are computed for each prefix of the query
+protein q matched with each prefix of a reference protein r:
+<code>nogap</code> gives the score of matching the two prefixes,
+<code>q_gap</code> gives the score of a match ending in a gap in the
+query protein, and <code>r_gap</code> gives the score of a match
+ending in a gap in the reference protein. The penalty of starting a
+gap is given by the constant <code>U</code>; the penalty for extending
+a gap by one more position is <code>V</code>. The value of matching a
+character from each protein is given by the matrix <code>
+Value</code>. The final score of the two proteins is simply the
+largest <code>nogap</code> score computed for any pair of their
+prefixes.<p>
+
+<a name = "figure1">
+<hr>
+<pre>
+initialize q_gap, r_gap, nogap, score
+for i from 0 to |D|-1 do
+    for k from 0 to |D[i]|-1 do
+        for j from 0 to |q|-1 do
+
+            r_gap[i,j,k] := ADD( V,
+                                 MAX( r_gap[i,j,k-1],
+                                      ADD( nogap[i,j,k-1],
+                                           U ) ) )
+
+            q_gap[i,j,k] := ADD( V,
+                                 MAX( q_gap[i,j-1,k],
+                                      ADD( nogap[i,j-1,k],
+                                           U ) ) )
+
+            nogap[i,j,k] := MAX( MAX( ADD( nogap[i,j-1,k-1],
+                                           Value[q[j], D[i][k]] ),
+                                      ZERO ),
+                                 MAX( q_gap[i,j,k],
+                                      r_gap[i,j,k] ) )
+
+            score[i]     := MAX(score[i], nogap[i,j,k])
+</pre>
+<strong> Figure 1. Unoptimized pseudocode for the protein matching problem.
+</strong>
+<hr>
+</a>
+
+<h3><a name = "ISG">The Protein Matching Iteration Space Graph</a></h3>
+
+An <dfn> iteration space graph (ISG) </dfn> [<a href = "#CFH">Carter,
+Ferrante, and Hummel</a>] has node (or point) for each execution of
+the inner loop body and a directed arc from one node to another if a
+number computed at the first is used in the second. This graph can be
+visualized as a solid with outer iterations (on <code>i</code>) along
+the x-axis, inner iterations (on <code>j</code>) along the y-axis, and
+middle iterations (on <code>k</code>) along the z-axis.  There are
+dependence arcs into a point <code>&lt;i,j,k&gt;</code> from the
+points before it (<code>&lt;i,j,k-1&gt;</code>), below it
+(<code>&lt;i,j-1,k&gt;</code>), and diagonally below and before it
+(<code>&lt;i,j-1,k-1&gt;</code>). Notice the absence of left-right
+dependences. <p>
+
+To perform the computation, each node of the graph must be evaluated.
+However, it is not necessary that the be evaluated in exactly the
+order specified in <a href = "#figure1"> figure 1</a>.  Any evaluation
+order that respects the dependences (no node is evaluated before any
+node that points to it) is legitimate.  Since no arcs go from left to
+right (or <em> vice versa</em>), yz-planes can be executed in
+parallel. <p>
+
+As mentioned earlier, the three-dimensional arrays of <a href =
+"#figure1"> figure 1</a> are unnecessary.  Each iteration of the inner
+loop uses scores (of <code>r_gap</code> and <code>nogap</code>)
+computed in the preceding iteration of the inner loop (on <code>
+j</code>) and of scores (of <code>q_gap</code> and <code>
+nogap</code>) computed in the preceding iteration of the next outer
+loop (on <code>k</code>).  Only these intermediate scores need be
+maintained.  Thus, space proportional to |q| is sufficient to compute
+<code>score[i]</code>. <p>
+
+<h2><a name = "Tuning">Tuning the Smith-Waterman Code</a></h2>
+
+The initial code for the Smith-Waterman algorithm is relatively
+efficient, but valid performance comparisons require
+pretuning the existing code. <p>
+
+<h3><a name = "Blocking">Blocking</a></h3>
+
+Conceivably, the algorithm of <a href = "#figure1"> figure 1</a>
+might have cache problems.  The values of <code>nogap</code> and
+<code>q_gap</code> computed in one iteration of the <code>k</code>
+loop are used in the next.  Unless the cache is big enough to hold all
+these scores (as well as the <code>Value</code> matrix), there will be
+a cost associated with bringing the them back into cache.  Since
+<code>nogap</code> and <code>q_gap</code> are accessed sequentially,
+the cost of a cache miss will be amortized over the length of a cache
+line, so the cost will not usually be large. <p>
+
+Cache miss penalties can be avoided entirely by blocking the
+computation.  First, the middle loop is <dfn>stripmined</dfn>, that
+is, broken into two nested loops.  Then, the two innermost loops are
+interchanged.  The resulting computation proceeds through the yz-plane
+of the <a href = "#ISG"> iteration space graph </a> in broad vertical
+swaths.  Notice that this order of evaluation respects the dependences
+of the graph. The optimal width of the swathes,
+<code>swathsize</code>, is machine-dependent, and should be chosen to
+be as large as possible (to reduce the loop overhead) while still
+getting adequate cache reuse. <p>
+
+ In the blocked program, the arrays <code>nogap_horz</code> and
+<code>q_gap_horz</code> are used to store scores computed in the inner
+loop that are needed at the next level up, while separate arrays
+<code>nogap_vert</code> and <code>r_gap_vert</code> are needed to
+store scores at the vertical swath boundaries. Thus, this approach
+requires additional space proportional to <code>swathsize</code>.  <p>
+
+<h3><a name = "Inner">Inner Loop Improvements</a></h3>
+
+In <a href = "#figure1"> figure 1</a> the <code>Value</code> matrix is
+doubly subscripted. After the loop interchange described above, the
+first subscript (<code>q[j]</code>) doesn't change in the inner loop, so 
+this doubly subscripted array can be replaced by a singly subscripted
+one.  However, even a single subscript requires an indirect reference.
+This indirect reference can also be eliminated.  Outside the two
+innermost loops, a sequence of costs is computed for each possible
+character in the query protein. This sequence gives the costs for each
+character in a segment of the reference protein and the given
+character of q.  Outside the innermost loop, the appropriate sequence
+for the current character of q is chosen. In the innermost loop, the
+values of this sequence are read sequentially. <p>
+
+The resulting code is shown in <a href = "#figure2"> figure 2</a>.
+The operations have been reordered a little to avoid register copying.
+The inner loop entails 5 <code>ADD</code>'s, 6 <code>MAX</code>'s, 3
+loads, and 2 store's. <p>
+
+<a name = "figure2">
+<hr>
+<pre>
+for i from 0 to |D|-1 do
+    for j from 0 to |q|-1 do
+        r_gap_vert[j], nogap_vert[j] := U, 0
+    for kk from 0 to |D[i]|-1 by swathsize do
+        this_swath := min(swathsize,|D[i]|-kk)-1
+        for a in alphabet do
+            for k from 0 to this_swath do
+                ValueDi[a][k] := Value[a, D[i,k+kk]]
+        for k from 0 to this_swath do
+            q_gap_horz[k], nogap_horz[k] := U, 0
+        temp := 0
+        for j from 0 to |q|-1 do
+            nogap := nogap_vert[j]
+            r_gap := r_gap_vert[j]
+            ValueqjDi:= ValueDi[q[j]]
+            for k from 0 to this_swath do
+
+                r_gap := ADD( V,
+                             MAX( r_gap,
+                                  ADD( nogap,
+                                       U ) ) )
+
+                nogap :=      MAX( ADD( temp,
+                                       ValueqjDi[k] ),
+                                  ZERO )
+
+                temp := nogap_horz[k]
+
+                q_gap := ADD( V,
+                             MAX( q_gap_horz[k],
+                                  ADD( temp,
+                                       U ) ) )
+
+                nogap := MAX( nogap,
+                             MAX( q_gap,
+                                  r_gap ) )
+
+                score := MAX(score, nogap)
+
+                nogap_horz[k], q_gap_horz[k] := nogap, q_gap
+
+            temp := nogap_vert[j]
+            nogap_vert[j] := nogap
+            r_gap_vert[j] := r_gap
+</pre>
+<strong> Figure 2. Optimized pseudocode.
+</strong>
+<hr>
+</a>
+
+We implemented the above pseudocode in C and measured the performance
+on a single node of an Intel Paragon (that is, an i860 processor) and
+on an IBM SP2 node (i.e. a RISC System/6000 model 590 or "Power2"
+processor).  The results are shown in <a href = "#figure3"> figure
+3</a>. The times reported are computed by taking the running time of
+the programs and dividing by the product of the length of the query
+string and the length of the reference string. Thus, they represent
+the time to compute one iteration of the inner loop, plus all
+amortized overhead. The reference string always had length 1000, while
+we varied the length |q| of the query string as shown.  There was some
+timing variation on the i860 (a maximum of 20 percent, but typically
+much less), so the times given are the average of three runs. <p>
+
+<a name = "figure3">
+<hr>
+<pre>
+                     Intel i860     |      IBM Power2
+                                    |
+q-String Length  500   2000   5000  |  500   2000   5000 
+                ------------------- | -------------------
+Original Code    954ns  988   1077  |  280    265    264
+                                    |
+Optimized Code   886    862    859  |  260    250    250
+                                    | 
+Speedup          7.6%    15%    25% |  7.7%   6.0%   5.6%
+
+
+</pre> <strong> Figure 3. Result of blocking and inner loop
+improvements. </strong> Times are nanoseconds for the entire run
+divided by the product of the string lengths.  <hr> </a>
+
+The times show that the original code on the i860 suffered a 13%
+performance degradation for the longest string length, presumably
+because of cache misses. The Power2, which has a larger cache, showed
+no degredation for these string lengths. Even when the data fits in
+cache, the optimized code runs faster than the original,
+and its performance actually improves on longer
+strings, since the overhead of constructing the localized Value table
+is amortized over more iterations. Thus, the optimizations were
+successful, although the speed improvements are not particularly
+dramatic. <p>
+
+<h3><a name = "Parallelism">Parallelism </a></h3>
+
+As observed earlier, there is no dependence between each of the
+yz-planes of the Protein Matching ISG. This makes the protein matching
+problem "embarrassingly parallel". This potential parallelism can be
+exploited at various levels.  Discussion of multiprocessor parallelism
+is deferred to <a href = "#Scalability">Section 5</a> where
+load-balancing issues are considered. The lowest possible
+level of parallelism is discussed in the <a href =
+"#Microparallel">next section</a>.  The remainder of this section
+concerns instruction-level parallelism.<p>
+
+Modern pipelined and superscalar processors execute several
+instructions concurrently. If an instruction needs to use a result
+computed by the previous instruction, there may be a pipeline stall or
+functional unit interlock. Good compilers attempt to choose a sequence
+of instructions that reduce the number of such delays, but they are
+limited by the dependences of the source code.  To realize the full
+power of the processor, it is sometimes necessary to restructure the
+source code to provide more independent operations. <p>
+
+Because of the readily available parallelism of the protein matching
+problem, this is easy to accomplish; see <a href = "#figure4"> figure
+4</a>. The outermost loop was changed to have a stride of two, and the
+innermost loop is changed to process two proteins simultaneously. In
+terms of the Iteration Space Graph, the new code executes two
+yz-planes simultaneously. In the language of compiler optimizations,
+the outer loop was stripmined, one of the resulting loops was
+interchanged all the way to the innermost position, and it was
+subsequently unrolled. These optimizations are all legal since they
+respect the data dependences. <p>
+
+We also note that even if there were only one reference protein, it
+would still be possible, though more complicated, to find
+instruction-level parallelism. The example of <a href = "#CFH">Carter,
+Ferrante, and Hummel</a> has the same iteration space graph as one
+yz-plane (except for the shape of the boundary), and the techniques of
+that paper could be used. <p>
+
+
+<a name = "figure4">
+<hr>
+<pre>
+for i from 0 to |D|-1 by 2 do
+    ...
+    for kk from 0 to |D[i]|-1 by swathsize do
+                  /* |D[i]| must equal |D[i+1]| */
+        ...
+        for j from 0 to |q|-1 do
+            ...
+            for k from 0 to min(swathsize,|D[i]|-kk)-1 do
+
+                r_gap0 := ADD( V,
+                              MAX( r_gap0,
+                                   ADD( nogap0,
+                                        U ) ) )
+
+                r_gap1 := ADD( V,
+                              MAX( r_gap1,
+                                   ADD( nogap1,
+                                        U ) ) )
+
+                nogap0 := ...
+
+                ...
+
+</pre>
+<strong> Figure 4. Code with more independent inner-loop operations.
+</strong>
+<hr>
+</a>
+
+We implemented the above code and ran it on the i860 processor and the
+Sparc processor of a Sun Sparc 20 workstation. In both cases, the
+program ran slightly slower than the optimized code of the preceding
+section. However the instruction level parallelism resulted in a
+modest improvement on the Power2 architecture, which has two
+fixed-point functional units (as well as two floating point
+units). The results are shown in <a href="#figure5"> figure 5</a>. The
+IBM xlc compiler used compare and branch instructions to implement most of
+the MAX operations, although it used the hardware's "monus"
+(difference or zero) instruction for several.  Branch instructions
+reduce the effectiveness of the multiple functional units, since all
+units must be restarted when there is a mis-predicted branch. We
+believe that greater speedups would have resulted if the compiler had
+made more liberal use of the monus instructions. <p>
+
+<a name = "figure5">
+<hr>
+<pre>
+                              IBM Power2 
+
+q-String Length          500    2000    5000
+                        ---------------------
+2-way IL Parallel        230ns   220     221
+
+Speedup over Optimized    13%     14%     13%
+ 
+Speedup over Original     22%     20%     19%
+
+
+</pre> <strong> Figure 5. Result of 2-way instruction-level parallelism.
+</strong>
+Times are nanoseconds divided by the product of the string lengths, and are 
+further divided by 2 (the number of strings processed in parallel).
+<hr>
+</a>
+
+
+<h2><a name = "Microparallel">Microparallel Protein Matching</a></h2>
+
+<dfn> Microparallelism</dfn> refers to the process of packing several
+numbers into a single computer word, so that the processor performs
+the same operation on multiple numbers when it executes a single
+instruction. The most common example of microparallelism is <dfn>
+bit-vectoring</dfn>, where each bit position of a word represents data
+for an independent Boolean problem. Bit-vectoring is used in compilers
+for doing data flow analysis, in VLSI tools for performing 2-level
+simulation, and a variety of other applications. However,
+microparallelism can also be used with data that are more than one bit
+wide, for instance to add two pairs of short integers (or 4 byte-long
+integers) in a single instruction, or for tristate logic VLSI
+simulation using carefully chosen 2-bit encodings <a href= "#BCRR87">
+[BCRR87] </a>. <p>
+
+This section presents a microparallel implementation of the MIN
+and ADD operations.  As with the other forms of parallelism,
+the operations being executed in parallel correspond to independent
+reference strings, and these strings should be chosen to be
+roughly the same length. <p>
+
+<h3><a name = "Zbuffer">Z-Buffer Microparallelism</a></h3>
+
+Z-buffer instructions are executed by special hardware that is
+intended to speed up graphics processing, but the instructions can be
+put to other uses as well.  We will use it to match
+a query protein against four reference proteins in parallel.<p>
+
+Certain z-buffer instructions of the Intel Paragon's i860 processors
+operate on four 16-bit fields of an 8-byte doubleword simultaneously.
+The <CODE>fzchks</CODE> instruction performs 4 MIN operations in
+parallel. The i860 also has a double word add (<CODE>fiadd.dd</CODE>)
+that performs an integer addition on the four 16-bit fields that are
+supplied in even-odd floating point register pairs.  Although there is
+no z-buffer MAX instruction, we can represent the value of a constant
+C (<CODE>StartGap</CODE>, <CODE>ExtendGap</CODE>, or any entry in the
+<CODE>Value</CODE> matrix) by the 16-bit integer BIAS - C, where BIAS
+= 0xFF9C. With this representation, the <CODE>fzchks</CODE>
+instruction acts as a MAX instruction on the biased encoding. The
+particular choice of the BIAS constant allows us to represent values
+in the range -100 < C < 65436, which is appropriate since the MAX's
+with 0 in the Smith-Waterman code keep the negative numbers close to
+zero.  However, the ADD instruction must take the biasing into
+account.  Thus, ADD(x,y) = x + y - BIAS.  <P>
+
+The Paragon's compiler does not produce the needed
+<CODE>fiadd.dd</CODE>, <CODE>fisub.dd</CODE>, and <CODE>fzchks</CODE>
+instructions. To get around this problem, we implemented the
+Smith-Waterman algorithm in C using +, -, and *, respectively, for
+adding, subtracting, and computing the min of the 8-byte encodings,
+which were declared as "double". Then a program, CHANGE, modified the
+assembly code produced by the compiler, converting the floating-point
+add, subtract and multiply instructions to <CODE>fiadd.dd</CODE>,
+<CODE>fisub.dd</CODE>, and <CODE>fzchks</CODE> instructions.<P>
+
+The final change needed to implement the microparallel algorithm is to
+bias-encode and pack the appropriate groups of four values from the
+<CODE>ValueDi</CODE> array into the 8-byte doublewords. Our earlier
+optimizations, which removed the indirect addressing from the inner
+loop, has the added benefit that only 23 packed numbers (one for each
+possible value of the query string) need to be computed per 1x|q|x4
+column of the iteration space graph. <p>
+
+We implemented 4-way microparallel code and obtained the
+results of <a href = "#figure6">figure 6</a>. <p>
+
+<a name = "figure6">
+<hr>
+<pre>
+                               Intel i860
+
+q-String Length          500     2000    5000
+                        ----------------------
+4-way microparallel      186ns    188     168
+
+Speedup over optimized  4.76     4.59    5.11
+
+Speedup over original   5.13     5.26    6.41
+
+
+</pre> <strong> Figure 6. Performance of 4-way microparallel z-buffer code.
+</strong>
+Times are nanoseconds divided by the product of the string lengths, and are
+further divided by 4 (the number of strings processed in parallel.)
+<hr>
+</a>
+
+The performance improvement is quite dramatic! The "superlinear speedup"
+of more than a factor of four for four-way microparallelism is
+probably a consequence of the elimination of the conditional
+branches used in computing the MAX's in the original and optimized codes.
+Even though the z-buffer operations are slower than integer operations,
+conditional branches are slower still. <p>
+
+We wish to emphasize that even though a little hacking of the
+assembly code was needed, the performance gains are <em> not </em> the
+result of careful assembly code tuning. None of the authors of this
+paper had prior familiarity with the i860's architecture. We suspect
+that someone who really understood the i860 could get even more
+improvements by using the "dual instruction" mode which
+allows a floating point or z-buffer operation and a fixed point
+operation to be executed concurrently. <p>
+
+
+<h3><a name = "Integer">64-bit Integer Microparallelism</a></h3>
+
+On machines that support 64-bit integer operations ( e.g. DEC Alpha
+and IBM PowerPC 620 processors), microparallelism can be obtained by
+packing four 15-bit numbers into a 64-bit integer, separating the
+values with 1-bit zeros.  The ordinary add instruction can be used to
+ADD the four numbers simultaneously.  MAX can be implemented as
+follows: <xmp>
+           MAX(A,B) == MONUS(A,B) + B
+</xmp>
+where MONUS(A,B) is A-B if A>B and 0 otherwise. An implementation of a
+microparallel MAX based on this approach is given in <a href =
+"#figure7">figure 7</a>.
+
+<a name = "figure7">
+<hr>
+<pre>
+
+ADD(A,B):
+  ADD := A+B               /* ith field: Ai + Bi                  */
+
+MAX(A,B):
+   t1 := A  or  x80808080  /* puts a 1 in the separator bits of A */
+   t2 := t1  -  B          /* ith field: 2^15+ Ai - Bi            */
+   t3 := t2 and x80808080  /* separator bit is 1 iff Ai>Bi        */
+   t4 := t3 shiftright 15  /* move separator bit to low-order bit */
+   t5 := t3  -  t4         /* ith field: if Ai>Bi then 7F else 0  */
+   t6 := t2 and t5         /* ith field: MONUS(Ai,Bi)             */
+  MAX := t6  +  B          /* ith field: if Ai>Bi then Ai else Bi */
+
+</pre>
+<strong> Figure 7. A 64-bit microparallel ADD and MAX operations.
+</strong>
+<hr>
+</a>
+
+This technique was not implemented, but a rough estimate of
+its performance is possible.  If a conventional ADD takes one cycle
+and a MAX takes four, the microparallel code should be more than twice
+as fast.  It should also be noted that the microparallel code requires
+one fourth the loads and stores of the conventional code.<p>
+
+Depending on the length of the proteins being matched and on the
+table entries, it is possible that fewer than 15 bits are required.
+This method can easily be modified to process five 11-bit or six 9-bit
+numbers in parallel. <p>
+
+<h2><a name = "Floating-Point">Floating-Point Protein Matching</a></h2>
+
+Modern superscalar processors are designed to get high performance on
+floating-point intensive problems.  The IBM Power2, for example, can
+initiate two floating-point multiply-add instructions per cycle.  This
+is the incentive behind reformulating ADD and MAX operations
+as floating-point multiply and add instructions. <p>
+
+The two algebraic structures S1 = (R, +, 0, MAX) and S2 = (R+, *, 1,
++) are both semirings, where R is the set of real numbers and R+ is the
+positive reals. Given a real number BASE, the function encode(A) = 
+BASE**A maps numbers from S1 into those of S2. The inverse mapping 
+is decode(X) = log(X)/log(BASE). These transformations preserve the first
+semiring operation, that is, <xmp> 
+A+B = decode(encode(A)*encode(B))
+</xmp> 
+The situation is not quite as tidy for the second operation. If 
+A is much larger (or smaller) than B, then A+B is a very good 
+approximation to MAX(A,B). However, if A is equal to B, 
+then A+B = 2 MAX(A,B). It isn't hard to show <xmp>
+MAX(A,B) < decode(encode(A)+encode(B)) <= MAX(A,B)+log(2)/log(BASE)
+</xmp>
+
+The Smith-Waterman algorithm uses the first semiring.  A modified
+algorithm uses the second.  (It is not yet clear to the authors which
+semiring algorithm most accurately captures the underlying chemistry.)
+The above discussion shows that the modified algorithm will always
+produce a larger score, and the scores will be closer when BASE is
+larger. The disadvantage of using a large value for BASE is that the
+floating point numbers may overflow to plus-infinity's. This may not
+be a disaster, as long as plus-infinity implies a good match. But if
+BASE is too large, poor matches may also overflow. This problem can be
+circumvented by using a hybrid algorithm that uses the second semiring
+for substrings up to a certain length, combines the scores for the
+substrings in the first semiring. However, we found for the proteins
+in our database, this was not necessary.  We matched every pair chosen
+from the 156 proteins in the database (except for matching a protein
+against itself), computing the "true score" (given by the semiring
+S1), and the score using a variety of values for BASE between 1 and 2.
+<A HREF="fig008.gif">Figure 8</A> shows the scores, and <A
+HREF="fig009.gif">Figure 9</A> the error for 120 randomly
+chosen pairs. (The scores for the entire data set were similar, but 
+there were too many points to be plotted conveniently.)
+The results show that BASE=1.1 produced unacceptable results and BASE=1.25
+marginal ones, but for BASE>=1.5, the maximum error was 11. Further, the
+maximum error (as well as the relative error) decreased for the larger
+scores. Since the strings of interest are those with the largest scores,
+the results produced by the multiply-add technique are effectively
+identical with those of the original algorithm. <p>
+
+The performance advantages of the floating-point formulation of the
+algorithm are that the pipeline-stopping conditional branches are
+eliminated, that the integer instruction unit can be devoted to doing
+loads and stores while the floating-point unit does the multiply and
+adds, and that fused multiply-add instructions can implement a MAX and
+ADD in a single instruction. (This last advantage could be put to
+fuller advantage by restructuring the inner loop to perform 5
+multiply-adds and one multiply; we did not perform this experiment.)
+<a href = "#figure10">Figure 10</a> reports on the results of
+experiments on the Power2.  Since this processor has two
+floating-point units, and each uses a two-stage pipeline, the
+instruction-level parallelism described earlier is of particular
+importance. The figure shows the result of matching 1 to 4 reference
+strings to a query string in parallel. <p>
+
+<a name = "figure10">
+<hr>
+<pre>
+                                   IBM Power2 
+
+IL Parallelization          1-way  2-way  3-way  4-way
+                           ----------------------------
+Floating-Point Code         170ns   90     77     78 
+
+Speedup over IL-parallel    1.53   2.72    -      -
+ 
+Speedup over Original       1.59   3.0    3.51   3.46 
+
+
+</pre> <strong> Figure 10. Performance of the Floating-Point Algorithm.
+</strong>
+Times are nanoseconds divided by the product of the string lengths
+(which are all 1000 long), and are further divided by the number of
+strings processed in parallel.  
+<hr> </a>
+
+Once again, the performance is impressive. The clock on the Power2 is about
+15ns, so each matching step of the algorithm -- involving 5 ADD's, 6 MAX's,
+4 loads, 3 stores, and assorted bookkeeping operations -- takes only about
+5 cycles! <p>
+
+<h2><a name = "Scalability"></a>Scalability and Load-Balancing</h2>
+
+This paper has concentrated on exploiting the parallel processing
+power of individual "uni-" processors. For time consuming problems
+such as this, it is often desirable to get the faster turnaround time
+provided by a parallel supercomputer or workstation cluster.
+In theory, all of the reference proteins could be evaluated in
+parallel by separate processors or separate computers.  In
+practice, the number of reference proteins will far exceed the number
+of available processors. Thus, each processor is assigned multiple
+reference strings.  Some care should be taken to ensure that approximately the
+same amount of work is assigned to each processor.  Since the database
+of reference proteins doesn't change too rapidly, it is not difficult
+to compute a partitioning of the database to solve the load-balancing
+problem.<p>
+
+Where two or more strings are bundled together to obtain either
+instruction-level parallelism or microparallelism, the shorter
+reference strings of the bundle must be padded with non-matching
+characters.  This will keep the answer correct.  To minimize the
+wasted cycles, the strings bundled together should be chosen to be
+nearly-equal length. Again, this is not difficult to do. (It would,
+however, prove extremely challenging to an automated program
+transformation tool!) <p>
+
+Introducing low-level parallelism can have a detrimental effect on the
+load-balancing problem, since there will be fewer bundles than there
+were reference strings.  This effect should be minor, and
+will diminish as the number of reference strings in the data base
+grows. <p>
+
+A final concern: whenever the performance of individual processors
+is improved, the demand on the network that provided data to the
+processors is increased. While this might lessen the overall
+performance of multicomputers on some problems, the protein matching
+problem has a very high computation-to-communication ratio. For
+instance, with strings of length 1000, a bandwidth of 16 KB/sec is
+sufficient to keep up with the fastest computation speed of the
+Power2, even assuming that the all reference and query strings are
+communicated, and that no data compression is used. Thus, the factor of 3
+to 5 speed improvements demonstrated in this paper should translate
+directly to comparable improvements on parallel computers. <p>
+
+<h2><a name = "Acknowledgement">Acknowledgement</a></h2>
+
+We thank Mike Gribskov of the San Diego Supercomputing Center
+for introducing us to this problem and providing us with
+the original code and periodic encouragement.
+
+<h2><a name = "References">References</a></h2>
+
+<dl>
+
+<dt><a name = "Aetc90">S.F. Altschul, W. Gish, W. Miller, E.W. Myers, and D.J. Lipman,</a>
+<dd>
+"Basic Local Alignment Search Tool,"<br>
+<em>J. of Molecular Biology</em>,  v. 215, pp. 403-10 (Oct 1990).
+<p>
+
+<dt><a name = "Bailey">D.H. Bailey,</a>
+<dd>
+``Misleading Performance in the Supercomputing Field,''<br>
+<em>Proc. Supercomputing '92</em>, pp, 155-158.
+<p>
+
+<dt><a name = "BCRR87">Z. Barzilai, L. Carter, B.K. Rosen and
+J.D. Rutledge,</a>
+<dd>
+``HSS - A High-Speed Simulator,'' <br>
+<em>IEEE Trans. on Computer-Aided Design</em>, v. CAD-6, pp. 601-17
+(July, 1987).
+<p>
+
+<dt><a name = "CR93">A. Califano and I. Rigoutsos,</a>
+<dd>
+"FLASH: a fast look-up algorithm for string homology," <br>
+<em>Proc. IEEE  Conference on Computer Vision and Pattern
+Recognition</em>, (1993).
+<p>
+
+<dt><a name = "CFH">L. Carter, J. Ferrante, and S. Hummel,</a>
+<dd>
+"Hierarchical Tiling: A Framework for Multi-Level Parallelism and Locality,"
+<em> International Parallel Processing Symposium</em>, (April, 1995).
+<p>
+
+<dt><a name = "P91">W.R. Pearson,</a>
+<dd>
+"Searching protein sequence libraries: comparison of the
+sensitivity and selectivity of the Smith-Waterman and FASTA algorithms," <br>
+<em> Genomics</em>, v 11, pp. 635-50 (Nov 1991).
+<p>
+
+<dt><a name = "G82">O. Gotoh,</a>
+<dd>
+``An Improved Algorithm for Matching Biological Sequences,'' <br>
+<em> J. of Molecular Biology </em>, v. 162, pp. 705-8 (1982).
+<p>
+
+<dt><a name = "SW81">T.F. Smith and M.S. Waterman,</a>
+<dd>
+``Identification of Common Molecular Subsequences'' <br>
+<em> J. of Molecular Biology </em>, v. 147, pp. 195-7 (1981).
+<p>
+
+</dl>
+
+<hr>
+
+Return to <a href = "#Outline">outline</a>.
+
+</body>
+
+
+
+
+
+
+
+
+
+

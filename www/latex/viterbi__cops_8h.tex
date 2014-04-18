@@ -1,0 +1,87 @@
+\hypertarget{viterbi__cops_8h}{\section{viterbi\-\_\-cops.\-h File Reference}
+\label{viterbi__cops_8h}\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}}
+}
+{\ttfamily \#include $<$hmmer.\-h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{viterbi__cops_8h_a0466af8e69fb4520784600cab52f3256}{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run} (D\-A\-T\-A\-\_\-\-C\-O\-P\-S16 $\ast$dcops, S\-E\-Q $\ast$$\ast$seqsdb, float $\ast$results)
+\item 
+void \hyperlink{viterbi__cops_8h_a0d432fc4f26a68a2ac609a03b69777f7}{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup} (D\-A\-T\-A\-\_\-\-C\-O\-P\-S16 $\ast$dcops, int max\-L, int max\-\_\-partition)
+\item 
+D\-A\-T\-A\-\_\-\-C\-O\-P\-S16 $\ast$ \hyperlink{viterbi__cops_8h_a0574bf10298aa0961549936f85b1c7f7}{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create} (P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$gm)
+\item 
+int \hyperlink{viterbi__cops_8h_ab633a2ac8c8b402531426abcaaace313}{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run} (D\-A\-T\-A\-\_\-\-C\-O\-P\-S32 $\ast$dcops, S\-E\-Q $\ast$$\ast$seqsdb, float $\ast$results)
+\item 
+void \hyperlink{viterbi__cops_8h_ad8c8372955051f01bbc417e19db602e3}{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup} (D\-A\-T\-A\-\_\-\-C\-O\-P\-S32 $\ast$dcops, int max\-L, int max\-\_\-partition)
+\item 
+D\-A\-T\-A\-\_\-\-C\-O\-P\-S32 $\ast$ \hyperlink{viterbi__cops_8h_ae68d5f1e4401d61d8941214a64a2e449}{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create} (P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$gm)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Viterbi\-C\-O\-P\-S public interface 
+
+\subsection{Function Documentation}
+\hypertarget{viterbi__cops_8h_ae68d5f1e4401d61d8941214a64a2e449}{\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}!p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create}}
+\index{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create}!viterbi_cops.h@{viterbi\-\_\-cops.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create}]{\setlength{\rightskip}{0pt plus 5cm}D\-A\-T\-A\-\_\-\-C\-O\-P\-S32$\ast$ p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Create (
+\begin{DoxyParamCaption}
+\item[{P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$}]{gm}
+\end{DoxyParamCaption}
+)}}\label{viterbi__cops_8h_ae68d5f1e4401d61d8941214a64a2e449}
+Create C\-O\-P\-S data structure for the 32-\/bit float implementation \begin{DoxyItemize}
+\item A valid P7\-\_\-\-P\-R\-O\-F\-I\-L\-E \end{DoxyItemize}
+\hypertarget{viterbi__cops_8h_ab633a2ac8c8b402531426abcaaace313}{\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}!p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run}}
+\index{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run}!viterbi_cops.h@{viterbi\-\_\-cops.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}int p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{D\-A\-T\-A\-\_\-\-C\-O\-P\-S32 $\ast$}]{dcops, }
+\item[{S\-E\-Q $\ast$$\ast$}]{seqsdb, }
+\item[{float $\ast$}]{results}
+\end{DoxyParamCaption}
+)}}\label{viterbi__cops_8h_ab633a2ac8c8b402531426abcaaace313}
+C\-O\-P\-S processing function. Executes Viterbi algorithm on the 4-\/sequence batch \begin{DoxyItemize}
+\item C\-O\-P\-S data \item Array with 4 sequences to score \item Result array with 4 float values \mbox{[}out\mbox{]} \end{DoxyItemize}
+\hypertarget{viterbi__cops_8h_ad8c8372955051f01bbc417e19db602e3}{\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}!p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup}}
+\index{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup}!viterbi_cops.h@{viterbi\-\_\-cops.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}void p7\-\_\-\-Viterbi\-C\-O\-P\-Sf\-\_\-\-Setup (
+\begin{DoxyParamCaption}
+\item[{D\-A\-T\-A\-\_\-\-C\-O\-P\-S32 $\ast$}]{dcops, }
+\item[{int}]{max\-L, }
+\item[{int}]{max\-\_\-partition}
+\end{DoxyParamCaption}
+)}}\label{viterbi__cops_8h_ad8c8372955051f01bbc417e19db602e3}
+Setup C\-O\-P\-S. Needs to be called before calling the processing function \begin{DoxyItemize}
+\item C\-O\-P\-S data \item Estimate of the maximum Sequences' length. Used to optimize the memory allocation. Defaults to 1000 \item Maximum partition length allowed. Must be a multiple of 4. Defaults to 120 \end{DoxyItemize}
+\hypertarget{viterbi__cops_8h_a0574bf10298aa0961549936f85b1c7f7}{\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}!p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create}}
+\index{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create}!viterbi_cops.h@{viterbi\-\_\-cops.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create}]{\setlength{\rightskip}{0pt plus 5cm}D\-A\-T\-A\-\_\-\-C\-O\-P\-S16$\ast$ p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Create (
+\begin{DoxyParamCaption}
+\item[{P7\-\_\-\-P\-R\-O\-F\-I\-L\-E $\ast$}]{gm}
+\end{DoxyParamCaption}
+)}}\label{viterbi__cops_8h_a0574bf10298aa0961549936f85b1c7f7}
+Create C\-O\-P\-S data structure for the 16-\/bit integer implementation \begin{DoxyItemize}
+\item A valid P7\-\_\-\-P\-R\-O\-F\-I\-L\-E \end{DoxyItemize}
+\hypertarget{viterbi__cops_8h_a0466af8e69fb4520784600cab52f3256}{\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}!p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run}}
+\index{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run}!viterbi_cops.h@{viterbi\-\_\-cops.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run}]{\setlength{\rightskip}{0pt plus 5cm}int p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-run (
+\begin{DoxyParamCaption}
+\item[{D\-A\-T\-A\-\_\-\-C\-O\-P\-S16 $\ast$}]{dcops, }
+\item[{S\-E\-Q $\ast$$\ast$}]{seqsdb, }
+\item[{float $\ast$}]{results}
+\end{DoxyParamCaption}
+)}}\label{viterbi__cops_8h_a0466af8e69fb4520784600cab52f3256}
+C\-O\-P\-S processing function. Executes Viterbi algorithm on the 8-\/sequence batch \begin{DoxyItemize}
+\item C\-O\-P\-S data \item Array with 8 sequences to score \item Result array with 8 float values \mbox{[}out\mbox{]} \end{DoxyItemize}
+\hypertarget{viterbi__cops_8h_a0d432fc4f26a68a2ac609a03b69777f7}{\index{viterbi\-\_\-cops.\-h@{viterbi\-\_\-cops.\-h}!p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup}}
+\index{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup@{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup}!viterbi_cops.h@{viterbi\-\_\-cops.\-h}}
+\subsubsection[{p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup}]{\setlength{\rightskip}{0pt plus 5cm}void p7\-\_\-\-Viterbi\-C\-O\-P\-Sw\-\_\-\-Setup (
+\begin{DoxyParamCaption}
+\item[{D\-A\-T\-A\-\_\-\-C\-O\-P\-S16 $\ast$}]{dcops, }
+\item[{int}]{max\-L, }
+\item[{int}]{max\-\_\-partition}
+\end{DoxyParamCaption}
+)}}\label{viterbi__cops_8h_a0d432fc4f26a68a2ac609a03b69777f7}
+Setup C\-O\-P\-S. Needs to be called before calling the processing function \begin{DoxyItemize}
+\item C\-O\-P\-S data \item Estimate of the maximum Sequences' length. Used to optimize the memory allocation. Defaults to 1000 \item Maximum partition length allowed. Must be a multiple of 8. Defaults to 120 \end{DoxyItemize}
