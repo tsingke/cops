@@ -1,7 +1,7 @@
 COPS: Cache Oblivious Parallel SIMD Viterbi
 =====================================
 
-A cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models (HMMER), using inter-task parallelism on the SSE units of x86 processors, and multi-threading. Developed for the latest version (3.1b1) of the HMMER suite: http://hmmer.janelia.org/
+A cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models, using inter-task parallelism on the SSE units of x86 processors, and additionally multi-threading. Developed for the latest version (3.1b1) of the HMMER suite: http://hmmer.janelia.org/
 
 COPS is mainly a research project, developed as the final application of my mas bter's thesis work. It was the subject of a paper submitted to the BMC journal of Bioinformatics, one the most prestigious bioinformatics papers worldwide. Currently (February 2014) the paper is in its final peer-review.
 
@@ -12,8 +12,7 @@ https://kdbio.inesc-id.pt/~lsr/COPS/#home
 
 **Build & Install:**
 
-1) Download HMMER 3.1b1 from here:
-http://selab.janelia.org/software/hmmer3/3.1b1/hmmer-3.1b1-linux-intel-ia32.tar.gz
+1) Download [HMMER latest version (3.1b1)](http://selab.janelia.org/software/hmmer3/3.1b1/hmmer-3.1b1-linux-intel-ia32.tar.gz)
 
 2) Download the present COPS code.
 
