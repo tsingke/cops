@@ -1,15 +1,13 @@
-COPS: Cache Oblivious Parallel SIMD Viterbi
+Cache-Oblivious Parallel SIMD Viterbi
 =====================================
 
-A cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models, using inter-task parallelism on the SSE units of x86 processors, and additionally multi-threading. Developed for the latest version (3.1b1) of the HMMER suite: http://hmmer.janelia.org/
+COPS is a cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models, using inter-sequence parallelism on the SSE units of x86 processors, and additionally multi-threading. Developed for the latest version (3.1b1) of the [HMMER suite](http://hmmer.janelia.org).
 
-COPS is mainly a research project, developed as the final application of my mas bter's thesis work. It was the subject of a paper submitted to the BMC journal of Bioinformatics, one the most prestigious bioinformatics papers worldwide. Currently (February 2014) the paper is in its final peer-review.
+This is mainly a research project, developed as the final application of my master's thesis work (which dealt with SIMD parallelization of Sequence alignment in general).           
 
-A simplified, single-threaded, version of the project, the version presented in the research paper, is available here:
-https://kdbio.inesc-id.pt/~lsr/COPS/#home
+COPS was the subject of a research paper submitted by the BMC journal of Bioinformatics, one the most important bioinformatics papers worldwide. The paper has been accepted and is currently (Abril 2014) awaiting publication.
 
-
-The version published on the website is the one submitted to BMC Bioinformatics, and does not include the multi-threaded version (since this version is not so clearly universally competitive vs non-multi-threaded implementations)
+A simplified single-threaded version of the project (the same presented in the research paper) is available [here](https://kdbio.inesc-id.pt/~lsr/COPS/#home).
 
 
 
@@ -22,7 +20,7 @@ The version published on the website is the one submitted to BMC Bioinformatics,
 3) Build HMMER and install
 
 4) Copy the folder and header `impl_sse/impl_sse.h` from the HMMMER distribution, over to a global include dir (i.e. /usr/local/include).   
-(This is a bug in HMMER's install script, which does not create the 'impl_sse' in the include directory as it should.)
+(This is a bug in HMMER's install script, which does not create the `impl_sse` folder in the include directory as it should.)
 
 5) Type `make` to build COPS
 
@@ -31,7 +29,7 @@ The version published on the website is the one submitted to BMC Bioinformatics,
 
 The programs may be compiled with some specific options to optimize their performance. These options can be enabled by exporting as environment variables:
 
-   >export OPTION=VALUE
+   >export [OPTION]=[VALUE]
     
 The options are:
 
@@ -72,7 +70,7 @@ Options allowed:
 
 [Sequence Alignment](https://en.wikipedia.org/wiki/Sequence_alignment)
 
-[Striped SIMD alignment](http://bioinformatics.oxfordjournals.org/content/23/2/156.abstract)
+[Striped (not stripped!) SIMD alignment](http://bioinformatics.oxfordjournals.org/content/23/2/156.abstract)
 
 [Inter-sequence SIMD alignment](http://dna.uio.no/swipe)
 
@@ -89,7 +87,7 @@ Options allowed:
 
 
 
-**Intel's SIMD (SSE/AVX):**
+**Intel's SIMD (MMX/SSE/AVX):**
 
 [Intel's Developer Manual](http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html)
 
