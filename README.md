@@ -105,13 +105,3 @@ Options allowed:
 [Intel ISA Extensions Programming Reference](https://software.intel.com/sites/default/files/managed/68/8b/319433-019.pdf)
 
 
-
-
-
-
-
-
-
-
-
-
