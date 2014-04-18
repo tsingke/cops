@@ -1,15 +1,12 @@
-COPS: Cache Oblivious Parallel SIMD Viterbi
+COPS: Cache-Oblivious Parallel SIMD Viterbi
 =====================================
 
-A cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models, using inter-task parallelism on the SSE units of x86 processors, and additionally multi-threading. Developed for the latest version (3.1b1) of the HMMER suite: http://hmmer.janelia.org/
+A cache-oblivious SSE-based implementation of the Viterbi algorithm for Hidden Markov Models, using inter-sequence parallelism on the SSE units of x86 processors, and additionally multi-threading. Developed for the latest version (3.1b1) of the [HMMER suite](http://hmmer.janelia.org).
 
-COPS is mainly a research project, developed as the final application of my mas bter's thesis work. It was the subject of a paper submitted to the BMC journal of Bioinformatics, one the most prestigious bioinformatics papers worldwide. Currently (February 2014) the paper is in its final peer-review.
+COPS is mainly a research project, developed as the final application of my master's thesis work.           
+It was the subject of a paper submitted by the BMC journal of Bioinformatics, one the most important bioinformatics papers worldwide. The paper has been accepted and is currently (Abril 2014) awaiting publication.
 
-A simplified, single-threaded, version of the project, the version presented in the research paper, is available here:
-https://kdbio.inesc-id.pt/~lsr/COPS/#home
-
-
-The version published on the website is the one submitted to BMC Bioinformatics, and does not include the multi-threaded version (since this version is not so clearly universally competitive vs non-multi-threaded implementations)
+A simplified single-threaded version of the project (the same presented in the research paper) is available [here](https://kdbio.inesc-id.pt/~lsr/COPS/#home).
 
 
 
@@ -72,7 +69,7 @@ Options allowed:
 
 [Sequence Alignment](https://en.wikipedia.org/wiki/Sequence_alignment)
 
-[Striped SIMD alignment](http://bioinformatics.oxfordjournals.org/content/23/2/156.abstract)
+[Striped (not stripped!) SIMD alignment](http://bioinformatics.oxfordjournals.org/content/23/2/156.abstract)
 
 [Inter-sequence SIMD alignment](http://dna.uio.no/swipe)
 
@@ -89,7 +86,7 @@ Options allowed:
 
 
 
-**Intel's SIMD (SSE/AVX):**
+**Intel's SIMD (MMX/SSE/AVX):**
 
 [Intel's Developer Manual](http://www.intel.com/content/www/us/en/processors/architectures-software-developer-manuals.html)
 
