@@ -1,0 +1,84 @@
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	
+\fancychapter{Conclusions}
+
+%\section{Dissertation summary}
+% resumo do trabalho
+
+Sequence analysis is an increasingly important field in bioinformatics. By comparing biological sequences, proteins and nucleic acids, it is possible to unveil previously unknown relations between different organisms and organelles, such as evolutionary links. This comparison process, known as Homology Search, is a burgeoning field, fueled by the exponential growth of biological data to search. Recent sequencing technology, like Illumina, Pyrosequencing, SOLiD, and others, have greatly expended the quantity of available data that must be analyzed. The biological databases most used for homology search, such as UniProt, TrEMBL, Genbank, etc, have also grown considerably.
+
+Nowadays, two main methods are used to conduct homology search: aligning sequences against each other with tailored alignment algorithms, and evaluating the probability of natural occurrence of a sequence through the use of a probabilistic model, such as a Hidden Markov Model. Both methods have been extensively developed and are in widespread use, offering an invaluable service to biologists. Due to the heavy computational cost of processing the large biological databases that exist today, it has been essential to exploit the enormous potential of hardware parallel computation to speedup the lengthy searches.
+
+Chapter 2 of this thesis expanded on the most relevant algorithms for alignment and Markov Models that are in use today for homology search, along with some important improvements and optimizations of the standard algorithms. Special attention was given to the optimal Smith-Waterman algorithm, which is the basis of many optimization efforts; and to the Viterbi and Forward algorithms for HMMs. Algorithms for single alignment and HMMs were compared and contrasted, focusing particularly on their similarities and common points, as Dynamic Programming algorithms.
+
+Chapter 3 surveyed the major parallelization approaches to Dynamic Programming algorithms (like the Smith-Waterman and Viterbi). The general hardware architectures were covered - SIMD in general purpose CPUs and in GPUs, and MIMD in clusters and multi-core processors. An important distinction was made between intra-task parallelism where a single task is parallelized, and inter-task parallelism which combines multiples tasks to facilitate the parallel work division. 
+
+Three possible decomposition patterns for intra-task parallelism were studied: diagonal, vertical and striped. The striped pattern, first proposed by Farrar, achieved the best speedup and became very popular in many implementations. It is in particular the approach chosen by HMMER, a widely used HMM search tool. In the case of Inter-task parallelism, it was studied the promising work of Rognes in his 2011 Swipe tool. By implementing inter-sequence parallelism on Intel's SSE registers, he managed to surpass Farrar's speedups, for the Smith-Waterman algorithm.
+
+In this work, the objective was to adapt Rognes inter-task strategy to the Viterbi algorithm for HMMs. In particular, to implement it on HMMER and create an alternative Viterbi version that is competitive and surpasses the existing one, which is based on Farrar's pattern. The goal was to reach in HMMER close to the same speedups of around 2.5-fold to 1.5-fold that Rognes achieved against Farrar's version. The development of the work was detailed in Chapter 4.
+
+The inter-sequence vectorization of Viterbi on SSE was successfully implemented, initially following the methods used by Rognes for Smith-Waterman. The performance was clearly lacking however, failing to reach the same processing speed as HMMER's version.
+It was then discovered two main issues hindering the program's efficiency: 
+\begin{enumerate}
+\item The loading and arrangement of the per-sequence Emission Scores;
+\item An exhaustion of the available capacity in the innermost L1D cache, in the inner loop code, that happened for medium/large models.
+\end{enumerate}
+
+The first issue was tackled by moving the loading of scores into the inner loop, and doing it inlined only 8 vector values at a time. With the inline loading, the values can be kept in close memory and avoid the memory re-writings of Rognes. This improvement led to a speed increase between 30\% and 40\%, shown in the experimental results of \autoref{Results for the Inline loading of the Emission scores}.
+
+
+The second issue, the L1D cache exhaustion, was solved by dividing the HMM into chunks, which were named partitions. The partitions are then processed in a new outer loop. The inner loop is \emph{strip-mined} so that it processes only one partition in each iteration, as a way to avoid filling the L1D cache capacity. The result was a constant processing speed for any model size, thus making the program \emph{Cache-Oblivious}. For medium and large models, it is faster than HMMER's version, which suffers from the cache encumbrance.
+
+
+The developed tool, COPS, achieved roughly the same performance as HMMER's ViterbiFilter version on medium models up to $\sim$1000 model states for Intel and $\sim$500 for AMD, and after this threshold, it yielded an increasingly higher speedup against ViterbiFilter. With the larger models, in all benchmarks, COPS obtained speedups between 1.5 and 2.0 against HMMER. The speedups against a serial optimized version ranged from 8-fold to 11-fold.
+
+This advantage in larger models derives mainly from the improved utilization of the innermost cache, that resulted from partitioning the model. By tweaking the maximum partition length (from $\sim$120 for 32KB L1D caches, to $\sim$50 for 16KB caches, and $\sim$220 for 64KB caches), it was possible to maintain an efficient optimal use of the available memory in the L1D cache to store the arrays that are frequently accessed in the inner loop. As a result, it was possible to keep a high performance level when running large models, with which HMMER's ViterbiFilter suffers considerably. We can observe that the performance of HMMER's implementation quickly deteriorates as the model's length increases, and the memory requirements of the standard striped approach reach the maximum that the innermost caches can provide.
+
+For very small models ($<$ $\sim$100 bps), Farrar's approach also suffers considerably due to more passes through the Lazy-F loop. This weakness of Farrar was the main reason behind Rognes' original comparative speedup in his Smith-Waterman program. The same comparative advantage and higher speedup (up to $\sim$1.9-fold) in small models is evident in COPS. 
+
+
+With this work, we have thus shown that an Inter-task vectorization can effectively improve on Farrar's intra-task striped pattern, and achieve a substantial higher speedup that is independent of the cache size. As such, the developed COPS implementation is a significant improvement on HMMER's implementation.
+
+The comparative speedup obtained against Farrar's approach is higher for very small models, and medium or large models, depending on the machine. Therefore, COPs can be most efficient vis-a-vis a striped pattern in applications that use small models (for instance, most proteins); or large models (such as DNA and RNA analysis, speech and audio recognition, etc).
+
+
+After developing the single-threaded COPS with the workload divided in partitions, it was explored the avenue of multi-threading parallelization using a wave-front pattern. This consisted in an Intra-task parallelization of each COPS execution, as opposed to an Inter-task trivial parallelization with independent executions. The results were fairly good, as expected, although the parallelization is clearly not scalable for a large number of threads, due to the communication overhead. For a small number of threads however, up to about 8, the obtained speedup through multi-threading is strong, not much lower than a linear speedup (i.e. 6.5-fold speedup for 8 threads). Hence, it has been shown to be an interesting parallelization avenue to employ in some areas. Namely, in the parallelization of very large models that are searched only a few times, and for whom, therefore, the trivial inter-task multi-threading is not very useful due to a lack of independent tasks to divide among threads. 
+
+
+
+\section{Main Contributions}
+
+The main contribution of this thesis is the Inter-task vectorization of HMM algorithms. This was successfully accomplished, although the resulting performance did not meet expectations. Two other novel strategies were later developed to improve the original Rognes-based solution. Overall, the main contributions are listed below:
+
+\begin{itemize}
+\item Inter-task vectorization of \acp{HMM} algorithms, in commodity CPUs (x86's SSE)
+
+\item Improved method of loading the Emission scores (which correspond to the Match scores of the Smith-Waterman algorithm)
+
+\item Partitioning to Model to fit the inner loops storage arrays in the innermost cache, thus making the program Cache-oblivious
+
+\item Multi-threading the model partitions using a wave-front pattern
+
+\end{itemize}
+
+
+
+\section{Future work}
+
+In the author's view, the most promising areas for future work following this thesis are:
+
+\begin{itemize}
+
+\item Adapting the Cache-oblivious model partitioning to Farrar's striped pattern. Although it would surely lead to a performance gain on the larger models, it is expected that it would be lower than the speedup obtained by the Inter-task method. It is my view that the introduction of partitions would make the Lazy-F loop be more frequently executed, which would carry a considerable performance cost. Still, as the partitions would be reasonable large (e.g., $\sim$1000 bps for 32-bit L1D CPUs), the Lazy-F overhead would very likely not nullify the benefits of the reduced L1D cache misses.
+
+\item Adopting and studying the application of the COPS approach in other areas and tools which require Hidden Markov Models, specially those that use larger models, such as speech recognition, DNA analysis, etc. These areas could benefit greatly from an optimized Viterbi implementation.
+
+\item Extending the SSE vectorization to the newest Intel SIMD instruction set, the 256-bit AVX2, which supports operations on 16-bit integers (which AVX1 did not support). Both the Inter-task and the Intra-task striped methods could be ported to AVX2. It is the view of the author that the striped method will obtain a lower speedup than the COPS approach. This expectation is due to the increased frequency of the Lazy-F loop, which happens when the stride is shorter (AVX entails a 2-fold shorter stride for any model length).
+
+
+\end{itemize}
+

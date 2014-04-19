@@ -1,0 +1,1089 @@
+%% BioMed_Central_Tex_Template_v1.06
+%%                                      %
+%  bmc_article.tex            ver: 1.06 %
+%                                       %
+
+%%IMPORTANT: do not delete the first line of this template
+%%It must be present to enable the BMC Submission system to
+%%recognise this template!!
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                     %%
+%%  LaTeX template for BioMed Central  %%
+%%     journal article submissions     %%
+%%                                     %%
+%%          <8 June 2012>              %%
+%%                                     %%
+%%                                     %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                 %%
+%% For instructions on how to fill out this Tex template           %%
+%% document please refer to Readme.html and the instructions for   %%
+%% authors page on the biomed central website                      %%
+%% http://www.biomedcentral.com/info/authors/                      %%
+%%                                                                 %%
+%% Please do not use \input{...} to include other tex files.       %%
+%% Submit your LaTeX manuscript as one .tex document.              %%
+%%                                                                 %%
+%% All additional figures and files should be attached             %%
+%% separately and not embedded in the \TeX\ document itself.       %%
+%%                                                                 %%
+%% BioMed Central currently use the MikTex distribution of         %%
+%% TeX for Windows) of TeX and LaTeX.  This is available from      %%
+%% http://www.miktex.org                                           %%
+%%                                                                 %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% additional documentclass options:
+%  [doublespacing]
+%  [linenumbers]   - put the line numbers on margins
+
+%%% loading packages, author definitions
+
+%\documentclass[twocolumn]{bmcart}% uncomment this for twocolumn layout and comment line below
+\documentclass{bmcart}
+
+% Load packages
+\usepackage{cite} % Make references as [1-4], not [1,2,3,4]
+\usepackage{url}  % Formatting web addresses  
+\usepackage{ifthen}  % Conditional 
+\usepackage{multicol}   %Columns
+\usepackage[utf8]{inputenc} %unicode support
+%\usepackage[applemac]{inputenc} %applemac support if unicode package fails
+%\usepackage[latin1]{inputenc} %UNIX support if unicode package fails
+\urlstyle{rm}
+
+\usepackage{amsmath}
+%\usepackage[hidelinks]{hyperref}	% para usar o \autoref
+\usepackage{hyperref}	% para usar o \autoref
+% Packages usados no relatorio para adicionar imagens
+\usepackage{graphicx}
+\usepackage{epstopdf}
+% \usepackage{pst-pdf}
+\usepackage{wrapfig}
+\usepackage{subfig}
+%\usepackage{subfigure}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{acronym}
+\usepackage{caption}
+%\usepackage{float}
+
+% ============== ATENÇÃO =============
+% Descomentar estas duas linhas, para passar as figuras para o final do documento
+\usepackage[nofiglist,notablist,heads,nomarkers]{endfloat}
+%\DeclareDelayedFloatFlavor{algorithm}{figure}
+% ============== ATENÇÃO =============
+% Retirar este pacote, depois de eliminar os TODO's
+%\usepackage[textwidth=3cm]{todonotes}\setlength{\marginparwidth}{3cm}
+
+
+
+\makeatletter
+\renewcommand{\ALG@name}{Listing}
+\makeatother
+
+\algnewcommand{\LeftComment}[1]{\State \(\triangleright\) #1}
+
+\captionsetup[table]{font=small,skip=5pt}     %% Adjust here
+\renewcommand{\arraystretch}{1.5}
+
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
+%%                                             %%
+%%  If you wish to display your graphics for   %%
+%%  your own use using includegraphic or       %%
+%%  includegraphics, then comment out the      %%
+%%  following two lines of code.               %%   
+%%  NB: These line *must* be included when     %%
+%%  submitting to BMC.                         %% 
+%%  All figure files must be submitted as      %%
+%%  separate graphics through the BMC          %%
+%%  submission process, not included in the    %% 
+%%  submitted article.                         %% 
+%%                                             %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                     
+
+%% Nuno Roma: comentei as seguintes linhas
+\def\includegraphic{}
+\def\includegraphics{}
+
+%\setlength{\topmargin}{0.0cm}
+%\setlength{\textheight}{21.5cm}
+%\setlength{\oddsidemargin}{0cm} 
+%\setlength{\textwidth}{16.5cm}
+%\setlength{\columnsep}{0.6cm}
+%% Nuno Roma: final do comentário
+
+\newboolean{publ}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                              %%
+%% You may change the following style settings  %%
+%% Should you wish to format your article       %%
+%% in a publication style for printing out and  %%
+%% sharing with colleagues, but ensure that     %%
+%% before submitting to BMC that the style is   %%
+%% returned to the Review style setting.        %%
+%%                                              %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+ 
+ 
+ % Section reference
+\newcommand{\sref}[1]{Section \ref{#1}}
+% Code reference
+\newcommand{\cref}[1]{Listing \ref{#1}}
+
+
+%Review style settings
+%\newenvironment{bmcformat}{\begin{raggedright}\baselineskip20pt\sloppy\setboolean{publ}{false}}{\end{raggedright}\baselineskip20pt\sloppy}
+
+%Publication style settings
+%\newenvironment{bmcformat}{\fussy\setboolean{publ}{true}}{\fussy}
+
+%New style setting
+\newenvironment{bmcformat}{\baselineskip20pt\sloppy\setboolean{publ}{false}}{\baselineskip20pt\sloppy}
+
+% Begin ...
+\begin{document}
+
+\acrodef{DP}{Dynamic Programming}
+\acrodef{HMM}{Hidden Markov Models}
+\acrodef{SIMD}{Single-Instruction Multiple-Data}
+\acrodef{COPS}{Cache-Oblivious Parallel SIMD Viterbi}
+\acrodef{MP}{Maximum Partition}
+\acrodef{MCUPS}{Millions of Cell Updates Per Second}
+\acrodef{L1D}{L1 data}
+
+%%% Start of article front matter                                                                                                                                                             
+\begin{frontmatter}
+
+\begin{fmbox}
+\dochead{Research}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the title of your article here     %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{Cache-Oblivious Parallel SIMD Viterbi Decoding for \mbox{Sequence} Search in HMMER}
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors here                   %%
+%%                                          %%
+%% Ensure \and is entered between all but   %%
+%% the last two authors. This will be       %%
+%% replaced by a comma in the final article %%
+%%                                          %%
+%% Ensure there are no trailing spaces at   %% 
+%% the ends of the lines                    %%     	
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author[
+   addressref={aff1},                   % id's of addresses, e.g. {aff1,aff2}
+   email={miguel.ferreira@tecnico.ulisboa.pt}   % email address
+]{\inits{MF}\fnm{Miguel} \snm{Ferreira}}
+\author[
+   addressref={aff1,aff2},
+   email={nuno.roma@inesc-id.pt}
+]{\inits{NR}\fnm{Nuno} \snm{Roma}}
+\author[
+   addressref={aff1,aff2},
+   corref={aff1,aff2},                       % id of corresponding address, if any
+   noteref={n1},                        % id's of article notes, if any
+   email={lsr@kdbio.inesc-id.pt}
+]{\inits{LR}\fnm{Luis} \snm{Russo}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter the authors' addresses here        %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\address[id=aff1]{%                           % unique id
+  \orgname{Instituto Superior T\'ecnico, Universidade de Lisboa},\\% university, etc
+  \street{Av. Rovisco Pais},\\%
+  \postcode{1049-001}                                % post or zip code
+  \city{Lisboa},                              % city
+  \cny{Portugal}                                    % country
+}
+\address[id=aff2]{%
+  \orgname{INESC-ID},\\% university, etc
+  \street{Rua Alves Redol, 9},\\%
+  \postcode{1000-029}                                % post or zip code
+  \city{Lisboa},                              % city
+  \cny{Portugal}                                    % country
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Enter short notes here                   %%
+%%                                          %%
+%% Short notes will be after addresses      %%
+%% on first page.                           %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{artnotes}
+%\note{Sample of title note}     % note to the article
+\note[id=n1]{Equal contributor} % note, connected to author
+\end{artnotes}
+
+\end{fmbox}% comment this for two column layout
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Abstract begins here                 %%
+%%                                          %%
+%% Please refer to the Instructions for     %%
+%% authors on http://www.biomedcentral.com  %%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{abstractbox}
+
+\begin{abstract}
+        % Do not use inserted blank lines (ie \\) until main body of text.
+\indent\textbf{Background:} HMMER is a commonly used bioinformatics tool based on Hidden Markov Models (HMMs) to analyze and process biological sequences. One of its main homology engines is based on the Viterbi decoding algorithm, which was already highly parallelized and optimized using Farrar's striped processing pattern with Intel SSE2 instruction set extension. 
+
+\indent\textbf{Results:} A new SIMD vectorization of the Viterbi decoding algorithm is proposed, based on an SSE2 inter-task parallelization approach similar to the DNA alignment algorithm proposed by Rognes. Besides this alternative vectorization scheme, the proposed implementation also introduces a new partitioning of the Markov model that allows a significantly more efficient exploitation of the cache locality. Such optimization, together with an improved loading of the emission scores, allows the achievement of a constant processing throughput, regardless of the innermost-cache size and of the dimension of the considered model. 
+
+\indent\textbf{Conclusions:} The proposed optimized vectorization of the
+Viterbi decoding algorithm was extensively evaluated and compared with
+the HMMER3 decoder to process DNA and protein datasets, proving to be
+a rather competitive alternative implementation. Being always faster
+than the already highly optimized ViterbiFilter implementation of
+HMMER3, the proposed Cache-Oblivious Parallel SIMD Viterbi (COPS)
+implementation provides a constant throughput and offers a processing
+speedup as high as two times faster, depending on the model's size.
+
+\indent\textbf{Availability:} Freely available at \url{https://kdbio.inesc-id.pt/~lsr/COPS}, under a variation of the Internet Systems Consortium (ISC) license.
+
+\indent\textbf{Contact:} \url{lsr@kdbio.inesc-id.pt}
+\end{abstract}
+
+\begin{keyword}
+\kwd{Sequences Alignment}
+\kwd{Hidden Markov Model}
+\kwd{Viterbi}
+\kwd{HMMER}
+\kwd{Parallelization}
+\kwd{Streaming SIMD Extensions (SSE)}
+\end{keyword}
+
+% MSC classifications codes, if any
+%\begin{keyword}[class=AMS]
+%\kwd[Primary ]{}
+%\kwd{}
+%\kwd[; secondary ]{}
+%\end{keyword}
+
+\end{abstractbox}
+%\end{fmbox}% uncomment this for twcolumn layout
+
+\end{frontmatter}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% The Main Body begins here                %%
+%%                                          %%
+%% Please refer to the instructions for     %%
+%% authors on:                              %%
+%% http://www.biomedcentral.com/info/authors%%
+%% and include the section headings         %%
+%% accordingly for your article type.       %%
+%%                                          %%
+%% See the Results and Discussion section   %%
+%% for details on how to create sub-sections%%
+%%                                          %%
+%% use \cite{...} to cite references        %%
+%%  \cite{koon} and                         %%
+%%  \cite{oreg,khar,zvai,xjon,schn,pond}    %%
+%%  \nocite{smith,marg,hunn,advi,koha,mouse}%%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%% start of article main body
+% <put your article body there>
+
+
+%%%%%%%%%%%%%%%%
+%% Background %%
+%%
+
+\section*{Background}
+
+\subsection*{Sequence Alignment Algorithms}
+
+One of the most used alignment algorithms for sequence homology search is the Smith-Waterman algorithm \cite{smithwaterman}. It computes the optimal local alignment and the respective similarity score between the most conserved regions of two sequences, with a complexity proportional to $\mathcal{O}(N^2)$. The algorithm is based on a \ac{DP} approach that considers three possible mismatches: insertions, deletions, and substitutions. To ensure that a local alignment is found, the computed scores are constrained to a minimum value of 0, corresponding to a restart in the alignment. To circumvent the computational complexity of the Smith-Waterman and similar alignment algorithms, alternative heuristic methods (like BLAST~\cite{blast}) were developed. However, their lower complexity is obtained at the cost of sacrificing the resulting sensibility and accuracy.
+
+An effective way that has been adopted to speed up these \ac{DP} alignment algorithms is the exploitation of data-level parallelism. One of the most successful parallelization methods was proposed by Farrar \cite{farrar}, who exploited vector processing techniques using the Intel SSE2 instruction set extension to implement an innovative striped data decomposition scheme (see \autoref{farrar-pattern}). In his approach, each vector contains several cells from the same column of the scoring matrix. However, contrasting to other implementations, these cells are not contiguous. Instead, they are exactly $K$ cells apart, in order to minimize the inter-row dependencies. Essentially, this processing pattern assumes that there is no dependencies across the vertical `segment sections' (continuous sections). Whenever this assumption is not verified, the existing data dependencies have to be solved by a second inner loop (the \emph{Lazy-F loop}). Since these vertical dependencies among cells are unlikely (although still possible), the resulting algorithm proves to be very effective in the average case.
+
+\begin{figure}[h!]
+  \centering
+%  \includegraphics[width=0.4\textwidth]{img/farrar-pattern.eps}  
+  \includegraphics{img/farrar-pattern.eps}  
+  \caption{Interleaved decomposition pattern proposed by Farrar~\cite{farrar}.}
+  \label{farrar-pattern}
+\end{figure}
+
+Meanwhile, Rognes proposed a different method in his Swipe tool~\cite{rognes}, which achieved even better performances than Farrar's. Contrasting to Farrar's, which was based on the exploitation of \textit{intra}-task parallelism, Rognes' method also makes use of SSE2 vector processing but exploits an \textit{inter}-task parallelism scheme (i.e., multiple alignment tasks are run in parallel), by using a lock-step processing
+model (see \autoref{rognes-pattern}). Each vector is loaded with $N$ different sequences, one in each vector element (or channel), and the algorithm concurrently aligns them against a target sequence, by using the $N$ vector channels to hold the independent computed values. The drawbacks of this strategy are concerned with its restrictive application domain, resulting from the fact that the $N$ alignments proceed coalesced, from the beginning to the end. Any divergence on the program flow carries a high performance penalty, either as stoppage time or as wasted computing potential (e.g., empty padded cells). Even so, the complete elimination of data dependencies between the values inside the same SSE register allows this technique to achieve \textit{quasi}-optimal speed-ups. Therefore, this software implementation is often regarded as the fastest choice.
+
+\begin{figure}[h!]
+  \centering
+%  \includegraphics[width=0.4\textwidth]{img/rognes-pattern.eps}
+  \includegraphics{img/rognes-pattern.eps}
+  \caption{Decomposition pattern proposed by Rognes in SWIPE~\cite{rognes}.}
+  \label{rognes-pattern}
+\end{figure}
+
+Other authors have even focused on the use of more specialized hardware architectures, such as GPUs \cite{gpus}, ASICs \cite{fpgas}, or on parallelizing the algorithm onto a multi-node grid, usually by dividing the sequence database in blocks and independently searching on each block.
+
+\subsection*{Markov Models and Viterbi Decoding}
+
+Instead of searching with a single query sequence, several applications have adopted a previously built consensus, conveniently defined from a family of similar sequences. This consensus structure is usually known as a \textit{consensus profile} and it provides a more flexible way to identify homologs of a certain family, by highlighting the family's common features and by downplaying the divergences between the family's sequences.
+
+A common method to perform a profile homology search rests on a well-known machine learning technique: \acp{HMM}. As an example, an \ac{HMM} may be constructed to model the probabilistic structure of a group of sequences, such as a family of proteins. Such resulting \ac{HMM} is then used to search within a sequence database, by computing the probability of that sequence being generated by the model.
+\acp{HMM} may also be used to find distant homologs, by iteratively building and refining a model that describes them (such as in the SAM tool~\cite{sam}).
+
+In 1994, Krogh \emph{et al}.~\cite{krogh1994} developed a
+straightforward and generalized profile \ac{HMM}  for homology searches that emulates the results of an optimal alignment algorithm. The model is mainly composed by three different types of states, corresponding to matches/mismatches (M), insertions (I) and deletions (D), with explicit transitions between the three types of states. \autoref{krogh-haussler-model} depicts an example of such model, where the match states (M) are represented by squares, the insertions (I) by rhombus and the deletions (D) by circles. The model also contains an initial and a final state, represented by hexagons.
+
+\begin{figure}[h!]
+  \centering
+%  \includegraphics[width=12cm]{img/krogh-haussler-model.eps} 
+  \includegraphics{img/krogh-haussler-model.eps} 
+  \caption{HMM for global alignment.}
+  \label{krogh-haussler-model}
+\end{figure}
+
+The most important algorithms to process \acp{HMM} are the \textit{Forward} algorithm, which gives the full probability for all possible model state paths; and the \textit{Viterbi}'s algorithm, used to compute the most likely sequence of model states for the generation of the considered sequence. The complete path of states that is extracted by the application of Viterbi's procedure thus corresponds to an optimal alignment of the considered sequence against the profiled model.
+
+Hence, for a general Markov model, Viterbi's algorithm computes the most likely sequence of hidden states. By denoting as $P(V_j (i))$ the probability that the most likely path at time $i$ ends at $V_j$, Viterbi's algorithm defines the following relation to compute this probability:
+\begin{equation}
+\label{eq:Viterbi_def}
+P(V_j (i)) = P(x_i | V_j)
+\max_{j'} \{V_{j'} t_{j'j}\}
+\end{equation}
+In this equation, $P(x_i | V_j)$ represents the probability of observing $x_i$ in state $V_j$. The $t_{j'j}$ term represents the transition probability from state $V_{j'}$ to state $V_{j}$. 
+
+These equations are very similar to the corresponding recurrences of the Forward algorithm, with Viterbi's using a \textit{maximum} operation while Forward uses a \textit{sum}. To avoid possible underflows resulting from the repeated products, the involved computations usually use logarithmic scores (\textit{log-odds}). This conversion also replaces the multiplication operations by sums, which further simplifies the calculations. To simplify this \textit{log-odds} notation, the term $V_j (i)$ will herein represent $\log (P(V_j (i)))$. The recurrence equations of Viterbi's algorithm, for the profile \acp{HMM}, in \textit{log-odds}, are presented in \autoref{eq:Viterbi}.
+
+\begin{align}
+\label{eq:Viterbi}
+ V^M_j(i) &= \log \frac{e_{Mj}(x_i) }{q_{xi}} + \max  
+		\begin{cases}
+			V^M_{j-1} (i-1) + \log (t_{M_{j-1} M_j})  \\
+			V^I_{j-1} (i-1) + \log (t_{I_{j-1} M_j})  \\
+			V^D_{j-1} (i-1) + \log (t_{D_{j-1} M_j}) 
+		\end{cases}\nonumber \\
+V^I_j(i) &= \log \frac{e_{Ij}(x_i) }{q_{xi}} + \max  
+		\begin{cases}
+			V^M_{j} (i-1) + \log (t_{M_{j} I_j})  \\
+			V^I_{j} (i-1) + \log (t_{I_{j} I_j})  \\
+			V^D_{j} (i-1) + \log (t_{D_{j} I_j})
+		\end{cases}\\
+V^D_j(i) &= \max \begin{cases}
+			V^M_{j-1} (i) + \log (t_{M_{j-1} D_j})  \\
+			V^I_{j-1} (i) + \log (t_{I_{j-1} D_j})  \\
+			V^D_{j-1} (i) + \log (t_{D_{j-1} D_j}) 
+		\end{cases} \nonumber
+\end{align}
+
+
+%	i = seq
+%	j = estado
+%	t = transicoes
+%	e = emission
+
+The terms $e_{Ij}(x_i)/q_{xi}$, relating the emission probabilities $(e_{Ij}(x_i))$ and the background probability distribution $(q_{xi})$ of belonging to the standard random model, represent a normalized probability of observing the event $x_i$ at state $Ij$. The remaining variables in these equations represent the following: $V^M_j(i)$ represents the logarithm of the probability of the most likely path  ending at state $M_j$ in column $j$, after processing $i$ letters from a given sequence. Likewise, $V^I_j(i)$ and $V^D_j(i)$ represent the logarithm of the probability of an insertion and deletion, respectively. $t_{XY}$ represents the probability of transitioning from one state to another (for example, $t_{M_{2} D_3}$ represents the probability of transitioning from $M_{2}$ to $D_3$). 
+
+\subsection*{HMMER}
+
+HMMER~\cite{eddy1998profile} is a commonly used software tool that uses \acp{HMM} to perform homology search. The original version of HMMER relied on a model architecture entirely similar to Krogh-Haussler's model. The current version (HMMER 3.1b1~\cite{eddy2011hmmer3}) employs the `Plan 7' model architecture, presented in \autoref{hmmer-model}. Although the core of this architecture is still very similar to Krogh-Haussler's, Plan 7 has no $\mathrm{D}\rightarrow\mathrm{I}$ or $\mathrm{I}\rightarrow\mathrm{D}$ transitions, which simplifies the algorithm. Furthermore, some special-states are added at the beginning and at the end, in order to allow for arbitrary restarts (thus making it a local alignment) and multiple repeats (multihit alignment). These special states can be parameterized to control the desired form of alignment, such as unihit or multihit, global or local.
+
+\begin{figure}[h!]
+  \centering
+%  \includegraphics[width=10cm]{img/hmmer-model.eps}
+  \includegraphics{img/hmmer-model.eps}
+  \caption{Multihit HMMER3 model.}
+  \label{hmmer-model}
+\end{figure}
+
+This latest HMMER version also introduced a processing pipeline, comprehending a combination of several incremental filters. Each incremental filter is more accurate, restrictive and expensive than the previous one. All of these filters have already been parallelized by \ac{SIMD} vectorization using Farrar's striped processing pattern~\cite{farrar}. The ViterbiFilter, in particular, has been parallelized with 16-bit integer scores. Accordingly, the present work proposes a new parallelization approach of this filter based on Rognes' processing pattern~\cite{rognes}, with a novel strategy to improve the cache efficiency.
+
+%HMMER provides various different analysis tools, such as \emph{jackhammer}, which performs an iterative database search, rebuilding and refining the model; and \emph{hmmscan}, which searches a target sequence against a database of profile models. In this work we will focus on the most used tool, \emph{hmmsearch}, which searches a target model against a sequence database.
+
+
+\section*{Cache-Oblivious SIMD Viterbi with Inter-Sequence Parallelism}
+
+The proposed \ac{COPS} algorithm represents an optimization of the Viterbi filter implementation in local unihit mode (i.e., the mode corresponding to the original Smith-Waterman local alignment algorithm). Global alignment is not currently supported by the latest version of HMMER.
+
+The presented implementation was developed on top of the HMMER suite, as a standalone tool. A full integration into the HMMER pipeline was deemed unsuitable, since the pipeline was designed to execute a single sequence search at a time, while the proposed approach exploits inter-sequence parallelism, i.e., it concurrently processes several sequences at a time in the \ac{SIMD} SSE2 vector elements.
+
+A coarse grained structure of the implemented algorithm, when compared with the original HMMER implementation, is presented in Listing~\ref{table-partitioning-comp}. The following subsections will describe the several code transformations that were required to implement the proposed processing approach.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[t!]
+\centering
+  \caption{Coarse grained algorithm structure.}
+  \label{table-partitioning-comp}
+  \begin{minipage}{1.0\textwidth}
+  \smallskip
+  \begin{center}
+  {\textrm{(a) \bf HMMER Original Code: Non-partitioned Model}}
+  \end{center}
+\begin{algorithmic}[1]
+\LeftComment \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~B:\hspace*{0.5ex}}}} Loop through the sequence symbols
+\For {$i \gets 1 \textrm{ to } \mathit{SequenceLength} \ (L) $} 
+	\State ...		
+
+	\LeftComment \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~A:\hspace*{0.5ex}}}} Loop through the model state-triplets
+	\For {$j \gets 0 \textrm{ to } M-1 $} 
+		\LeftComment Core Viterbi code
+		\State ...
+	\EndFor
+	
+	\LeftComment Update the special states
+	\State ...	
+\EndFor
+\end{algorithmic}
+\end{minipage}
+
+  \begin{minipage}{1.0\textwidth}
+  \smallskip
+\begin{center}
+  \hrulefill \\
+  \smallskip
+  {\textrm{(b) \bf Proposed COPS Code: Strip-Mined Partitioned Model}}
+  \end{center}
+\begin{algorithmic}[1]
+\LeftComment  \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~C:\hspace*{0.5ex}}}} Loop through the partitions
+\For {$p \gets 1 \textrm{ to } \mathit{Npartitions} $} 
+	
+	\State ...		
+	\LeftComment \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~B:\hspace*{0.5ex}}}} Loop through the sequence symbols
+	\For {$i \gets 1 \textrm{ to } \mathit{SequenceLength} \ (L) $} 
+		\State Load\_Data\_From\_Last\_Partition(i)
+		\State ...		
+
+		\LeftComment \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~A:\hspace*{0.5ex}}}} Loop through the model state-triplets of the current partition
+
+		\For {$j \gets 0 \textrm{ to } \mathit{PartLength} $} 
+			\LeftComment Core Viterbi code
+			\State ...
+		\EndFor
+	
+		\LeftComment Update the special states
+		\State ...	
+		\State Store\_Data\_For\_Next\_Partition(i)
+	\EndFor
+\EndFor
+\end{algorithmic}
+  \smallskip
+\end{minipage}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Rognes' strategy applied to Viterbi decoding}
+
+Although HMMER extensively adopts the Farrar's intra-sequence vectorization approach, the presented research demonstrates that the inter-sequence parallel alignment strategy that was proposed by Rognes \cite{rognes} can be equally applied to implement the Viterbi decoding algorithm. The proposed vectorization comprehends the computation of the recursive Viterbi relations, by using three auxiliary arrays to hold the previous values of the Match (M), Insert (I) and Delete (D) states (see \autoref{hmmer-model}). After each loop over the normal states, the special states (E and C) are updated. Since the proposed implementation does not support multhit alignments, the J transitions were removed from the original model.
+
+Just like Farrar's and Rognes' vectorizations, the implementation that is now proposed uses 128-bit \ac{SIMD} registers, composed by eight 16-bit integer scores, to simultaneously process eight different sequences. Furthermore, similarly to the HMMER implementation, the scores are discretized by using a simple scaling operation, with an additional bias and saturated arithmetic. Hence, just like the '-2.0 nat approximation' that is used by HMMER, the N $\rightarrow$ N and C $\rightarrow$ C transitions were  set to zero, and a -2.0 score offset was added at the end. This value approximates the cumulative contribution of N $\rightarrow$ N and C $\rightarrow$ C transitions which, for a large $L$, is given by $ \log  \frac{L}{L+2}$. As a result, the B contributions become constant, since they only depend on the N values (which are constant) and on the J values  (which are zero in unihit modes).
+
+A required and important step in this inter-sequence \ac{SIMD} implementation of the Viterbi decoding is the pre-loading and arrangement of the per-residue emission scores. However, these emission scores depend on the searched sequences and they cannot be predicted, pre-computed and memorized before knowing those sequences. Furthermore, each new batch of 8 sequences to search requires the loading of new emission scores. Rognes' solution to circumvent this problem can also be adapted to Viterbi decoding and consists on loading the emission scores for the 8 different residues from the 8 sequences under processing (each from its own emission scores array) before starting the main loop of the model (loop A, in Listing~\ref{table-partitioning-comp}). To accomplish this, the scores must be transposed from the original \textit{continuous} pattern into a convenient \textit{striped} pattern, by using the unpack and shuffle SSE operations. The implemented processing pattern is illustrated in \autoref{scores-loading-rognes}, while the corresponding pseudo-code implementation is presented in Listing~\ref{scores_pre_processing}.
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=0.8\textwidth]{img/scores-loading-rognes.eps}
+  \includegraphics{img/scores-loading-rognes.eps}
+  \caption{Emission scores pre-processing using SSE2 unpack instructions. For illustrative purposes, only 4 sequences (denoted by letters \textsf{a}, \textsf{b}, \textsf{c} and \textsf{d}) were represented. The numeric suffix represents the corresponding index, within the sequence.}
+  \label{scores-loading-rognes}
+\end{figure}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[!t]
+\caption{Pre-processing of the emission scores by using SSE2 instructions.}
+\label{scores_pre_processing}
+\begin{algorithmic}
+\Procedure{EMISSION\_SCORES\_PREPROCESS}{}
+  \LeftComment Load original scores, xmm 0 to 8
+  \State $xmm[0] \gets \mathtt{LOAD16}(\mathit{EMscoreSeq}[0]+j) $
+  \State $xmm[1] \gets \mathtt{LOAD32}(\mathit{EMscoreSeq}[1]+j) $
+  \State ...
+  \LeftComment Interleave 16-bit wide, xmm 8 to 15
+  \State $xmm[8] \gets \mathtt{UNPACK\_LOW16}(xmm[0], xmm[1]) $
+  \State $xmm[9] \gets \mathtt{UNPACK\_HIGH16}(xmm[0], xmm[1]) $
+  \State ...
+  \LeftComment Interleave 32-bit wide, xmm 16 to 23
+  \State $xmm[16] \gets \mathtt{UNPACK\_LOW32}(xmm[8], xmm[10]) $
+  \State $xmm[17] \gets \mathtt{UNPACK\_HIGH32}(xmm[8], xmm[10]) $
+  \State ...
+  \LeftComment Interleave 64-bit wide, xmm 24 to 31
+  \State $xmm[24] \gets \mathtt{UNPACK\_LOW64}(xmm[16], xmm[18) $
+  \State $xmm[25] \gets \mathtt{UNPACK\_HIGH64}(xmm[16], xmm[18]) $
+  \State ...
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsection*{Inline pre-processing of the scores}
+
+Rognes' method to pre-load and pre-process the emission scores before each inner loop iteration (i.e., iteration over the model states) suffers from a considerable handicap: it needs an additional re-write of the scores to memory, before the actual Viterbi decoding can start. To circumvent this problem, an alternative approach is herein proposed. Instead of transposing all the emission scores for each tuple of residues in the outer loop of the algorithm (Loop B in Listing~\autoref{table-partitioning-comp} (a), over the sequence residues), the transposition was moved inwards to the inner loop (Loop A) and subsequently unrolled for 8 iterations. Hence, each iteration starts by pre-loading 8 emission values: one from each of the 8 continuous arrays. These emission values are then transposed and striped into 8 temporary SSE2 vectors and used in the computation of the next model state for each of the 8 sequences under processing. Hence, the inner loop is unrolled into the 8 state-triplets that are processed by each loop iteration. With this approach, the emission scores can be kept in close memory, thus improving the memory and cache efficiency. Furthermore, the re-writing in memory during this pre-loading phase is also avoided.
+
+To take full advantage of this vectorization approach, the number of considered model states should be always a multiple of 8 (in order to occupy the 8 available SSE channels). Nevertheless,  this restriction is easily fulfilled, by padding the model with dummy states up to the next multiple-of-8 state barrier. These dummy states should carry dummy scores (set to $-\infty$), so that they have a null influence on the final results, representing a negligible effect on the overall performance. According to the conducted evaluations (further detailed in the latest sections of this manuscript), this optimization of the inlined scores loading procedure leads to an execution time roughly 30\% faster than the pre-loading method used by Rognes' tool.
+
+\subsection*{Model Partitioning }
+
+One common problem that is often observed in these algorithms is concerned with the degradation of the cache efficiency when the score arrays exceed the capacity of the innermost-level data caches, leading to an abrupt increase of the number of cache misses and causing a substantial reduction of the overall performance. This type of performance penalties is also present in HMMER Farrar-based ViterbiFilter implementation, whenever larger models are considered. 
+
+To circumvent this cache efficiency problem, a \emph{loop-tiling} (a.k.a. \emph{strip-mining}) strategy based on a partitioning of the model states was devised in the proposed implementation, in order to limit the amount of memory required by the core loop. The required code transformations are illustrated in Listing~\ref{table-partitioning-comp}(b). Accordingly, the M, I and D model states are split in blocks (or partitions), whose optimal dimension (\ac{MP} length) is parameterized according to the size and organization of the \ac{L1D} cache. With this approach, all the defined partitions are now iterated in a new outermost-loop (Loop C, in Listing~\ref{table-partitioning-comp}(b)). As a result, the inner loop (Loop A) is substantially shorter and it is now possible to obtain an optimal cache use in loops A and B --- the middle loop (Loop B) iterates over the 8 database sequences, while the inner loop (Loop A) iterates over a single partition of model states.  %The resulting code can also be observed in \autoref{code-complete}.
+
+The middle loop (Loop B), over the database sequences, mostly re-uses the same memory locations (except for the emission scores) that are accessed in the inner core loop (Loop A). Consequently, these locations tend to be kept in close cache. By limiting this model states loop to a pre-defined number of state-triplets defined by the \ac{MP} length, it can be assured that the whole sequence loop (Loop B) is kept in cache. Hence, with this optimization, the memory required by the inner loop (Loop A) is always cached in close memory and repeatedly accessed over the whole sequence loop, thereby drastically reducing the occurrence of cache misses. To attain the maximum performance, the \ac{MP} length should be adjusted in order to achieve an optimal cache occupation, i.e., one that fills the available capacity of the innermost data cache (\ac{L1D}). The processing pattern resulting from the proposed partitioned model is represented in \autoref{figure-partitions}.
+
+\begin{figure}[h!]
+  \centering
+%  \includegraphics[scale=0.5]{img/partitions.eps} 
+  \includegraphics{img/partitions.eps} 
+  \caption{Processing pattern of the adopted partitioned model, with a batch of length 10. The numbers represent the processing order of each partition, while the arrows show the inter-partition dependencies.}
+  \label{figure-partitions}
+\end{figure}
+
+Listing~\ref{code-complete} presents the pseudo-code of the whole algorithm implementation. The pseudo-code corresponding to the procedures EMISSION\_SCORES\_PREPROCESS and COMPUTE\_STATE\_TRIPLET, used in the inner loop (Loop A), are depicted in Listings~\ref{scores_pre_processing} and \ref{code-compute}, respectively. The notation adopted in this pseudo-code is closer to the provided software implementation than equations~\ref{eq:Viterbi_def} and \ref{eq:Viterbi}, defining the algorithm. Accordingly, the variable names re properly adapted. In particular, the $j$ indexes were omitted and use $cv$ (current value). Likewise, $pv$ (previous value) was used to represent the index $j-1$. Hence, variable $Mpv$ represents  $V^M_{j-1} (i)$. Similarly, $Dpv$ represents $V^D_{j-1} (i)$ and $Ipv$ represents $V^I_{j-1} (i)$. 
+It is also worth noting that these variables are not arrays. Instead, once the values are computed they are copied to the arrays $Mmx(j)$, $Dmx(j)$ and $Imx(j)$, respectively. The transition probabilities $t$, are stored in $8$ arrays (for example $t_{MI}$, for transitions from match to insert states). The computation of each Match value is split between iterations. Hence, an additional variable $Mnext$ is required to carry the partial computed value onto the next iteration.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[!t]
+\caption{Pseudo-code of the proposed COPS algorithm.}
+\label{code-complete}
+
+\begin{algorithmic}[1]
+\item[]
+\LeftComment \raisebox{-1pt}{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~C:\hspace*{0.5ex}}}} Loop through the partitions
+\For {$p \gets 1 \text{ to } Npartitions $} 
+
+	\State $ Initialize \;\; Mmx,\;\;Imx,\;\;Dmx\;\;to\;\; -\infty $
+
+	\LeftComment \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~B:\hspace*{0.5ex}}}} Loop through the sequence symbols
+	\For {$i \gets 1 \text{ to } SequenceLength \ (L) $} 
+		
+		\If { p = 0 }
+			\LeftComment First partition, initialize all to $-\infty $
+			\State $ xmxE \gets Mnext \gets Dcv \gets -\infty $
+		\Else 
+			\LeftComment Load data from previous partitions
+			\State $xmxE \gets PxmxE(i) $
+			\State $Dcv  \gets PDcv(i) $
+			\State $Mnext   \gets PMnext(i) $
+		\EndIf
+
+		\LeftComment \raisebox{-1pt}[10pt]{\frame{\raisebox{1pt}[8pt][0pt]{\bf \hspace*{0.5ex}LOOP~A:\hspace*{0.5ex}}}} Loop through the model state-triplets of the current partition
+		\For {$j \gets 0 \text{ to } \text{Min}(PartLength, ModelLength -  p \times PartLength) \text{, with step } 8 $} 
+			\State	$\mathrm{EMISSION\_SCORES\_PREPROCESS()}$
+			\For { $k \gets 0 \textrm{ to } 7$ }
+				\LeftComment Inner loop procedure. Argument: state index
+				\State $\mathrm{COMPUTE\_STATE\_TRIPLET(j+k)}$
+			\EndFor	
+		\EndFor
+		\LeftComment Compute and update the special flanking states
+		\If { $ j + p \times PartLength < ModelLength $ }
+			\LeftComment Not the last partiton, store data for next partition
+			\State $ PxmxE(i) \gets xmxE $
+			\State $ PDcv(i) \gets Dcv $
+			\State $ PMnext(i) \gets Mnext $
+		\Else 
+			\LeftComment Final partition, update the definitive pseudo-states
+			\State $ xmxC \gets \mathrm{VMAX16}(xmxC, xmxE) $
+		\EndIf
+	\EndFor
+\EndFor
+
+\State \Return $ Undiscretize(\mathrm{VMAX16}(xmxC,  t\_{CT})) $
+\end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{algorithm}[h!]
+\caption{Pseudo-code of the inner loop procedure. $M$ represents the model length, while $j$ is the State index}
+\label{code-compute}
+
+\begin{algorithmic}[1]
+\item[]
+\Procedure{COMPUTE\_STATE\_TRIPLET}{}
+\item[]
+\LeftComment Use M value partially computed in last iteration
+\State $ Mnext \gets \mathrm{VMAX16}
+			\begin{cases}
+				Mnext \\						
+				xmxB + t_{BM}(j)	\\
+				xmx[EMindex]
+			\end{cases} $ 
+\item[]
+\item[]
+\State $ xmxE \gets \mathrm{VMAX16}(xmxE, Mnext) $		
+\item[]
+\LeftComment Load scores from last column
+\State $ Dpv \gets Dmx(j) $
+\State $ Ipv  \gets Imx(j)  $
+\State $ Mpv \gets Mmx(j) $
+\item[]
+\LeftComment Compute and store scores of this column
+\State $ Mmx(j) \gets Mnext $
+\State $ Dmx(j) \gets Dcv   $
+
+\State $ Imx(j) \gets \mathrm{VMAX16}
+			\begin{cases}
+				Mpv + t_{MI}(j+1)	\\
+				Ipv + t_{II}(j+1)	\\
+			\end{cases} $ 
+\item[]
+\item[]
+\LeftComment Preempetive computation of next-column D score
+\State $ Dcv \gets \mathrm{VMAX16}
+			\begin{cases}
+				Mnext +  t_{MD}(j+1)	\\
+				Dcv +  t_{DD}(j+1)	\\
+			\end{cases} $ 
+\item[]
+\item[]
+\LeftComment Partially compute M score for next column
+\State $ Mnext \gets \mathrm{VMAX16}
+			\begin{cases}
+				Mpv + t_{MM}(j)	\\
+				Ipv + t_{IM}(j)	\\
+				Dpv + t_{DM}(j)	\\
+			\end{cases} $ 
+\item[]
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+
+%Mmx, Dmx, Imx 3×M×16
+%Transition Scores 8×M×16
+%Match emission scores M×16
+%Auxiliary Emission array 24×16
+%30 aux. variables 30×16
+%M*3*16
+
+\autoref{table-memory-comp} represents the memory footprint required by the proposed \ac{COPS} implementation, when compared with the original HMMER ViterbyFilter. $M$ represents the model length. At this respect, it is important to note that although the presented approach exceeds the innermost cache capacity sooner, since 8 times more transition scores and 8-fold larger dynamic programming arrays are required in the inner loop, the cumulative amount of cache misses along the time is substantially lower, as a result of the proposed partitioning.
+
+\begin{table}[h!]
+\centering
+\caption{Memory footprint (in Bytes) required by the proposed \ac{COPS} implementation, when compared with the original HMMER ViterbyFilter. $M$ represents the model length and all the computed scores are represented with 16-bit integers.}
+\label{table-memory-comp}
+
+\begin{tabular}{ccc}
+\hline
+	\textbf{Data Structure} & \textbf{COPS (proposed)}      &   \textbf{ViterbiFilter (HMMER)}   \\ \hline
+	Mmx, Dmx, Imx	&	$3 \times M \times 16 $	& $3 \times M \times 2$	\\ %\hline
+	Transition Scores	&	$8 \times M \times 16 $	& $8 \times M \times 2$	\\ %\hline
+	Emission Match (E.M.) scores &	$M  \times 16 $		& $M \times 2$		\\ %\hline
+	Auxiliary Emission array &	$24 \times 16 $		&  \textendash		\\ %\hline
+	$\sim$20 aux. variables	&	$20 \times 16 $		& $20 \times 16$	\\ \hline %\hline
+	Total			&	$192 \times M +700$	& $24 \times M  + 320$	\\ %\hline
+	Total minus E.M. scores &	$176 \times M + 700$	& $22 \times M + 320$	\\ %\hline
+	Max. $M$ to fill a 32KB cache &	$\frac{32768-700}{192} \approx 167 $	&  $\frac{32768-320}{24} \approx 1350 $ \\ \hline
+\end{tabular}
+\end{table}
+
+Overall, the partitioned \ac{COPS} implementation has an expected memory footprint of around $240\times M + 900$ bytes (corresponding to the original memory requirements of the non-partitioned \ac{COPS}, plus the additional arrays that are required to store the inter-partition dependencies). It can thereby be estimated an optimal \ac{MP} value as the maximum model length ($M$) that limits the memory footprint within the size of the \ac{L1D} cache. Hence the \ac{MP} length can be determined by:
+\begin{equation}
+\mathrm{MP} = \frac{ \mathrm{size(L1D)} - 900}{240}
+\end{equation}
+
+Nevertheless, a conservative tolerance should be considered when approaching this maximum estimate, justified by the sharing of the \ac{L1D} cache with other variables not correlated with this processing loop, process or thread. In fact, the conducted experimental procedures demonstrated that the actual  \ac{MP} values are very close to the best values that were theoretically estimated:
+\begin{itemize}[noitemsep,nolistsep]
+\item 112 to 120 states, for 32KB L1D CPUs (e.g. Intel Core, Core2, Nehalem, Sandy Bridge, Ivy Bridge and Haswell);
+\item around 48  states, for 16KB L1D CPUs (e.g. AMD Opteron Bulldozer and Piledriver);
+\item 216 to 224 states, for 64KB L1D CPUs (e.g. AMD Opteron K8, K10, Phenom I and II).
+\end{itemize}
+
+There are, however, two memory blocks that cannot be \emph{strip-mined}:
+\begin {itemize}
+\item Emission scores, which must be refreshed (re-computed) for each new round of sequence tokens. These values are accessed only once, so it is counter-productive to consider their cacheability.
+\item Dependencies that must be exchanged between adjacent partitions. The last Match (M), Insert (I) and Delete (D) contributions from each partition have to be carried on in the next partition, and so they have to be saved at the end of each partition. Hence, each partition receives as input one line of previous states, with one state-triplet for each 8-fold round of sequences, and produces as output another line of values to be used by the next partition. These dependencies can be minimized to 3 values per sequence round ($xmxE$, $Mnext$ and $Dcv$) after re-factoring the core code and moving the computation of $Mnext$ with the 3 state dependencies to the end. The re-factored inner loop code can be seen in \cref{code-compute}.
+\end {itemize}
+
+
+%\pagebreak
+
+%\subsection*{Problems and limitations of lock-step inter-task parallelism}
+
+%Inter-task algorithms in \ac{SIMD} pose some problems, which had to be addressed. The sequences should be of the same length, in order to minimize the amount of wasted computation, and so the sequence database was first sorted by sequence length. Still, for sequences of different lengths, it is necessary to mark where each sequence terminates, and ignore the dummy iterations run after the sequence's end. We did this by numeric manipulation, introducing nullifying values that are activated after the sequence's end.
+
+%There is also some amount of computation that is wasted by the varying lengths of the 8 sequences. However, it is a very small amount --- in our experiments below 0.01\% of computed values.
+
+%Another problem with streaming is the inflexibility in the parameterization of the model. For each execution of the algorithm, the model is parameterized with the sequences' length, to compute the expected values for the HMMER optimizations of the NN, CC and LL contributions. When using several sequences of varying lengths in the same execution, some of these sequences are inevitably run against a model that is mis-parameterized for them, introducing some error in the final computed probabilities.
+%From our experiments, however, the error introduced by the mis-parameterization of the model is quite negligible, provided that the sequences have been previously sorted and the resulting difference in lengths is therefore very small.
+
+
+\section*{Methods}
+
+To conduct a comparative and comprehensive evaluation of the proposed
+approach, the \ac{COPS} algorithm was ran against the ViterbiFilter
+implementation of HMMER 3.1b1, based on Farrar's striped
+vectorization. For such purpose, a benchmark dataset comprehending
+both DNA and protein data was adopted, covering a wide spectrum of
+model lengths, ranging from 50 to 3000 model states, with a step of
+about 100. 
+
+In particular, the DNA data consisted on \acp{HMM} sampled
+from Dfam 1.2 database of Human DNA \acp{HMM}~\cite{dfam}, and the
+human genome retrieved from the NCBI archive.  
+% RETIREI ESTA FRASE: Dfam is a widely used database of protein families, and HMM’s constructed to model them.
+As of March 2013, Dfam uses HMMER3.1b1 to create the models. The
+complete list of HMMs is the following (the length is
+prefixed to the model name): 
+%
+%
+%M0063-U7, M0700-MER77B, M1409-MLT1H-int, M2204-CR1 Mam, M0101-HY3,
+%M0804-LTR1E, M1509-LTR104 Mam, M2334-L1M2c 5end, M0200-MER107,
+%M0900-MER4D1, M1597-Tigger6b, M2434-L1MCa 5end, M0301-Eulor9A,
+%M1000-L1MEg2 5end, M1727-L1P3 5end, M2532-L1MC3 3end, M0401-MER121,
+%M1106-L1MD2 3end, M1817-REP522, M2629-L1MC4a 3end, M0500-LTR72B,
+%M1204-Charlie17b, M1961-Charlie4, M2731-Tigger4,M0600-MER4A1,
+%M1302-HSMAR2, M2101-L1MEg 5end, M2858-Charlie12, M2991-HAL1M8.
+%
+% \vspace{1px}
+% \begin{tabular}{llll}
+M0063-U7,  M0804-LTR1E,  M1597-Tigger6b,  M2500-L1M4c\_5end,
+M0101-HY3,  M0900-MER4D1,  M1683-FordPrefect,  M2596-L1P4a\_5end,
+M0200-MER107,  M1000-L1MEg2\_5end, M1795-L1MB4\_5end,  M2706-Charlie3,
+M0301-Eulor9A,  M1106-L1MD2\_3end,  M1961-Charlie4,  M2789-L1MC4\_3end,
+M0401-MER121,  M1204-Charlie17b,  M2101-L1MEg\_5end, M2904-L1M2\_5end,
+M0500-LTR72B,  M1302-HSMAR2,  M2204-CR1\_Mam,  M2991-HAL1M8,
+M0600-MER4A1,  M1409-MLT1H-int,  M2275-L1P2\_5end,
+M0700-MER77B,  M1509-LTR104\_Mam,  M2406-Tigger5.	 						
+% \end{tabular}
+% \vspace{1px}
+%
+%M0063-U7			& M0101-HY3			& M0200-MER107		& M0301-Eulor9A		\\
+%M0401-MER121		& M0500-LTR72B		& M0600-MER4A1		& M0700-MER77B		\\
+%M0780-LTR17			& M0900-MER4D1		& M1000-L1MEg2\_5end& M1106-L1MD2\_3end	\\
+%M1204-Charlie17b	& M1302-HSMAR2		& M1409-MLT1H-int	& M1509-LTR104\_Mam	\\
+%M1597-Tigger6b		& M1683-FordPrefect	& M1795-L1MB4\_5end	& M1961-Charlie4	\\
+%M2030-L1M2b\_5end	& M2101-L1MEg\_5end	& M2204-CR1\_Mam	& M2275-L1P2\_5end	\\
+%M2406-Tigger5		& M2500-L1M4c\_5end	& M2596-L1P4a\_5end	& M2706-Charlie3	\\
+%M2789-L1MC4\_3end	& M2904-L1M2\_5end	& M2991-HAL1M8.						\\
+
+ The protein data
+consisted on a mix of 13 small and medium-sized \acp{HMM} from Pfam
+27.0~\cite{Pfam} and 17 large \acp{HMM} created with
+\textit{hmmerbuild} tool from Protein Isoforms sampled from Uniprot,
+and the NRDB90~\cite{nrdb90} non-redundant protein database. The short
+protein models, from Pfam, were the following:
+% \vspace{1px}
+% \begin{tabular}{llll}
+M0063-ACT\_5, M0400-Alginate\_exp, M0800-Patched, M1201-DUF3584,
+M0101-Bactofilin, M0500-Lant\_dehyd\_C, M0900-PolC\_DP2, M1301-Orbi\_VP1,
+M0201-Adeno\_52K, M0600-Mpp10, M1002-SrfB, 					
+M0300-Aldose\_epim, M0700-Pox\_VERT\_large, M1098-CobN-Mg\_che. 				
+% \end{tabular}
+% \vspace{1px}
+
+The longer models used were generated from the following Uniprot
+Isoforms: 
+% \vspace{1px}
+% \begin{tabular}{llll}
+M1400-Q8CGB6, M1800-Q9BYP7, M2203-P27732, M2602-O75369,
+M1500-Q9V4C8, M1901-Q64487, M2295-Q3UHQ6, M2703-Q8BTI8,
+M1600-Q6NZJ6, M2000-Q9NY46, M2403-Q9UGM3, M2802-Q9DER5,
+M1700-Q3UH06, M2099-Q8NF50, M2505-O00555, M2898-Q868Z9,
+M3003-A2AWL7.
+% \end{tabular}
+% \vspace{1px}
+
+
+The benchmarks were run on two different machines:
+\begin{itemize}
+\item Intel Core i7 3770K, with an Ivy Bridge architecture, running at 3.50 GHz with a 32KB L1D cache;
+\item AMD Opteron 6276, with a Bulldozer architecture, running at 2.3 GHz with a 16KB L1D cache.
+\end{itemize}
+All the timings were measured as total walltime, by using the Linux \texttt{ftime} function.
+
+\section*{Results and Discussion}
+
+\subsection*{Cache misses}
+
+To evaluate the cache usage efficiency of the considered algorithms, the number of \ac{L1D} cache misses for the \ac{COPS} tool and for the HMMER ViterbiFilter implementations were measured with PAPI performance instrumentation framework~\cite{papi}. To ensure a broader and more comprehensive coverage of measures, a wider and random dataset of DNA models was considered in this specific evaluation.
+
+When Intel processors (with 32KB \ac{L1D} caches) are considered, the theoretical estimates suggested a \emph{critical point} for optimal \ac{L1D} cache utilization corresponding to models of size $M{\approx}1350$ for the HMMER ViterbiFilter and $M{\approx}167$ for \ac{COPS}.
+To confirm the formulated estimation, the experimental procedure started by considering a \textit{non-partitioned} implementation, which was evaluated in conjunction with the corresponding HMMER implementation. The obtained values, illustrated in \autoref{cache-misses-nonpart}, demonstrate that the theoretically estimated \emph{critical points} coincide very closely with the observed abrupt increases of the \ac{L1D} cache misses, as well as with the corresponding performance drops, which are strongly correlated in the observed results.
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=10cm]{img/cache_np.eps} 
+  \includegraphics{img/cacheNp.eps} 
+  \caption{Cache usage results of HMMER ViterbiFilter and of a \textit{Non-Partitioned} COPS (NP) implementation on the Intel Core i7 with 32KB of L1D cache.}
+  \label{cache-misses-nonpart}
+\end{figure}
+
+After partitioning, the overall performance of the proposed \ac{COPS} algorithm behaved remarkably close to what had been predicted, maintaining the same level of caches misses and computation performance for any model length (see \autoref{cache-misses-part}). As it can be seen in this figure, \ac{COPS} even managed to be slightly faster than HMMER ViterbiFilter for models up to $M{\approx}1200$ in 32KB L1D cache machines. For longer models, \ac{COPS} gains are close to 1.5-fold speedup over HMMER ViterbiFilter, due to the cache degradation observed in HMMER. When compared with the non-partitioned \ac{COPS} implementation (see \autoref{cache-misses-nonpart}), the partitioned version was about 50\% faster for long models ($>$1000 bps), demonstrating the remarkable benefits of the proposed partitioned processing approach.
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=10cm]{img/cache.eps} 
+  \includegraphics{img/cache.eps} 
+  \caption{Cache usage results of HMMER ViterbiFilter and of the new partitioned COPS implementation on the Intel Core i7 with 32KB of L1D cache.}
+  \label{cache-misses-part}
+\end{figure}
+
+\subsection*{Performance}
+
+Figures~\ref{runtimes-liliana} and \ref{speedups-liliana} represent the performance (in \ac{MCUPS}) of the two implementations and the observed speedup of the presented \ac{COPS} approach, when using the Intel Core i7 processor. Figures~\ref{runtimes-aleph} and \ref{speedups-aleph} represent similar results, observed in the AMD processor.
+
+For short models ($<$ 100 bps), the penalizing overhead of Farrar's \textit{Lazy-F loop} is clearly evident. As a result, the HMMER ViterbiFilter has a very poor performance on these models. In contrast, the proposed COPS solution does not suffer from this problem and presents a much smaller performance penalty in these small models (mainly from the initialization costs between each inner-loop execution). As a result, with these short models, \ac{COPS} achieved a considerable 1.7-fold speedup, when compared with HMMER.
+ 
+For medium-length models (between 100 and 500 bps on 16KB-\ac{L1D} machines, and up to ${\approx}1000$ bps on 32KB-\ac{L1D} machines), the proposed \ac{COPS} implementation is about as good as HMMER, reducing the observed speedup to about 1.2-fold. These performance values correspond to model lengths where the striped version does not exceed the size of the innermost data cache.
+
+For longer models, from 500 bps or 1000 bps (depending on the \ac{L1D} size), it can be observed that the performance of HMMER quickly deteriorates as the length of the model increases and the memory requirements of HMMER Farrar-based approach reach the maximum that the innermost \ac{L1D} caches can provide (usually, 32KB on Intel and 16KB on AMD CPUs). In contrast, the proposed inter-sequence COPS is able to consistently maintain the same performance level with increasingly long models, thus achieving a 2-fold speedup on AMD and a 1.5-fold on Intel, against the HMMER version for longer models.
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=10cm]{img/Intel-Perf.eps}
+  \includegraphics{img/Intel-Perf.eps}
+  \caption{Comparative performance results of the proposed COPS implementation and of HMMER ViterbiFilter, obtained on the Intel Core i7 (32KB of L1D cache).}
+  \label{runtimes-liliana}
+\end{figure}
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=10cm]{img/Intel-speedup.eps}
+  \includegraphics{img/Intel-speedup.eps}
+  \caption{Resulting speedup of the proposed COPS implementation over HMMER ViterbiFilter, obtained on the Intel Core i7 (32KB of L1D cache).}
+  \label{speedups-liliana}  
+\end{figure}
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=10cm]{img/AMD-Perf.eps} 
+  \includegraphics{img/AMD-Perf.eps} 
+  \caption{Comparative performance results of the proposed COPS implementation and of HMMER ViterbiFilter, obtained on an AMD Opteron Bulldozer (16KB of L1D cache).}
+  \label{runtimes-aleph}
+\end{figure}
+
+\begin{figure}[!b]
+  \centering
+%  \includegraphics[width=10cm]{img/AMD-speedup.eps}
+  \includegraphics{img/AMD-speedup.eps}
+  \caption{Resulting speedup of the proposed COPS implementation over HMMER ViterbiFilter, obtained on an AMD Opteron Bulldozer (16KB of L1D cache).}
+  \label{speedups-aleph}
+\end{figure}
+ 
+
+\section*{Conclusions}
+
+The main insight of the presented approach is based on the observation
+that current parallel \ac{HMM} implementations may suffer severe cache
+penalties when processing long models. To circumvent this limitation,
+a new vectorization of the Viterbi decoding algorithm is proposed to
+process arbitrarily sized \ac{HMM} models. The presented algorithm is
+based on a SSE2 inter-sequence parallelization approach, similar to
+the DNA alignment algorithm proposed by Rognes~\cite{rognes}. Besides
+the adopted alternative vectorization approach, the proposed algorithm
+introduces a new partitioning of the Markov model that allows a
+significantly more efficient exploitation of the cache locality. Such
+optimization, together with an improved loading of the emission
+scores, allows the achievement of a constant processing throughput,
+regardless of the innermost-cache size and of the dimension of the
+considered model. 
+
+In what concerns the partitioning, the proposed implementation was based on the observation that the poor cache
+performance of HMMER is related to the size of the model and to the fact that it
+is necessary to update all the states in the model for every letter of
+a query sequence. As a result, large models will force recently computed values out
+of cache. When this phenomena occurs for every letter in a query,
+ it naturally results in a
+significant bottleneck. 
+
+We speculate that a similar
+phenomena occurs for the striped pattern of Farrar, in which case our
+partitioning technique could prove useful. Still, Farrar's algorithm
+processes one single query at a time, instead of 8. Therefore, the slowdown
+should only occurs for models 8 times larger, i.e., models of size
+larger than 10800.
+
+According to the extensive set of assessments and evaluations that
+were conducted, the proposed vectorized optimization of the Viterbi
+decoding algorithm proved to be a rather competitive alternative
+implementation, when compared with the state of the art HMMER3
+decoder. Being always faster than the already highly optimized HMMER
+ViterbiFilter implementation, the proposed implementation provides a
+constant throughput and proved to offer a processing speedup as high
+as 2, depending on the considered \ac{HMM} model size and L1D cache size.
+
+Future work may also extend this approach to Intel's recent instruction-set extension AVX2, allowing the processing of twice more vector elements at a time.
+
+
+\bigskip
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                          %%
+%% Backmatter begins here                   %%
+%%                                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{backmatter}
+\section*{Availability and requirements}
+
+\begin{description}
+\item [Project name:] COPS (Cache-Oblivious SIMD Viterbi with Inter-Sequence Parallelism)
+\item [Project home page:] \url{https://kdbio.inesc-id.pt/~lsr/COPS}
+\item [Operating system(s):] Linux
+\item [Platform independent Programming language:] C
+\item [requirements:] gcc, make
+\item [License:] a variation of the Internet Systems Consortium (ISC)
+  license.
+\item[Restrictions to use by non-academics:] Referencing this work.
+\end{description}
+
+\section*{Competing interests}
+The authors declare that they have no competing interests.
+
+The authors have received no funding or reimbursements from institutions that may  gain or lose financially from the publication of this manuscript.
+
+The authors do not own stocks or shares in organizations that  may in any way gain or lose financially from the publication of this manuscript.
+
+The authors do not hold or are currently applying for any patents relating to the content of the manuscript. The authors did not received reimbursements, fees, funding, or salary from an organization that holds or has applied for patents relating to the content of the manuscript.
+
+The authors do not have any other financial competing interests.
+
+\section*{Author's contributions}
+MF analyzed the problem and implemented the prototype, which was subsequently used for profiling and evaluation. NR and LR introduced the problem, along with an initial analysis, and recommended experimental approaches.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section*{Author's contributions}
+%    Text for this section \ldots
+
+    
+%%%%%%%%%%%%%%%%%%%%%%%%%%%    
+\section*{Acknowledgements}
+  \ifthenelse{\boolean{publ}}{\small}{}
+%  Text for this section \ldots
+
+This work was partially supported by national funds through Fundação
+para a Ciência e a Tecnologia (FCT), under project "HELIX:
+Heterogeneous Multi-Core Architecture for Biological Sequence
+Analysis'' (reference number PTDC/EEA-ELC/113999/2009), project "DataStorm - Large scale data management in cloud
+environments'' (reference number EXCL/EEI-ESS/0257/2012) and project PEst-OE/EEI/LA0021/2013. 
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                  The Bibliography                       %%
+%%                                                         %%              
+%%  Bmc_article.bst  will be used to                       %%
+%%  create a .BBL file for submission, which includes      %%
+%%  XML structured for BMC.                                %%
+%%  After submission of the .TEX file,                     %%
+%%  you will be prompted to submit your .BBL file.         %%
+%%                                                         %%
+%%                                                         %%
+%%  Note that the displayed Bibliography will not          %% 
+%%  necessarily be rendered by Latex exactly as specified  %%
+%%  in the online Instructions for Authors.                %% 
+%%                                                         %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newpage
+{\ifthenelse{\boolean{publ}}{\footnotesize}{\small}
+ \bibliographystyle{bmc_article}  % Style BST file
+  \bibliography{bmc_article} }     % Bibliography file (usually '*.bib' ) 
+
+%%%%%%%%%%%
+
+\ifthenelse{\boolean{publ}}{\end{multicols}}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                               %%
+%% ~es                       %%
+%%                               %%
+%% NB: this is for captions and  %%
+%% Titles. All graphics must be  %%
+%% submitted separately and NOT  %%
+%% included in the Tex document  %%
+%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%
+%% Do not use \listoffigures as most will included as separate files
+
+% \section*{Figures}
+
+%  \subsection*{Figure 1 - Sample figure title}
+%
+%      A short description of the figure content
+%      should go here.
+
+
+
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                               %%
+%%% Tables                        %%
+%%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%% Use of \listoftables is discouraged.
+%%%
+%\section*{Tables}
+%  \subsection*{Table 1 - Sample table title}
+%    Here is an example of a \emph{small} table in \LaTeX\ using  
+%    \verb|\tabular{...}|. This is where the description of the table 
+%    should go. \par \mbox{}
+%    \par
+%    \mbox{
+%      \begin{tabular}{|c|c|c|}
+%        \hline \multicolumn{3}{|c|}{My Table}\\ \hline
+%        A1 & B2  & C3 \\ \hline
+%        A2 & ... & .. \\ \hline
+%        A3 & ..  & .  \\ \hline
+%      \end{tabular}
+%      }
+%
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                               %%
+%%% Additional Files              %%
+%%%                               %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%\section*{Additional Files}
+%  \subsection*{Additional file 1 --- Sample additional file title}
+%    Additional file descriptions text (including details of how to
+%    view the file, if it is in a non-standard format or the file extension).  This might
+%    refer to a multi-page table or a figure.
+%
+%  \subsection*{Additional file 2 --- Sample additional file title}
+%    Additional file descriptions text.
+
+
+\end{backmatter}
+\end{document}
+
+
+
+
+
+

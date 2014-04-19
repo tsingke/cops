@@ -1,0 +1,16 @@
+%%  includegraphics, then comment out the      %%
+%\def\includegraphics{}
+	\includegraphics[scale=0.55]{img/farrar-pattern.eps}
+	\includegraphics[scale=0.28]{img/rognes-pattern.eps}
+%    \resizebox*{0.4\columnwidth}{!}{ \includegraphics{img/farrar-pattern.eps} }
+%    \resizebox*{0.2\columnwidth}{!}{ \includegraphics{img/rognes-pattern.eps} }
+    \resizebox*{1.0\columnwidth}{!}{ \includegraphics{img/krogh-haussler-model.eps} }
+    \resizebox*{1.0\columnwidth}{!}{ \includegraphics{img/hmmer-model.eps} }
+    \includegraphics[scale=1.5] {img/scores-loading-rognes.eps}
+	\includegraphics[width=16cm]{img/cache-misses-nonpart.png} 
+	\includegraphics[scale=0.5]{img/partitions.eps} 
+	\includegraphics[width=16cm]{img/cache-misses-part.png} 
+      \includegraphics{img/runtimes-liliana-partitions.png} }
+      \includegraphics{img/speedups-liliana-partitions.png} }
+      \includegraphics{img/runtimes-aleph-partitions.png} }
+      \includegraphics{img/speedups-aleph-partitions.png} }

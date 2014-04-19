@@ -1,0 +1,72 @@
+\contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Motivation}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.2}
+\contentsline {section}{\numberline {1.3}Dissertation outline}{4}{section.1.3}
+\contentsline {chapter}{\numberline {2}Sequence Homology Search}{5}{chapter.2}
+\contentsline {section}{\numberline {2.1}Alignment Algorithms}{6}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Edit Distance of Levenshtein}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.2}\ac {NW} Algorithm for Global Alignment}{8}{subsection.2.1.2}
+\contentsline {subsection}{\numberline {2.1.3}\ac {SW} Algorithm for Local Alignment}{8}{subsection.2.1.3}
+\contentsline {subsection}{\numberline {2.1.4}Gotoh Algorithm}{10}{subsection.2.1.4}
+\contentsline {subsection}{\numberline {2.1.5}SWAT optimization of the Smith-Waterman Algorithm}{11}{subsection.2.1.5}
+\contentsline {subsection}{\numberline {2.1.6}Substitution Scoring matrices}{12}{subsection.2.1.6}
+\contentsline {section}{\numberline {2.2}Homology Search with Markov Models}{12}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Markov Models}{13}{subsection.2.2.1}
+\contentsline {subsection}{\numberline {2.2.2}Alignment Profiles}{14}{subsection.2.2.2}
+\contentsline {subsection}{\numberline {2.2.3}Profile Markov Models}{15}{subsection.2.2.3}
+\contentsline {subsection}{\numberline {2.2.4}Algorithms for global alignment Profile HMMs}{17}{subsection.2.2.4}
+\contentsline {subsection}{\numberline {2.2.5}Simplification of the general Global Alignment HMM}{19}{subsection.2.2.5}
+\contentsline {subsection}{\numberline {2.2.6}Extension of Profile HMMs to Local Alignment}{19}{subsection.2.2.6}
+\contentsline {subsection}{\numberline {2.2.7}Extension of Profile HMMs to Multihit Alignments}{20}{subsection.2.2.7}
+\contentsline {chapter}{\numberline {3}Parallelization of Homology Search}{23}{chapter.3}
+\contentsline {section}{\numberline {3.1}Parallelization of Alignment Algorithms}{24}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Instruction-level Parallelism and Code Optimization}{24}{subsection.3.1.1}
+\contentsline {subsection}{\numberline {3.1.2}Fine-grained Parallelism using SIMD units}{25}{subsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.2.1}Decomposition Patterns in Intra-task Parallelism}{25}{subsubsection.3.1.2.1}
+\contentsline {subsubsection}{\numberline {3.1.2.2}Main Problems of SIMD Intra-task parallelism}{26}{subsubsection.3.1.2.2}
+\contentsline {subsubsection}{\numberline {3.1.2.3}Improvements for SIMD Algorithms}{28}{subsubsection.3.1.2.3}
+\contentsline {subsubsection}{\numberline {3.1.2.4}SIMD Implementation of Global Alignment}{29}{subsubsection.3.1.2.4}
+\contentsline {subsection}{\numberline {3.1.3}Intra-task Parallelism on Multiple Cores}{30}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Inter-task Parallelism}{31}{subsection.3.1.4}
+\contentsline {subsubsection}{\numberline {3.1.4.1}SIMD extensions}{31}{subsubsection.3.1.4.1}
+\contentsline {subsubsection}{\numberline {3.1.4.2}Multiprocessors}{32}{subsubsection.3.1.4.2}
+\contentsline {section}{\numberline {3.2}Parallelization of Profile Hidden Markov Models}{32}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Comparison between Profile HMMs and Single Alignment algorithms}{32}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Intra-task parallelization of Profile HMMs}{35}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Inter-task parallelization of Profile HMMs}{37}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}HMMER}{37}{subsection.3.2.4}
+\contentsline {chapter}{\numberline {4}SIMD Inter-task parallel Viterbi}{40}{chapter.4}
+\contentsline {section}{\numberline {4.1}Proposed Solution}{41}{section.4.1}
+\contentsline {section}{\numberline {4.2}Rognes-based SSE Inter-task vectorization}{41}{section.4.2}
+\contentsline {section}{\numberline {4.3}Loading of Emission Scores}{43}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Rognes method of Loading the Emission Scores}{43}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Inline method of Loading the Emission scores}{44}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Discretization to 8x16-bit integer channels}{45}{section.4.4}
+\contentsline {section}{\numberline {4.5}Model Partitioning to improve the L1 cache utilization}{46}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Problems with First-level Cache Efficiency}{46}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Partitioning the Model}{48}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Problems of Model Partitioning}{49}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Determining the Optimal Empirical Partition Length}{51}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.5.5}Evaluation after Partitioning}{51}{subsection.4.5.5}
+\contentsline {section}{\numberline {4.6}Batches of Sequences with varying lengths}{51}{section.4.6}
+\contentsline {section}{\numberline {4.7}Multi-threading the partitions}{53}{section.4.7}
+\contentsline {subsection}{\numberline {4.7.1}Execution call synchronization}{54}{subsection.4.7.1}
+\contentsline {subsection}{\numberline {4.7.2}Partition synchronization}{57}{subsection.4.7.2}
+\contentsline {subsection}{\numberline {4.7.3}Computing the Practical Threaded Partition Length}{57}{subsection.4.7.3}
+\contentsline {chapter}{\numberline {5}Evaluation}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Evaluation Methodology}{60}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Benchmark implementations}{60}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Evaluation Dataset}{60}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}Evaluation architectures}{62}{subsection.5.1.3}
+\contentsline {section}{\numberline {5.2}Results}{62}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Results for the Initial Rognes-based Inter-task vectorization}{62}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Results for the Inline loading of the Emission scores}{64}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Results for the Model Partitioning}{66}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Results for the Wave-Front Multi-threading}{68}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Evaluation of the experimental serial fraction by Karp-Flatt's Metric}{68}{subsection.5.2.5}
+\contentsline {subsubsection}{\numberline {5.2.5.1}Limitations of Wave-Front Multi-threading}{70}{subsubsection.5.2.5.1}
+\contentsline {chapter}{\numberline {6}Conclusions}{72}{chapter.6}
+\contentsline {section}{\numberline {6.1}Main Contributions}{75}{section.6.1}
+\contentsline {section}{\numberline {6.2}Future work}{75}{section.6.2}
+\contentsline {chapter}{\numberline {A}Code Listings}{83}{appendix.A}
+\contentsline {chapter}{\numberline {B}Results of the Wave-Front Multi-threading}{91}{appendix.B}

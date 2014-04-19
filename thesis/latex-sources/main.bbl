@@ -1,0 +1,328 @@
+\begin{thebibliography}{}
+
+\bibitem[Alpern et~al., 1995]{alpern}
+Alpern, B., Carter, L., and Su~Gatlin, K. (1995).
+\newblock {Microparallelism and high-performance protein matching}.
+\newblock In {\em 1995 ACM/IEEE conference on Supercomputing}, page~24. ACM.
+
+\bibitem[Altschul et~al., 1990]{blast}
+Altschul, S., Gish, W., Miller, W., Myers, E., and Lipman, D. (1990).
+\newblock {Basic local alignment search tool}.
+\newblock {\em Journal of molecular biology}, 215(3):403--410.
+
+\bibitem[Alves et~al., 2002]{parbcp}
+Alves, C., C{\'a}ceres, E., and Dehne, F. (2002).
+\newblock {Parallel dynamic programming for solving the string editing problem
+  on a CGM/BSP}.
+\newblock In {\em Proceedings of the 14th annual ACM symposium on Parallel
+  algorithms and architectures}, pages 275--281. ACM.
+
+\bibitem[Bateman et~al., 2004]{pfam}
+Bateman, A., Coin, L., Durbin, R., Finn, R.~D., Hollich, V., Griffiths-Jones,
+  S., Khanna, A., Marshall, M., Moxon, S., Sonnhammer, E.~L., et~al. (2004).
+\newblock The pfam protein families database.
+\newblock {\em Nucleic acids research}, 32(suppl 1):D138--D141.
+
+\bibitem[Benson et~al., 2000]{genbank}
+Benson, D., Karsch-Mizrachi, I., Lipman, D., Ostell, J., Rapp, B., and Wheeler,
+  D. (2000).
+\newblock {GenBank}.
+\newblock {\em Nucleic acids research}, 28(1):15--18.
+
+\bibitem[Boukerche et~al., 2009]{zalign}
+Boukerche, A., Batista, R., and de~Melo, A. (2009).
+\newblock {Exact pairwise alignment using a novel z-align parallel strategy}.
+\newblock In {\em IEEE Symposium on Parallel \& Distributed Processing, 2009},
+  pages 1--8. IEEE.
+
+\bibitem[Boukerche et~al., 2007]{boukerche2007parallel}
+Boukerche, A., de~Melo, et~al. (2007).
+\newblock {Parallel strategies for the local biological sequence alignment in a
+  cluster of workstations}.
+\newblock {\em Journal of Parallel and Distributed Computing}, 67(2):170--185.
+
+\bibitem[Brocchieri and Karlin, 2005]{brocchieri2005protein}
+Brocchieri, L. and Karlin, S. (2005).
+\newblock {Protein length in eukaryotic and prokaryotic proteomes}.
+\newblock {\em Nucleic acids research}, 33(10):3390.
+
+\bibitem[Dayhoff et~al., 1972]{pam}
+Dayhoff, M., Schwartz, R., and Orcutt, B. (1972).
+\newblock {22 A Model of Evolutionary Change in Proteins}.
+\newblock {\em Atlas of protein sequence and structure}, 5:345--352.
+
+\bibitem[de~Almeida and Roma, 2010]{framework2010parallel}
+de~Almeida, T. and Roma, N. (2010).
+\newblock {A parallel programming framework for multi-core DNA sequence
+  alignment}.
+\newblock In {\em Complex, Intelligent and Software Intensive Systems (CISIS)},
+  pages 907--912. IEEE.
+
+\bibitem[Delcher et~al., 1999]{mummer1}
+Delcher, A., Kasif, S., Fleischmann, R., Peterson, J., White, O., and Salzberg,
+  S. (1999).
+\newblock {Alignment of whole genomes}.
+\newblock {\em Nucleic Acids Research}, 27(11):2369--2376.
+
+\bibitem[Derrien and Quinton, 2010]{hmmer-fpgas}
+Derrien, S. and Quinton, P. (2010).
+\newblock Hardware acceleration of hmmer on fpgas.
+\newblock {\em Journal of Signal Processing Systems}, 58(1):53--67.
+
+\bibitem[Durbin et~al., 1998]{hmmsbook}
+Durbin, R., Eddy, S.~R., Krogh, A., and Mitchison, G. (1998).
+\newblock {\em Biological sequence analysis: probabilistic models of proteins
+  and nucleic acids}.
+\newblock Cambridge university press.
+
+\bibitem[Eddy, 1998]{eddy1998profile}
+Eddy, S.~R. (1998).
+\newblock Profile hidden markov models.
+\newblock {\em Bioinformatics}, 14(9):755--763.
+
+\bibitem[Eddy, 2010]{hmmer-userguide}
+Eddy, S.~R. (2010).
+\newblock Hmmer user's guide.
+
+\bibitem[Eddy, 2011]{hmmer3}
+Eddy, S.~R. (2011).
+\newblock Accelerated profile hmm searches.
+\newblock {\em PLoS Computational Biology}, 7(10):e1002195.
+
+\bibitem[Farrar, 2007]{farrar}
+Farrar, M. (2007).
+\newblock {Striped Smith--Waterman speeds database searches six times over
+  other SIMD implementations}.
+\newblock {\em Bioinformatics}, 23(2):156--161.
+
+\bibitem[Farrar, 2008]{farrarcell}
+Farrar, M. (2008).
+\newblock {Optimizing smith-waterman for the cell broadband engine}.
+\newblock {\em Sequence Analysis}.
+
+\bibitem[Ganesan et~al., 2010]{hmmer-gpus}
+Ganesan, N., Chamberlain, R.~D., Buhler, J., and Taufer, M. (2010).
+\newblock Accelerating hmmer on gpus by implementing hybrid data and task
+  parallelism.
+\newblock In {\em Proceedings of the First ACM International Conference on
+  Bioinformatics and Computational Biology}, pages 418--421. ACM.
+
+\bibitem[Gotoh, 1982]{gotoh}
+Gotoh, O. (1982).
+\newblock {An improved algorithm for matching biological sequences}.
+\newblock {\em Journal of molecular biology}, 162(3):705--708.
+
+\bibitem[Green, 1993]{swat}
+Green, P. (1993).
+\newblock {SWAT: Smith Waterman Alignment Tool}.
+\newblock {\em
+  \url{http://www.genome.washington.edu/uwgc/analysistools/swat.htm}}.
+
+\bibitem[Gribskov et~al., 1987]{gribskov1987profile}
+Gribskov, M., McLachlan, A., and Eisenberg, D. (1987).
+\newblock {Profile analysis: detection of distantly related proteins}.
+\newblock {\em Proceedings of the National Academy of Sciences}, 84(13):4355.
+
+\bibitem[Henikoff and Henikoff, 1992]{blosum}
+Henikoff, S. and Henikoff, J. (1992).
+\newblock {Amino acid substitution matrices from protein blocks}.
+\newblock {\em Proceedings of the National Academy of Sciences}, 89(22):10915.
+
+\bibitem[Henikoff and Henikoff, 1994]{henikoff1994position}
+Henikoff, S. and Henikoff, J. (1994).
+\newblock {Position-based sequence weights}.
+\newblock {\em Journal of Molecular Biology}, 243(4):574--578.
+
+\bibitem[Horn et~al., 2005]{clawhmmer}
+Horn, D.~R., Houston, M., and Hanrahan, P. (2005).
+\newblock Clawhmmer: A streaming hmmer-search implementatio.
+\newblock In {\em Proceedings of the 2005 ACM/IEEE conference on
+  Supercomputing}, page~11. IEEE Computer Society.
+
+\bibitem[Hosny et~al., 2011]{hosny}
+Hosny, A., Shedeed, H., et~al. (2011).
+\newblock {An Efficient Solution for Aligning Huge DNA Sequences}.
+\newblock {\em International Journal of Computer Applications (0975 ? 8887)},
+  32.
+
+\bibitem[Karp and Flatt, 1990]{karpflatt}
+Karp, A.~H. and Flatt, H.~P. (1990).
+\newblock Measuring parallel processor performance.
+\newblock {\em Communications of the ACM}, 33(5):539--543.
+
+\bibitem[Karplus et~al., 1998]{sam}
+Karplus, K., Barrett, C., and Hughey, R. (1998).
+\newblock Hidden markov models for detecting remote protein homologies.
+\newblock {\em Bioinformatics}, 14(10):846--856.
+
+\bibitem[Kent, 2002]{blat}
+Kent, W. (2002).
+\newblock {BLAT: the BLAST-like alignment tool}.
+\newblock {\em Genome research}, 12(4):656--664.
+
+\bibitem[Krogh et~al., 1994]{krogh1994}
+Krogh, A., Brown, M., Mian, I.~S., Sjolander, K., and Haussler, D. (1994).
+\newblock Hidden markov models in computational biology: Applications to
+  protein modeling.
+\newblock {\em Journal of molecular biology}, 235(5):1501--1531.
+
+\bibitem[Levenshtein, 1966]{levenshtein}
+Levenshtein, V. (1966).
+\newblock {Binary codes capable of correcting deletions, insertions, and
+  reversals}.
+\newblock In {\em Soviet physics doklady}, pages 707--710.
+
+\bibitem[Levon and Elie, 1990]{oprofile}
+Levon, J. and Elie, P. (1990).
+\newblock Oprofile - a system profiler for linux.
+\newblock \url{http://oprofile.sourceforge.net}.
+
+\bibitem[Liao et~al., 2004]{liao2004parallel}
+Liao, H., Yin, M., and Cheng, Y. (2004).
+\newblock {A parallel implementation of the Smith-Waterman algorithm for
+  massive sequences searching}.
+\newblock In {\em Engineering in Medicine and Biology Society. 26th Annual
+  Conference}, volume~2, pages 2817--2820. IEEE.
+
+\bibitem[Lindahl, 2005]{lindahl}
+Lindahl, E. (2005).
+\newblock
+  http://lindahl.sbc.su.se/software/altivec/altivec-hmmer,-version-2.html.
+
+\bibitem[Liu et~al., 2011]{cudablast}
+Liu, W., Schmidt, B., and Muller-Wittig, W. (2011).
+\newblock {CUDA-BLASTP: Accelerating BLASTP on CUDA-Enabled Graphics Hardware}.
+\newblock {\em IEEE/ACM Transactions on Computational Biology and
+  Bioinformatics}, 8(6):1678--1684.
+
+\bibitem[Liu et~al., 2009]{cudasw}
+Liu, Y., Maskell, D., and Schmidt, B. (2009).
+\newblock {CUDASW++: optimizing Smith-Waterman sequence database searches for
+  CUDA-enabled GPUs}.
+\newblock {\em BMC Research Notes}, 2(1):73.
+
+\bibitem[Meng and Chaudhary, 2005]{meng2005exploiting}
+Meng, X. and Chaudhary, V. (2005).
+\newblock {Exploiting multi-level parallelism for homology search using general
+  purpose processors}.
+\newblock In {\em 11th Conference on Parallel and Distributed Systems},
+  volume~2, pages 331--335. IEEE.
+
+\bibitem[Needleman and Wunsch, 1970]{needlemanwunsch}
+Needleman, S. and Wunsch, C. (1970).
+\newblock {A general method applicable to the search for similarities in the
+  amino acid sequence of two proteins}.
+\newblock {\em J. of Mol. Biol.}, 48(3):443--453.
+
+\bibitem[Oliver et~al., 2005]{oliver2005reconfigurable}
+Oliver, T., Schmidt, B., and Maskell, D. (2005).
+\newblock {Reconfigurable architectures for bio-sequence database scanning on
+  FPGAs}.
+\newblock {\em Transactions on Circuits and Systems II: Express Briefs},
+  52(12):851--855.
+
+\bibitem[Pearson, 1991]{ssearch}
+Pearson, W. (1991).
+\newblock {Searching protein sequence libraries: comparison of the sensitivity
+  and selectivity of the Smith-Waterman and FASTA algorithms}.
+\newblock {\em Genomics}, 11(3):635--650.
+
+\bibitem[Pearson and Lipman, 1988]{fasta}
+Pearson, W. and Lipman, D. (1988).
+\newblock {Improved tools for biological sequence comparison}.
+\newblock {\em Proceedings of the National Academy of Sciences}, 85(8):2444.
+
+\bibitem[Rabiner and Juang, 1986]{hmms}
+Rabiner, L. and Juang, B. (1986).
+\newblock An introduction to hidden markov models.
+\newblock {\em ASSP Magazine, IEEE}, 3(1):4--16.
+
+\bibitem[Rabiner, 1989]{hmms-speech}
+Rabiner, L.~R. (1989).
+\newblock A tutorial on hidden markov models and selected applications in
+  speech recognition.
+\newblock {\em Proceedings of the IEEE}, 77(2):257--286.
+
+\bibitem[Rognes, 2001]{paralign}
+Rognes, T. (2001).
+\newblock {ParAlign: a parallel sequence alignment algorithm for rapid and
+  sensitive database searches}.
+\newblock {\em Nucleic Acids Research}, 29(7):1647.
+
+\bibitem[Rognes, 2011]{rognes2011}
+Rognes, T. (2011).
+\newblock {Faster Smith-Waterman database searches with inter-sequence SIMD
+  parallelisation}.
+\newblock {\em BMC bioinformatics}, 12(1):221.
+
+\bibitem[Rognes and Seeberg, 2000]{rognes2000}
+Rognes, T. and Seeberg, E. (2000).
+\newblock {Six-fold speed-up of Smith--Waterman sequence database searches
+  using parallel processing on common microprocessors}.
+\newblock {\em Bioinformatics}, 16(8):699.
+
+\bibitem[Rudnicki et~al., 2009]{rudnicki2009cell}
+Rudnicki, W., Jankowski, A., et~al. (2009).
+\newblock {The new SIMD implementation of the Smith-Waterman algorithm on Cell
+  microprocessor}.
+\newblock {\em Fundamenta Informaticae}, 96(1):181--194.
+
+\bibitem[Rudnicki et~al., 2006]{rudnickipssms}
+Rudnicki, W., Maszkowski, R., Bolikowski, L., Cytowski, M., Dobrzynski, M., and
+  Fronczak, M. (2006).
+\newblock {Parallel Position-Specific Iterated Smith-Waterman Algorithm
+  Implementation}.
+\newblock {\em Proceedings the CUG 2005 conference in Albuquerqe}.
+
+\bibitem[Smith et~al., 1981a]{smithwaterman}
+Smith, T., Waterman, M., et~al. (1981a).
+\newblock {Identification of common molecular subsequences}.
+\newblock {\em J. mol. Biol}, 147(1):195--197.
+
+\bibitem[Smith et~al., 1981b]{smith1981comparative}
+Smith, T., Waterman, M., and Fitch, W. (1981b).
+\newblock {Comparative biosequence metrics}.
+\newblock {\em Journal of Molecular Evolution}, 18(1):38--46.
+
+\bibitem[Szalkowski et~al., 2008]{swps3}
+Szalkowski, A., Ledergerber, C., et~al. (2008).
+\newblock {SWPS3: fast multi-threaded vectorized Smith-Waterman for IBM Cell/BE
+  and x86/SSE2}.
+\newblock {\em BMC Research Notes}, 1(1):107.
+
+\bibitem[Viterbi, pril]{viterbi}
+Viterbi, A. (April).
+\newblock Error bounds for convolutional codes and an asymptotically optimum
+  decoding algorithm.
+\newblock {\em Information Theory, IEEE Transactions on}, 13(2):260--269.
+
+\bibitem[Wagner and Fischer, 1974]{wagner1974string}
+Wagner, R. and Fischer, M. (1974).
+\newblock {The string-to-string correction problem}.
+\newblock {\em Journal of the ACM (JACM)}, 21(1):168--173.
+
+\bibitem[Walters et~al., 2006]{hmmer-mpi}
+Walters, J.~P., Qudah, B., and Chaudhary, V. (2006).
+\newblock Accelerating the hmmer sequence analysis suite using conventional
+  processors.
+\newblock In {\em Advanced Information Networking and Applications, 2006. AINA
+  2006. 20th International Conference on}, volume~1, pages 6--pp. IEEE.
+
+\bibitem[Waterman et~al., 1976]{waterman1976some}
+Waterman, M., Smith, T., and Beyer, W. (1976).
+\newblock {Some biological sequence metrics}.
+\newblock {\em Advances in Mathematics}, 20(3):367--387.
+
+\bibitem[Wozniak, 1997]{wozniak}
+Wozniak, A. (1997).
+\newblock {Using video-oriented instructions to speed up sequence comparison}.
+\newblock {\em Computer applications in the biosciences: CABIOS},
+  13(2):145--150.
+
+\bibitem[Yu et~al., 2005]{yu2005smith}
+Yu, C., Kwong, K., et~al. (2005).
+\newblock {A Smith-Waterman systolic cell}.
+\newblock {\em New Algorithms, Architectures and Applications for
+  Reconfigurable Computing}, pages 291--300.
+
+\end{thebibliography}

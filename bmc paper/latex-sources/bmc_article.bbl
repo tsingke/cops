@@ -1,0 +1,320 @@
+%% BioMed_Central_Bib_Style_v1.01
+
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{[#1]}
+\providecommand{\urlprefix}{}
+
+\bibitem{smithwaterman}
+Smith TF, Waterman MS: \textbf{Identification of common molecular
+  subsequences}. \emph{Journal of Molecular Biology} 1981,
+  \textbf{147}:195--197.
+
+\bibitem{blast}
+Altschul S, Gish W, Miller W, Myers E, Lipman D: \textbf{Basic local alignment
+  search tool}. \emph{Journal of Molecular Biology} 1990,
+  \textbf{215}(3):403--410.
+
+\bibitem{farrar}
+Farrar M: \textbf{Striped Smith-Waterman speeds database searches six times
+  over other {SIMD} implementations}. \emph{Bioinformatics} 2007,
+  \textbf{23}(2):156--161.
+
+\bibitem{rognes}
+Rognes T: \textbf{Faster Smith-Waterman database searches with inter-sequence
+  {SIMD} parallelisation}. \emph{BMC Bioinformatics} 2011, \textbf{12}:221.
+
+\bibitem{gpus}
+Ganesan N, Chamberlain RD, Buhler J, Taufer M: \textbf{Accelerating HMMER on
+  GPUs by implementing hybrid data and task parallelism}. In \emph{Proceedings
+  of the First ACM International Conference on Bioinformatics and Computational
+  Biology}, ACM 2010:418--421.
+
+\bibitem{fpgas}
+Derrien S, Quinton P: \textbf{Hardware Acceleration of HMMER on FPGAs}.
+  \emph{Journal of Signal Processing Systems} 2010, \textbf{58}:53--67.
+
+\bibitem{sam}
+Karplus K, Barrett C, Hughey R: \textbf{Hidden Markov models for detecting
+  remote protein homologies.} \emph{Bioinformatics} 1998,
+  \textbf{14}(10):846--856.
+
+\bibitem{krogh1994}
+Krogh A, Brown M, Mian IS, Sjolander K, Haussler D: \textbf{Hidden Markov
+  models in computational biology: Applications to protein modeling}.
+  \emph{Journal of Molecular Biology} 1994, \textbf{235}(5):1501--1531.
+
+\bibitem{eddy1998profile}
+Eddy SR: \textbf{Profile Hidden Markov Models}. \emph{Bioinformatics} 1998,
+  \textbf{14}(9):755--763.
+
+\bibitem{eddy2011hmmer3}
+Eddy SR: \textbf{Accelerated profile {HMM} searches}. \emph{PLoS Computational
+  Biology} 2011, \textbf{7}(10):e1002195.
+
+\bibitem{dfam}
+Wheeler TJ, Clements J, Eddy SR, Hubley R, Jones TA, Jurka J, Smit AF, Finn RD:
+  \textbf{{Dfam}: a database of repetitive {DNA} based on profile hidden Markov
+  models}. \emph{Nucleic acids research} 2013, \textbf{41}(D1):D70--D82.
+
+\bibitem{Pfam}
+Bateman A, Coin L, Durbin R, Finn RD, Hollich V, Griffiths-Jones S, Khanna A,
+  Marshall M, Moxon S, Sonnhammer EL, et~al.: \textbf{The Pfam protein families
+  database}. \emph{Nucleic acids research} 2004, \textbf{32}(suppl
+  1):D138--D141.
+
+\bibitem{nrdb90}
+Holm L, Sander C: \textbf{Removing near-neighbour redundancy from large protein
+  sequence collections.} \emph{Bioinformatics} 1998, \textbf{14}(5):423--429.
+
+\bibitem{papi}
+Browne S, Dongarra J, Garner N, G, Mucci P: \textbf{A Portable Programming
+  Interface for Performance Evaluation on Modern Processors}.
+  \emph{International Journal of High Performance Computing Applications} 2000,
+  \textbf{14}(3):189--204.
+
+\end{thebibliography}
+
+\newcommand{\BMCxmlcomment}[1]{}
+
+\BMCxmlcomment{
+
+<refgrp>
+
+<bibl id="B1">
+  <title><p>Identification of common molecular subsequences</p></title>
+  <aug>
+    <au><snm>Smith</snm><fnm>T. F.</fnm></au>
+    <au><snm>Waterman</snm><fnm>M. S.</fnm></au>
+  </aug>
+  <source>Journal of Molecular Biology</source>
+  <pubdate>1981</pubdate>
+  <volume>147</volume>
+  <issue>1</issue>
+  <fpage>195</fpage>
+  <lpage>-197</lpage>
+</bibl>
+
+<bibl id="B2">
+  <title><p>Basic local alignment search tool</p></title>
+  <aug>
+    <au><snm>Altschul</snm><fnm>S.F.</fnm></au>
+    <au><snm>Gish</snm><fnm>W.</fnm></au>
+    <au><snm>Miller</snm><fnm>W.</fnm></au>
+    <au><snm>Myers</snm><fnm>E.W.</fnm></au>
+    <au><snm>Lipman</snm><fnm>D.J.</fnm></au>
+  </aug>
+  <source>Journal of Molecular Biology</source>
+  <publisher>Elsevier</publisher>
+  <pubdate>1990</pubdate>
+  <volume>215</volume>
+  <issue>3</issue>
+  <fpage>403</fpage>
+  <lpage>-410</lpage>
+</bibl>
+
+<bibl id="B3">
+  <title><p>Striped Smith-Waterman speeds database searches six times over
+  other {SIMD} implementations</p></title>
+  <aug>
+    <au><snm>Farrar</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>2007</pubdate>
+  <volume>23</volume>
+  <issue>2</issue>
+  <fpage>156</fpage>
+  <lpage>-161</lpage>
+</bibl>
+
+<bibl id="B4">
+  <title><p>Faster Smith-Waterman database searches with inter-sequence {SIMD}
+  parallelisation</p></title>
+  <aug>
+    <au><snm>Rognes</snm><fnm>T</fnm></au>
+  </aug>
+  <source>BMC Bioinformatics</source>
+  <publisher>BioMed Central Ltd</publisher>
+  <pubdate>2011</pubdate>
+  <volume>12</volume>
+  <issue>1</issue>
+  <fpage>221</fpage>
+</bibl>
+
+<bibl id="B5">
+  <title><p>Accelerating HMMER on GPUs by implementing hybrid data and task
+  parallelism</p></title>
+  <aug>
+    <au><snm>Ganesan</snm><fnm>N</fnm></au>
+    <au><snm>Chamberlain</snm><fnm>RD</fnm></au>
+    <au><snm>Buhler</snm><fnm>J</fnm></au>
+    <au><snm>Taufer</snm><fnm>M</fnm></au>
+  </aug>
+  <source>Proceedings of the First ACM International Conference on
+  Bioinformatics and Computational Biology</source>
+  <pubdate>2010</pubdate>
+  <fpage>418</fpage>
+  <lpage>-421</lpage>
+</bibl>
+
+<bibl id="B6">
+  <title><p>Hardware Acceleration of HMMER on FPGAs</p></title>
+  <aug>
+    <au><snm>Derrien</snm><fnm>S</fnm></au>
+    <au><snm>Quinton</snm><fnm>P</fnm></au>
+  </aug>
+  <source>Journal of Signal Processing Systems</source>
+  <publisher>Springer</publisher>
+  <pubdate>2010</pubdate>
+  <volume>58</volume>
+  <issue>1</issue>
+  <fpage>53</fpage>
+  <lpage>-67</lpage>
+</bibl>
+
+<bibl id="B7">
+  <title><p>Hidden Markov models for detecting remote protein
+  homologies.</p></title>
+  <aug>
+    <au><snm>Karplus</snm><fnm>K</fnm></au>
+    <au><snm>Barrett</snm><fnm>C</fnm></au>
+    <au><snm>Hughey</snm><fnm>R</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>1998</pubdate>
+  <volume>14</volume>
+  <issue>10</issue>
+  <fpage>846</fpage>
+  <lpage>-856</lpage>
+</bibl>
+
+<bibl id="B8">
+  <title><p>Hidden Markov models in computational biology: Applications to
+  protein modeling</p></title>
+  <aug>
+    <au><snm>Krogh</snm><fnm>A</fnm></au>
+    <au><snm>Brown</snm><fnm>M</fnm></au>
+    <au><snm>Mian</snm><fnm>IS</fnm></au>
+    <au><snm>Sjolander</snm><fnm>K</fnm></au>
+    <au><snm>Haussler</snm><fnm>D</fnm></au>
+  </aug>
+  <source>Journal of Molecular Biology</source>
+  <publisher>London, New York, Academic Press.</publisher>
+  <pubdate>1994</pubdate>
+  <volume>235</volume>
+  <issue>5</issue>
+  <fpage>1501</fpage>
+  <lpage>-1531</lpage>
+</bibl>
+
+<bibl id="B9">
+  <title><p>Profile Hidden Markov Models</p></title>
+  <aug>
+    <au><snm>Eddy</snm><fnm>SR</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>1998</pubdate>
+  <volume>14</volume>
+  <issue>9</issue>
+  <fpage>755</fpage>
+  <lpage>-763</lpage>
+</bibl>
+
+<bibl id="B10">
+  <title><p>Accelerated profile {HMM} searches</p></title>
+  <aug>
+    <au><snm>Eddy</snm><fnm>SR</fnm></au>
+  </aug>
+  <source>PLoS Computational Biology</source>
+  <publisher>Public Library of Science</publisher>
+  <pubdate>2011</pubdate>
+  <volume>7</volume>
+  <issue>10</issue>
+  <fpage>e1002195</fpage>
+</bibl>
+
+<bibl id="B11">
+  <title><p>{Dfam}: a database of repetitive {DNA} based on profile hidden
+  Markov models</p></title>
+  <aug>
+    <au><snm>Wheeler</snm><fnm>TJ</fnm></au>
+    <au><snm>Clements</snm><fnm>J</fnm></au>
+    <au><snm>Eddy</snm><fnm>SR</fnm></au>
+    <au><snm>Hubley</snm><fnm>R</fnm></au>
+    <au><snm>Jones</snm><fnm>TA</fnm></au>
+    <au><snm>Jurka</snm><fnm>J</fnm></au>
+    <au><snm>Smit</snm><fnm>AF</fnm></au>
+    <au><snm>Finn</snm><fnm>RD</fnm></au>
+  </aug>
+  <source>Nucleic acids research</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>2013</pubdate>
+  <volume>41</volume>
+  <issue>D1</issue>
+  <fpage>D70</fpage>
+  <lpage>-D82</lpage>
+</bibl>
+
+<bibl id="B12">
+  <title><p>The Pfam protein families database</p></title>
+  <aug>
+    <au><snm>Bateman</snm><fnm>A</fnm></au>
+    <au><snm>Coin</snm><fnm>L</fnm></au>
+    <au><snm>Durbin</snm><fnm>R</fnm></au>
+    <au><snm>Finn</snm><fnm>RD</fnm></au>
+    <au><snm>Hollich</snm><fnm>V</fnm></au>
+    <au><snm>Griffiths Jones</snm><fnm>S</fnm></au>
+    <au><snm>Khanna</snm><fnm>A</fnm></au>
+    <au><snm>Marshall</snm><fnm>M</fnm></au>
+    <au><snm>Moxon</snm><fnm>S</fnm></au>
+    <au><snm>Sonnhammer</snm><fnm>EL</fnm></au>
+    <au><cnm>others</cnm></au>
+  </aug>
+  <source>Nucleic acids research</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>2004</pubdate>
+  <volume>32</volume>
+  <issue>suppl 1</issue>
+  <fpage>D138</fpage>
+  <lpage>-D141</lpage>
+</bibl>
+
+<bibl id="B13">
+  <title><p>Removing near-neighbour redundancy from large protein sequence
+  collections.</p></title>
+  <aug>
+    <au><snm>Holm</snm><fnm>L</fnm></au>
+    <au><snm>Sander</snm><fnm>C</fnm></au>
+  </aug>
+  <source>Bioinformatics</source>
+  <publisher>Oxford Univ Press</publisher>
+  <pubdate>1998</pubdate>
+  <volume>14</volume>
+  <issue>5</issue>
+  <fpage>423</fpage>
+  <lpage>-429</lpage>
+</bibl>
+
+<bibl id="B14">
+  <title><p>A Portable Programming Interface for Performance Evaluation on
+  Modern Processors</p></title>
+  <aug>
+    <au><snm>Browne</snm><fnm>S.</fnm></au>
+    <au><snm>Dongarra</snm><fnm>J.</fnm></au>
+    <au><snm>Garner</snm><fnm>N.</fnm></au>
+    <au><cnm>G.</cnm></au>
+    <au><snm>Mucci</snm><fnm>P.</fnm></au>
+  </aug>
+  <source>International Journal of High Performance Computing
+  Applications</source>
+  <pubdate>2000</pubdate>
+  <volume>14</volume>
+  <issue>3</issue>
+  <fpage>189</fpage>
+  <lpage>204</lpage>
+</bibl>
+
+</refgrp>
+} % end of \BMCxmlcomment

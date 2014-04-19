@@ -1,0 +1,538 @@
+%% Define the document style. The thesis stylesheet inherits from 'report'. 
+%% I had once made a version inheriting from book. However the two versions are almost 
+%% compatible. The main difference is that the other version supported 'parts'.
+%% (extended from book) and this does not.
+%% IST requires the thesis to be written in Arial or similar. Two arguments allow you 
+%% to define the thesis font: 'Helvetica' and 'AvantGarde', which transforms normal font
+%% into Helvetica or AvantGarde, respectively... dahhhh!
+\documentclass[defaultstyle,10pt,master,Helvetica]{thesis}
+%\documentclass[defaultstyle,12pt,phd]{thesis}
+
+%% STYLESHEET SPECIFIC EXTRA COMMANDS (defined in thesis.cls):
+%% ------------------------------------------------------------
+%% \fancychapter{chaptername) -> Prints a fancier chapter
+%% \hline{width} -> use for a replacement of the \hline command
+%% \Mark1, \Mark2, \Mark3, ...
+
+%% Defines an additional alphabet... not required in most cases
+%% ------------------------------------------------------------
+% \DeclareMathAlphabet{\mathpzc}{OT1}{pzc}{m}{it}
+
+%% PACKAGE babel:
+%% ---------------
+%% The 'babel' package may correct some hyphenisation issues of latex. 
+%% However in most situations it is not required.
+% \usepackage[english]{babel}
+
+%% PORTUGUESE WRITTEN DOCUMENTS
+%% ---------------
+%% If you are writting the document in portuguese you will have to use the following 
+%% packages and commands:
+% \usepackage[portuges]{babel} 
+% \usepackage[fixlanguage]{babelbib}
+% \selectbiblanguage{portuges}
+% \def\chapterautorefname{Cap?tulo}
+% \def\sectionautorefname{Sec\c{c}\~ao}
+% \def\subsectionautorefname{Subsec\c{c}\~ao}
+% \def\figureautorefname{Figura}
+% \def\tableautorefname{Tabela}
+
+%% SPECIAL LATIN CHARACTERS
+%% ---------------
+%% During the writting of the document you are likely to have to write some latin 
+%% specific characters which are not typically available in english, e.g., vowels 
+%% with accents. By default LaTeX2E is not prepared to handle these special characters. 
+%% You can however add a package to handle these cases:
+%%
+%% if you are under linux, using UTF8 encoded characters, apply the following:
+\usepackage[utf8]{inputenc}
+%% if you are under windows, you will likely require the following package:
+%\usepackage[latin1]{inputenc}
+%\usepackage{textcomp}
+%\DeclareUnicodeCharacter{00A0}{ }
+
+%% PACKAGE fontenc:
+%% -----------------
+%% chooses T1-fonts and allows correct automatic hyphenation.
+%\usepackage[T1]{fontenc}
+
+%% PACKAGE latexsym:
+%% -----------------
+%% Defines additional latex symbols. May be required for thesis with many math symbols.
+%\usepackage{latexsym}
+
+%% PACKAGE amsmath, amsthm, amssymb, amsfonts:
+%% -------------------------------------------
+%% This package is typically required. Among many other things it adds the possibility
+%% to put symbols in bold by using \boldsymbol (not \mathbf); defines additional 
+%% fonts and symbols; adds the \eqref command for citing equations. I prefer the style
+%% "(x.xx)" for referering to an equation than to use "equation x.xx".
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+
+%% PACKAGE multirow, colortbl, longtable:
+%% ---------------------------------------
+%% These packages are most usefull for advanced tables. The first allows to join rows 
+%% throuhg the command \multirow which works similarly with the command \multicolumn
+%% The second package allows to color the table (both foreground and background)
+%% The third package is only required when tables extend beyond the length of one page;
+%% which typically does not happen and should be avoided
+\usepackage{multirow}
+\usepackage{colortbl}
+% \usepackage{longtable}
+
+%% PACKAGE graphics, epsfig, subfigure, caption:
+%% ---------------------------------------------
+%% Packages for figures... well you will certainly need these packages, with the exception
+%% of the 'caption' package. This only allows to define extra caption options.
+%% Notice that subfigure allows to place figures within figures with its own caption. It
+%% should be avoided to create an eps file with subfigures. That will mean that you won't be 
+%% able to reference those subfigures. Instead create an EPS file (the only graphics format supported
+%% by latex) for each of the subfigures and then use the command \subfigure (see below).
+\usepackage{graphics}
+\usepackage{epsfig}
+\usepackage[hang,small,bf]{subfigure}
+\usepackage{epstopdf}
+\usepackage{pst-pdf}
+\usepackage{wrapfig}
+% \usepackage[hang,small,bf]{caption}
+
+%% PACKAGE algorithmic, algorithm
+%% ------------------------------
+%% These packages are required if you need to describe an algorithm.
+%\usepackage{algorithmic}
+\usepackage[chapter]{algorithm}
+\usepackage{algpseudocode}
+
+
+%% PACKAGE natbib/cite
+%% -------------------
+%% The two packages are not compatible, and you should use one of the two. Notice however that the
+%% IEEE BiBTeX stylesheet is imcompatible with the natbib package. If using the IEEE format, use the 
+%% cite package instead
+%%
+%% For numeric citations use:
+\usepackage[square,numbers,sort&compress]{natbib}
+%% For numeric author-year use:
+% \usepackage[round,authoryear]{natbib}
+%% For the cite package instead use:
+%\usepackage{cite}
+
+%% PACKAGE acronyum
+%% -----------------
+%% This package is most usefull for acronyms. The package garantees that all acronyms definitions are 
+%% given at the first usage. IMPORTANT: do not use acronyms in titles/captions; otherwise the definition 
+%% will appear on the table of contents.
+\usepackage[printonlyused]{acronym}
+
+%% PACKAGE hyperref
+%% -----------------
+%% Set links for references and citations in document
+%% Some MiKTeX distributions have faulty PDF creators in which case this package will not work correctly
+%% Long live Linux :D
+\usepackage[hidelinks]{hyperref}
+\hypersetup{ %a4paper=true,
+             colorlinks=false,
+             citecolor=red,
+             breaklinks=true,
+             bookmarks=true,
+             bookmarksnumbered=true,
+             bookmarksopen=true,
+             pdftitle={SIMD Parallelization of Profile HMMs},
+             pdfauthor={Miguel Antunes Mendes Ferreira},
+             pdfsubject={bioinformatics},
+             pdfcreator={Miguel Ferreira},
+             pdfkeywords={bioinformatics, parallelization, SSE, alignment, hmmer, hmm}
+}
+
+
+% Section reference
+\newcommand{\sref}[1]{Section \ref{#1}}
+% Code reference
+\newcommand{\cref}[1]{Listing \ref{#1}}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Page formatting... It was correct for my master thesis... not sure it is still correct
+%% edit as necessary
+%\input{pagesetup.tex}
+
+% Copiado o ficheiro para aqui:
+\hoffset 0in
+\voffset 0in
+\oddsidemargin 0.71cm
+\evensidemargin 0.04cm
+\marginparsep 0in
+\topmargin -0.25cm
+\textwidth 15cm
+\textheight 23.5cm
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\thesection\ #1}}
+\fancyhf{} \fancyhead[LE]{\bfseries\nouppercase{\leftmark}}
+\fancyhead[RO]{\bfseries\nouppercase{\rightmark}}
+\fancyfoot[LE,RO]{\bfseries\thepage}
+\renewcommand{\headrulewidth}{0.5pt}
+\renewcommand{\footrulewidth}{0.5pt}
+\addtolength{\headheight}{2pt} % make space for the rule
+\fancypagestyle{plain}{%
+   \fancyhead{} % get rid of headers
+   \renewcommand{\headrulewidth}{0pt} % and the line
+   \renewcommand{\footrulewidth}{0pt}
+}
+\fancypagestyle{blank}{%
+   \fancyhf{} % get rid of headers and footers
+   \renewcommand{\headrulewidth}{0pt} % and the line
+   \renewcommand{\footrulewidth}{0pt}
+}
+\fancypagestyle{abstract}{%
+   \fancyhead{}
+   \renewcommand{\headrulewidth}{0pt}
+   \renewcommand{\footrulewidth}{0.5pt}
+}
+\fancypagestyle{document}{%
+	\fancyhf{} \fancyhead[LE]{\bfseries\nouppercase{\leftmark}}
+	\fancyhead[RO]{\bfseries\nouppercase{\rightmark}}
+	\fancyfoot[LE,RO]{\bfseries\thepage}
+	\renewcommand{\headrulewidth}{0.5pt}
+	\renewcommand{\footrulewidth}{0.5pt}
+	\addtolength{\headheight}{2pt} % make space for the rule
+}
+\setcounter{secnumdepth} {5}
+\setcounter{tocdepth} {5}
+
+% Comentado por mim! Quero as subsecoes todas numeradas com numeros em vez de letras
+%\renewcommand{\thesubsubsection}{\thesubsection.\Alph{subsubsection}}
+
+\renewcommand{\subfigtopskip}{0.3 cm}
+\renewcommand{\subfigbottomskip}{0.2 cm}
+\renewcommand{\subfigcapskip}{0.3 cm}
+\renewcommand{\subfigcapmargin}{0.2 cm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{tabularx}
+\usepackage{listings}
+\usepackage{enumitem}
+
+%% Set paragraph counter to alphanumeric mode
+%\renewcommand{\theparagraph} [1] {\Alph{paragraph}~--}
+\newcommand{\myparagraph}[1]{\paragraph*{#1} \mbox{} }
+
+\usepackage{setspace}
+\let\Algorithm\algorithm
+\renewcommand\algorithm[1][]{\Algorithm[#1]\setstretch{1.4}}
+
+\algnewcommand{\LeftComment}[1]{\State \(\triangleright\) #1}
+
+% Por o emph de novo em italico
+\DeclareTextFontCommand{\emph}{\it}
+
+\usepackage{float}
+\floatname{algorithm}{Listing}
+
+\renewcommand{\arraystretch}{1.5}
+
+
+
+\begin{document}
+
+% Add PDF bookmark 
+\pdfbookmark[0]{Titlepage}{Title}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEFINE THE TITLEPAGE
+% remember that IST requires for the titlepage to be written in portuguese
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REQUIRED:
+% The university logo image: first and second arguments are the (top,left) position of the logo. 
+% IST rules force it to be 2cm
+\univlogo{2.5cm}{2cm}{img/logo_ist_web.eps}
+% OPTIONAL:
+% The thesis logo image: first and second arguments are the position of the logo. 
+\thesislogo{2.5cm}{6cm}{img/clustal-chimp-similar.eps}
+
+% Thesis title
+\title{SIMD Parallelization of Profile HMMs}
+
+% Author and highest current degree (not the one you are applying to)
+\author{Miguel Antunes Mendes Ferreira}
+\degree{Information Systems and Computer Engineering }
+% This is not on the new IST MSc stylesheet... however for PhD dissertations it will most likely be required
+% \otherdegree{Mestre}
+
+% The supervisor. Use the second command if required.
+% Always remember that 'Professor' should only be used for a supervisor with a Cathedra
+\supervisor{Prof. Luis Manuel Silveira Russo}
+\othersupervisor{Prof. Nuno Filipe Valentim Roma}
+
+% Date of the dissertation
+\date{October 2013}
+
+
+% Is this the final version? Place false when delivering the first part.
+% The juri members will not be printed in that case. Place true after the juri has accepted the thesis
+\finalthesis{true}
+
+% The members of the Juri
+% Always remember that 'Professor' should only be used for a juri member with a Cathedra
+\presidentofjury{Prof. Doutor Luís Eduardo Teixeira Rodrigues}
+\vogalone{Prof. José Carlos Alves Pereira Monteiro}
+\vogaltwo{Prof.ª Sara Alexandra Cordeiro Madeira}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% print titlepage
+\maketitle
+\clearpage
+
+% Since I am using double sided pages, the second page should be white.
+% Remember that when delivering the dissertation, IST requires for the cover to appear twice.
+\thispagestyle{empty}
+\cleardoublepage
+
+\setcounter{page}{1} \pagenumbering{roman}
+
+\baselineskip 18pt	% line spacing: -12pt for single spacing
+			%		-18pt for 1 1/2 spacing
+			%		-24pt for double spacing
+
+\pdfbookmark{Acknowledgments}{Acknowledgments}
+\begin{acknowledgments}
+
+First, I would like to thank my two advisors, Professor Nuno Roma and Professor Luis Russo, for their support and patience throughout this thesis, as well as their valuable insights.
+
+I want to thank my family for their unwavering support, without which I would not be here today.
+
+Finally I want to thank the authors of HMMER, Professors Sean Eddy and Elena Rivas, whose software made this thesis possible and gave me many headaches.
+
+
+
+\end{acknowledgments}
+
+\pdfbookmark{Abstract}{Abstract}
+\begin{abstract}
+Sequence comparison is a crucial task in bioinformatics, to evaluate the similarity (homology) between biological sequence regions. Homology search involves either alignment of sequences, or probabilistic models such as Hidden Markov Models (HMMs), both of which use Dynamic Programming algorithms. 
+
+Given the enormous size of the sequences databases, it is essential to parallelize the searches. The parallelization strategies can be divided between intra-task (only one task is parallelized) and inter-task (multiple tasks are conducted in parallel). One successful strategy for Intra-task parallelism is the striped method of Farrar, which is employed by HMMER, a popular HMM tool, using SIMD vector units of commercial CPUs (e.g., x86's SSE)
+
+In this thesis, an alternative Inter-task solution for HMMER was developed, based on the 2011 work of Rognes, also on SSE. This work, named COPS, solved some of Rognes' problems, and deployed a Cache-oblivious technique to process HMMs of arbitrary lengths. The results are largely positive: it is faster than HMMER's version in all tests, and reaches a maximum speedup of 2x against HMMER. The potential for an additional intra-task multi-threading using a wave-front model was also explored, with positive results.
+
+With this work, new avenues for parallelization of HMMs are opened. COPS has shown to be strongly improve on the current HMMER's Farrar implementation, specially when using longer models. The same methods can be applied to other areas, such as speech recognition. COPS can also be extended to AVX2, the 256-bit successor of SSE.
+\end{abstract}
+\clearpage
+
+\begin{keywords}
+Alignment, parallelization, SSE, Hidden Markov Models, HMMER, Viterbi
+\end{keywords}
+\clearpage
+
+
+\thispagestyle{empty}
+\clearpage
+
+\pdfbookmark{Resumo}{Resumo}
+\begin{resumo}
+A comparação de sequências é uma tarefa crucial em bioinformática, para avaliar a semelhança (homologia) entre regiões de sequências biológicas. Pesquisa por Homólogos envolve ou alinhamento, ou modelos probabilísticos como os Modelos Ocultos de Markov (HMMs), e ambos usam algoritmos de Programação Dinâmica
+
+Dado as enormes bases de dados, é essencial paralelizar as pesquisas. As estratégias de paralelização podem ser divididas entre Intra-tarefa (apenas uma tarefa paralelizada) e Inter-tarefa (várias tarefas realizadas em paralelo). Uma estratégia Intra-tarefa eficiente é o método intercalado do Farrar, usado pelo HMMER em SIMD de processadores comuns (por exemplo, SSE do x86).
+
+Foi desenvolvida uma solução Inter-tarefa alternativa para o HMMER, baseada na abordagem do Rognes de 2011, também em SSE. Esta abordagem, denominada COPS, resolveu alguns problemas do Rognes, e implementou uma técnica \emph{Cache-Oblivious} para processar HMMs de comprimentos arbitrários. Os resultados são fortemente positivos: mais rápido que o HMMER para todos os testes realizados, e com um \emph{speedup} máximo de 2x contra o HMMER. Também foi explorado o potencial de uma paralelização adicional Intra-tarefa com \emph{threads}, através de um modelo frente-de-onda, obtendo resultados positivos.
+
+Assim, são abertos novos caminhos para paralelização de HMMs. Demonstrou-se ser uma alternativa mais eficiente face à implementação Farrar do HMMER, especialmente para modelos longos. Os métodos estudados aqui podem ser aplicados a outras áreas, tais como reconhecimento de voz. Também podem-se estender a AVX2, o sucessor do SSE, de 256-bit.
+
+\end{resumo}
+\clearpage
+
+\begin{palavraschave}
+Alinhamento, paralelização, SSE, Modelos Ocultos de Markov, HMMER, Viterbi
+\end{palavraschave}
+
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+% This is required for the fancy chapters
+\dominitoc
+\dominilof
+\dominilot
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of contents
+%\renewcommand{\baselinestretch}{1}
+
+\setcounter{tocdepth}{2}
+
+\pdfbookmark[0]{Index}{index}
+\pdfbookmark[1]{Contents}{toc}
+\tableofcontents
+% \contentsline{chapter}{References}{\pageref{bib}}
+\clearpage
+%\renewcommand{\baselinestretch}{1.5}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of figures
+\pdfbookmark[1]{List of Figures}{lof}
+\listoffigures
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% List of tables
+\pdfbookmark[1]{List of Tables}{lot}
+\listoftables
+\clearpage
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % List of algorithms
+% Requires packages algorithmic, algorithm
+% \pdfbookmark[1]{List of Algorithms}{loa}
+% \listofalgorithms
+% \cleardoublepage
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % List of acronyms
+% \pdfbookmark[1]{List of Acronyms}{loac}
+% \input{acronim.tex}
+
+
+\acrodef{DP}{Dynamic Programming}
+\acrodef{BLAST}{Basic Local Alignment Tool}
+\acrodef{OMP}{OpenMP}
+\acrodef{MPI}{Message Passaging Interface}
+\acrodef{SMP}{Symmetric multiprocessing}
+\acrodef{SNP}{Single nucleotide-polymorphim}
+\acrodef{bp}{Base pair}
+\acrodef{TAPyR}{Tool for Alignment of Pyrosequencing Reads}
+\acrodef{NW}{Needleman-Wunsch}
+\acrodef{SW}{Smith-Waterman}
+\acrodef{PST}{Pre-computed Scores Tables}
+\acrodef{PSSM}{Position Specific Scoring Matrice}
+\acrodef{HMM}{Hidden Markov Model}
+
+
+
+% Pages number is starting now with arabic style... until now it was on roman mode
+\setcounter{page}{1} \pagenumbering{arabic}
+\baselineskip 18pt
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% The Introduction:
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Notice that I am using my own chapter style, instead of the default one
+
+\fancychapter{Introduction}
+
+Nucleic Acids (nuclear DNA, mitochondrial m-DNA, RNA), and the proteins that they code, suffer sporadic mutations when they replicate, because their different strains recombine during sexual reproduction. The macroscopic result of such mutations is the species' evolution, which historically was the first sign of such microscopic forces at work. In molecular biology, among other things, it is studied these mutations, the reasons behind them, and the phylogenetic (evolutionary) trees that connect different nucleic acids, proteins and organisms. By analyzing the differences or similarities between two sequences, it is possible to infer about their probable homology (evolutionary relatedness). This can then be extended to other molecular biology tasks, such as genome sequencing through comparison with similar known genomes.
+
+Nowadays Bioinformatics techniques and applications play an essential role on molecular biology and related fields. Sequence alignment algorithms in particular, and probabilistic models which mimic alignment algorithms, are the preferred methods used to search for similarity between biological sequences or parts of such sequences. Probabilistic models such as Hidden Markov Models (HMMs) are specially useful to represent a family of closely related sequences, which has been previously aligned or clustered together. It is then faster, and more reliable, to search against a HMM that models a sequence family, instead of searching and aligning against each individual sequence separately.
+
+The amount of data involved rapidly becomes daunting: a DNA genome can have up to $150 \times 10^{9}$ basepairs (the human genome has $3 \times 10^{9}$ bps), and proteins' size ranges from just a few dozen amino-acids (called residues in a protein), to almost 30.000 in the case of tinins \cite{brocchieri2005protein}. Widely used databases like Swissprot and TrEMBL have millions of sequences, so a search of a single sequence against such databases, with the fastest tools available, can take considerable time. In many cases, the space and time cost of running a complete optimal alignment is prohibitive. Therefore, optimized and non-optimal approaches have been the focus of much study to surpass these problems.
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{Motivation}
+
+% FALAR: resumo de alinhamento, HMMs, Profiles, algoritmos, paralelização
+
+The importance of alignment applications can be seen by the large databases of biological sequences now in use (SwissProt, UniProt, NCBI, EMDBL, GenBank, etc). Moreover, these databases double in size each year or so \cite{genbank}, due to faster, better and ever more numerous sequencing technologies.
+
+This exponential growth can rapidly render any algorithm unusable, especially since the known algorithms that are guaranteed to find the optimal alignment have at best quadratic complexity. These are \ac{DP} algorithms, which fill in a complete $N \times M$ sub-problem matrix in order to evaluate all the possible paths for the perfect alignment, and compute the respective score.
+
+To circumvent such heavy algorithms, heuristic approaches have been proposed, that greatly reduce the problem complexity. In fact, the most used homology search tools in the past decades have been heuristic tools. Some particularly successful ones are Blast \cite{blast} and Fasta  \cite{fasta}, which were the earlier ones developed, and have spawned a few improved variants. Others with similar functionality are MUMmer \cite{mummer1} and BLAT \cite{blat}. These tools use a variety of methods to search for a 'good alignment', that is not guaranteed to be the best. 
+
+For Markov Models, one of the most widely used tools is HMMER (\cite{eddy1998profile}), which is now in its third version. HMMER also employs heuristic methods, in a succession of heuristic filtering algorithms, which prune most of the sequences to search before reaching the slowest, most accurate, HMM algorithms. 
+
+A very efficient alternative strategy to speedup homology search is to parallelize \ac{DP} algorithms on modern processors. Database search of a query can be trivially parallelized by running each alignment on a separate process/thread, and can be easily mapped and spread out across a cluster of machines (usually referred to as 'Inter-task Parallelization').
+
+Parallelization of a single alignment (Intra-task parallelization) is a more challenging goal, to which end many different approaches have been proposed. Specialized hardware solutions on FPGAs and others have obtained good results \cite{oliver2005reconfigurable}, \cite{yu2005smith}, but are naturally expensive, and cannot be easily reconfigurable or integrated. 
+
+Software solutions can be divided in two levels: 'coarse-grained' functional parallelism on MIMD architectures, in which the \ac{DP} matrix is divided in 'chunks' to be handled separately by each processor; and 'fine-grained' data parallelism, on vectorized processors implementing a SIMD architectural model.
+
+In vector processing, multiple cells are computed in parallel by the same single operation. Note that \ac{DP} algorithms are intrinsically vectorial: the computation of a cell follows the same exact function as every other cell, with the sole problem of solving data dependencies. As such, vector processing has yielded excellent results, as is one of the most hopeful and historically pursued for the past decades. Many implementations have been developed on numerous specific vector-processing architectures: Cell Broadband and PS3 \cite{swps3}, \cite{rudnicki2009cell}, \cite{farrarcell}, GPUs \cite{cudasw}, \cite{cudablast}; as well as vector units available on general purpose scalar CPUs: Intel x86' MMX and SSE \cite{rognes2000} \cite{farrar}, AMD's 3DNow!, SPARC's VIS \cite{wozniak}. Speedup factors in the order of 30x and higher, on a single parallelization approach, have been reported, such as in the interesting work of Rognes \cite{rognes2011}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Objectives}
+
+% FALAR: - acelerar, performance, eficiencia, abordagens usadas/desejadas, 
+
+Given the huge interest that biological alignment algorithms and applications have garnered over the past decades, varied multiple approaches have been proposed to tackle their efficiency problem. 
+
+After studying some promising alignment tools, the focus of this thesis fell on the widely used HMMER suite, which has already been vectorized using Farrar's striped method \cite{farrar} of Intra-task parallelism. This thesis endeavored to develop a novel alternative approach to vectorize the \ac{DP} algorithms used by HMMER, based on the work of Rognes \cite{rognes2011} with Inter-task parallelism on SSE. As of now, this approach has not been applied before to HMM algorithms.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Dissertation outline}
+
+This document is structured in 6 chapters. The current chapter, Chapter 1, introduces the developed work.
+
+Chapter 2 surveys the state-of-the-art of alignment algorithms and sequence search with Markov Models.
+
+Chapter 3 reviews the related work on parallelization of alignment and HMM algorithms, which given their similarity, employ the same techniques.
+
+Chapter 4 describes the proposed solution, its implementation, the problems found and how they were solved. Some novel improvements on Rognes strategy are presented in this chapter, including a new multi-threaded parallelization level.
+
+Chapter 5 presents and discuss the evaluation results for the main contributions of this work.
+
+The final Chapter 6 concludes the thesis with an analysis of the parallelization approaches studied and developed, their comparative advantages and drawbacks, and possible avenues for future study and extension.
+
+\clearpage
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\include{alignment}
+
+\include{parallelization}
+
+\include{implementation}
+
+\include{evaluation}
+
+\include{conclusions}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+% Add the Bibliography to the PDF table of contents (not the document table of contents)
+\pdfbookmark[0]{Bibliography}{bib}
+% The bibliography style sheet
+% \bibliographystyle{IEEEtran}
+\bibliographystyle{apalike}
+% \bibliographystyle{unsorted}
+% The BiBTeX file
+\bibliography{biblio}
+\cleardoublepage
+
+\include{appendices}
+
+
+\end{document}
+
+

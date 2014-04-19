@@ -1,0 +1,104 @@
+Rev 2
+
+1. It seems like something has happened to almost all references to figures, as
+the text just reads "(section )" instead of referring to an actual figure number, or
+the figure number is just missing (bottom of page 8). I therefore had to put in the
+figure numbers myself. This needs to be fixed.
+
+Fixed. We changed the paper template and now the captions work.
+
+2. The authors should state the type of software license that applies to their code.
+Also, the manuscript should state that the source code is available, not just
+include an URL in the abstract.
+
+Fixed. It is essentially the ISC, except that this paper must be cited in published media.
+
+3. On page 2, the word "mutations" on line 5 below the subheading "Sequence
+Alignment Algorithms" should be replaced with "substitutions".
+
+fixed
+
+ On line 12 in the
+same section the fragment "... in which each vector contains cells from the same
+column distancing some fixed K from each other" should be rephrased.
+
+fixed. thanks.
+
+ On line
+17 in the same section the word "using" in the phrase "... Rognes' method makes
+use of using vector processing ..." should be deleted.
+
+fixed.
+
+4. On page 3, the authors cite "Krogh and Haussler [8]" but the cited work
+actually has five authors and should be cited as "Krogh et al. [8]".
+
+Fixed. Miguel faz check, ha muitas refs tipo Krogh-Haussler model, tens a certeza disso ?
+
+5. On page 6, line 2 from the bottom, it is stated that "The theoretical estimates
+suggested a critical point of full L1D utilization when using models of size ~1470
+for ViterbiFilter and ~167 for ViterbiStream ...", while in table 1 the corresponding
+values are 1350 and 167. What is the reason for this discrepancy?
+
+Miguel, de facto isto e estranho, pensava que era experimental, mas parece que tanto o texto como a tabela sao teoria ????
+
+6. The overall structure of the manuscript is fine, but in general the language of
+the manuscript could be improved somewhat and the descriptions could be made
+clearer and more precise.
+
+todo
+
+7. The detailed description of the approach needs improvement. In particular, the
+authors should explain their notation and the meaning of all the variables used
+(e.g. Mnext, V, I, J, eIj, xi, aIjIj. qxi, vE, Dcv). This applies to some of the text as
+well as the equations on page 3 and listings 1 and 2. Also, the meaning of all
+states in the HMM (not just M, D and I) should be explained.
+
+Now there is a longer explanation about the state of the HMM. Now there is a brief explanation about the variables, just afther the equation.
+
+8. It is hard to keep track of all the loop levels (inner, outer, middle) in the
+description of the code. Perhaps this could be made clearer by naming the loops
+in some manner.
+
+sugiro ser o Miguel a fazer isto. Nuno ??
+
+9. COPS is evaluated using Dfam, a database of HMMs of repetitive DNA. Were
+all Dfam entries used or just a selection? In the latter case, the entries need to be
+given and an explanation for the selection should be included.
+
+todo Miguel
+
+10. It would be interesting to know if the software also works with protein HMMs
+and if the performance using a database of protein family HMMs (e.g. Pfam)
+would be different.
+
+todo Miguel   
+
+11. To improve reproducibility of the evaluation, all details regarding the
+benchmarking should be included in the text or on the website: the version of the
+COPS code, the actual code, command line options, scripts, databases (version,
+date) and genome sequences.
+
+todo Miguel  
+
+12. At the end of the Conclusion the authors briefly mention that the partitioning
+scheme used in COPS perhaps could be applied to Farrar's striped approach as
+well. Since the performance of COPS relative to HMMer is highly dependent on
+the model length, it seems like the reason for most of the performance
+improvement in COPS is due to better cache efficiency and not due to the use of
+inter-task vs intra-task parallelization. The authors could perhaps elaborate a bit
+on this and the importance of the different factors involved in the performance
+improvement.
+
+We added a longer paragraph, arguing that our improvement is mostly related to the size of
+the HMM, not the particular way in wich state probabilities are computed.
+
+Rev 1
+
+The introduction highlights the drawback of Rognes implementation. But the
+paper is based on the Rognes strategy. Things should be presented differently
+(?)
+
+In fact this was mostly an excessively critical explanation. The
+approach from Rognes is currently the fastest approach. We rewrote the
+before last paragragph of the background.
