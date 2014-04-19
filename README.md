@@ -29,7 +29,7 @@ A simplified single-threaded version of the project (the same presented in the r
 
 The programs may be compiled with some specific options to optimize their performance. These options can be enabled by exporting as environment variables:
 
-   >export [OPTION]=[VALUE]
+   >export OPTION=VALUE
     
 The options are:
 
