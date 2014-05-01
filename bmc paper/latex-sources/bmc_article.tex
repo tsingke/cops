@@ -73,11 +73,11 @@
 \usepackage{enumitem}
 \usepackage{acronym}
 \usepackage{caption}
-%\usepackage{float}
+\usepackage{float}
 
 % ============== ATENÇÃO =============
 % Descomentar estas duas linhas, para passar as figuras para o final do documento
-\usepackage[nofiglist,notablist,heads,nomarkers]{endfloat}
+%\usepackage[nofiglist,notablist,heads,nomarkers]{endfloat}
 %\DeclareDelayedFloatFlavor{algorithm}{figure}
 % ============== ATENÇÃO =============
 % Retirar este pacote, depois de eliminar os TODO's
@@ -92,7 +92,7 @@
 \algnewcommand{\LeftComment}[1]{\State \(\triangleright\) #1}
 
 \captionsetup[table]{font=small,skip=5pt}     %% Adjust here
-\renewcommand{\arraystretch}{1.5}
+\renewcommand{\arraystretch}{1}
 
  
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%	
@@ -111,8 +111,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                     
 
 %% Nuno Roma: comentei as seguintes linhas
-\def\includegraphic{}
-\def\includegraphics{}
+%\def\includegraphic{}
+%\def\includegraphics{}
 
 %\setlength{\topmargin}{0.0cm}
 %\setlength{\textheight}{21.5cm}
@@ -333,8 +333,7 @@ An effective way that has been adopted to speed up these \ac{DP} alignment algor
 
 \begin{figure}[h!]
   \centering
-%  \includegraphics[width=0.4\textwidth]{img/farrar-pattern.eps}  
-  \includegraphics{img/farrar-pattern.eps}  
+  \includegraphics[width=0.7\textwidth]{img/farrar-pattern.eps}  
   \caption{Interleaved decomposition pattern proposed by Farrar~\cite{farrar}.}
   \label{farrar-pattern}
 \end{figure}
@@ -344,8 +343,7 @@ model (see \autoref{rognes-pattern}). Each vector is loaded with $N$ different s
 
 \begin{figure}[h!]
   \centering
-%  \includegraphics[width=0.4\textwidth]{img/rognes-pattern.eps}
-  \includegraphics{img/rognes-pattern.eps}
+  \includegraphics[width=0.6\textwidth]{img/rognes-pattern.eps}
   \caption{Decomposition pattern proposed by Rognes in SWIPE~\cite{rognes}.}
   \label{rognes-pattern}
 \end{figure}
@@ -364,8 +362,7 @@ straightforward and generalized profile \ac{HMM}  for homology searches that emu
 
 \begin{figure}[h!]
   \centering
-%  \includegraphics[width=12cm]{img/krogh-haussler-model.eps} 
-  \includegraphics{img/krogh-haussler-model.eps} 
+  \includegraphics[width=0.97\textwidth]{img/krogh-haussler-model.eps} 
   \caption{HMM for global alignment.}
   \label{krogh-haussler-model}
 \end{figure}
@@ -417,8 +414,7 @@ HMMER~\cite{eddy1998profile} is a commonly used software tool that uses \acp{HMM
 
 \begin{figure}[h!]
   \centering
-%  \includegraphics[width=10cm]{img/hmmer-model.eps}
-  \includegraphics{img/hmmer-model.eps}
+  \includegraphics[width=0.98\textwidth]{img/hmmer-model.eps}
   \caption{Multihit HMMER3 model.}
   \label{hmmer-model}
 \end{figure}
@@ -508,8 +504,7 @@ A required and important step in this inter-sequence \ac{SIMD} implementation of
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=0.8\textwidth]{img/scores-loading-rognes.eps}
-  \includegraphics{img/scores-loading-rognes.eps}
+  \includegraphics[width=0.9\textwidth]{img/scores-loading-rognes.eps}
   \caption{Emission scores pre-processing using SSE2 unpack instructions. For illustrative purposes, only 4 sequences (denoted by letters \textsf{a}, \textsf{b}, \textsf{c} and \textsf{d}) were represented. The numeric suffix represents the corresponding index, within the sequence.}
   \label{scores-loading-rognes}
 \end{figure}
@@ -557,8 +552,7 @@ The middle loop (Loop B), over the database sequences, mostly re-uses the same m
 
 \begin{figure}[h!]
   \centering
-%  \includegraphics[scale=0.5]{img/partitions.eps} 
-  \includegraphics{img/partitions.eps} 
+  \includegraphics[scale=0.5]{img/partitions.eps} 
   \caption{Processing pattern of the adopted partitioned model, with a batch of length 10. The numbers represent the processing order of each partition, while the arrows show the inter-partition dependencies.}
   \label{figure-partitions}
 \end{figure}
@@ -754,64 +748,46 @@ human genome retrieved from the NCBI archive.
 As of March 2013, Dfam uses HMMER3.1b1 to create the models. The
 complete list of HMMs is the following (the length is
 prefixed to the model name): 
-%
-%
-%M0063-U7, M0700-MER77B, M1409-MLT1H-int, M2204-CR1 Mam, M0101-HY3,
-%M0804-LTR1E, M1509-LTR104 Mam, M2334-L1M2c 5end, M0200-MER107,
-%M0900-MER4D1, M1597-Tigger6b, M2434-L1MCa 5end, M0301-Eulor9A,
-%M1000-L1MEg2 5end, M1727-L1P3 5end, M2532-L1MC3 3end, M0401-MER121,
-%M1106-L1MD2 3end, M1817-REP522, M2629-L1MC4a 3end, M0500-LTR72B,
-%M1204-Charlie17b, M1961-Charlie4, M2731-Tigger4,M0600-MER4A1,
-%M1302-HSMAR2, M2101-L1MEg 5end, M2858-Charlie12, M2991-HAL1M8.
-%
-% \vspace{1px}
-% \begin{tabular}{llll}
-M0063-U7,  M0804-LTR1E,  M1597-Tigger6b,  M2500-L1M4c\_5end,
-M0101-HY3,  M0900-MER4D1,  M1683-FordPrefect,  M2596-L1P4a\_5end,
-M0200-MER107,  M1000-L1MEg2\_5end, M1795-L1MB4\_5end,  M2706-Charlie3,
-M0301-Eulor9A,  M1106-L1MD2\_3end,  M1961-Charlie4,  M2789-L1MC4\_3end,
-M0401-MER121,  M1204-Charlie17b,  M2101-L1MEg\_5end, M2904-L1M2\_5end,
-M0500-LTR72B,  M1302-HSMAR2,  M2204-CR1\_Mam,  M2991-HAL1M8,
-M0600-MER4A1,  M1409-MLT1H-int,  M2275-L1P2\_5end,
-M0700-MER77B,  M1509-LTR104\_Mam,  M2406-Tigger5.	 						
-% \end{tabular}
-% \vspace{1px}
-%
-%M0063-U7			& M0101-HY3			& M0200-MER107		& M0301-Eulor9A		\\
-%M0401-MER121		& M0500-LTR72B		& M0600-MER4A1		& M0700-MER77B		\\
-%M0780-LTR17			& M0900-MER4D1		& M1000-L1MEg2\_5end& M1106-L1MD2\_3end	\\
-%M1204-Charlie17b	& M1302-HSMAR2		& M1409-MLT1H-int	& M1509-LTR104\_Mam	\\
-%M1597-Tigger6b		& M1683-FordPrefect	& M1795-L1MB4\_5end	& M1961-Charlie4	\\
-%M2030-L1M2b\_5end	& M2101-L1MEg\_5end	& M2204-CR1\_Mam	& M2275-L1P2\_5end	\\
-%M2406-Tigger5		& M2500-L1M4c\_5end	& M2596-L1P4a\_5end	& M2706-Charlie3	\\
-%M2789-L1MC4\_3end	& M2904-L1M2\_5end	& M2991-HAL1M8.						\\
 
- The protein data
-consisted on a mix of 13 small and medium-sized \acp{HMM} from Pfam
+\vspace{5px}
+\begin{tabular}{llll}
+M0063-U7			& M0101-HY3			& M0200-MER107		& M0301-Eulor9A		\\
+M0401-MER121		& M0500-LTR72B		& M0600-MER4A1		& M0700-MER77B		\\
+M0780-LTR17		& M0900-MER4D1		& M1000-L1MEg2\_5end	& M1106-L1MD2\_3end	\\
+M1204-Charlie17b	& M1302-HSMAR2		& M1409-MLT1H-int		& M1509-LTR104\_Mam	\\
+M1597-Tigger6b	& M1683-FordPrefect	& M1795-L1MB4\_5end	& M1961-Charlie4		\\
+M2030-L1M2b\_5end	& M2101-L1MEg\_5end	& M2204-CR1\_Mam		& M2275-L1P2\_5end		\\
+M2406-Tigger5		& M2500-L1M4c\_5end	& M2596-L1P4a\_5end	& M2706-Charlie3		\\
+M2789-L1MC4\_3end	& M2904-L1M2\_5end		& M2991-HAL1M8							
+\end{tabular}
+\vspace{1px}
+
+The protein data consisted on a mix of 13 small and medium-sized \acp{HMM} from Pfam
 27.0~\cite{Pfam} and 17 large \acp{HMM} created with
 \textit{hmmerbuild} tool from Protein Isoforms sampled from Uniprot,
 and the NRDB90~\cite{nrdb90} non-redundant protein database. The short
 protein models, from Pfam, were the following:
-% \vspace{1px}
-% \begin{tabular}{llll}
-M0063-ACT\_5, M0400-Alginate\_exp, M0800-Patched, M1201-DUF3584,
-M0101-Bactofilin, M0500-Lant\_dehyd\_C, M0900-PolC\_DP2, M1301-Orbi\_VP1,
-M0201-Adeno\_52K, M0600-Mpp10, M1002-SrfB, 					
-M0300-Aldose\_epim, M0700-Pox\_VERT\_large, M1098-CobN-Mg\_che. 				
-% \end{tabular}
-% \vspace{1px}
+
+\vspace{5px}
+\begin{tabular}{llll}
+M0063-ACT\_5 M0400-Alginate\_exp & M0800-Patched& M1201-DUF3584 \\
+M0101-Bactofilin& M0500-Lant\_dehyd\_C& M0900-PolC\_DP2& M1301-Orbi\_VP1 \\
+M0201-Adeno\_52K& M0600-Mpp10& M1002-SrfB \\
+M0300-Aldose\_epim& M0700-Pox\_VERT\_large& M1098-CobN-Mg\_che	\\
+\end{tabular}
+\vspace{1px}
 
 The longer models used were generated from the following Uniprot
 Isoforms: 
-% \vspace{1px}
-% \begin{tabular}{llll}
-M1400-Q8CGB6, M1800-Q9BYP7, M2203-P27732, M2602-O75369,
-M1500-Q9V4C8, M1901-Q64487, M2295-Q3UHQ6, M2703-Q8BTI8,
-M1600-Q6NZJ6, M2000-Q9NY46, M2403-Q9UGM3, M2802-Q9DER5,
-M1700-Q3UH06, M2099-Q8NF50, M2505-O00555, M2898-Q868Z9,
-M3003-A2AWL7.
-% \end{tabular}
-% \vspace{1px}
+
+\vspace{5px}
+\begin{tabular}{llll}
+M1400-Q8CGB6& M1800-Q9BYP7& M2203-P27732& M2602-O75369 \\
+M1500-Q9V4C8& M1901-Q64487& M2295-Q3UHQ6& M2703-Q8BTI8 \\
+M1600-Q6NZJ6& M2000-Q9NY46& M2403-Q9UGM3& M2802-Q9DER5 \\
+M1700-Q3UH06& M2099-Q8NF50& M2505-O00555& M2898-Q868Z9 
+\end{tabular}
+\vspace{5px}
 
 
 The benchmarks were run on two different machines:
@@ -832,8 +808,7 @@ To confirm the formulated estimation, the experimental procedure started by cons
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=10cm]{img/cache_np.eps} 
-  \includegraphics{img/cacheNp.eps} 
+  \includegraphics[width=0.97\textwidth]{img/cache_np.eps} 
   \caption{Cache usage results of HMMER ViterbiFilter and of a \textit{Non-Partitioned} COPS (NP) implementation on the Intel Core i7 with 32KB of L1D cache.}
   \label{cache-misses-nonpart}
 \end{figure}
@@ -842,8 +817,7 @@ After partitioning, the overall performance of the proposed \ac{COPS} algorithm 
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=10cm]{img/cache.eps} 
-  \includegraphics{img/cache.eps} 
+  \includegraphics[width=0.97\textwidth]{img/cache.eps} 
   \caption{Cache usage results of HMMER ViterbiFilter and of the new partitioned COPS implementation on the Intel Core i7 with 32KB of L1D cache.}
   \label{cache-misses-part}
 \end{figure}
@@ -860,32 +834,28 @@ For longer models, from 500 bps or 1000 bps (depending on the \ac{L1D} size), it
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=10cm]{img/Intel-Perf.eps}
-  \includegraphics{img/Intel-Perf.eps}
+  \includegraphics[width=12cm]{img/Intel-Perf.eps}
   \caption{Comparative performance results of the proposed COPS implementation and of HMMER ViterbiFilter, obtained on the Intel Core i7 (32KB of L1D cache).}
   \label{runtimes-liliana}
 \end{figure}
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=10cm]{img/Intel-speedup.eps}
-  \includegraphics{img/Intel-speedup.eps}
+  \includegraphics[width=12cm]{img/Intel-speedup.eps}
   \caption{Resulting speedup of the proposed COPS implementation over HMMER ViterbiFilter, obtained on the Intel Core i7 (32KB of L1D cache).}
   \label{speedups-liliana}  
 \end{figure}
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=10cm]{img/AMD-Perf.eps} 
-  \includegraphics{img/AMD-Perf.eps} 
+  \includegraphics[width=12cm]{img/AMD-Perf.eps} 
   \caption{Comparative performance results of the proposed COPS implementation and of HMMER ViterbiFilter, obtained on an AMD Opteron Bulldozer (16KB of L1D cache).}
   \label{runtimes-aleph}
 \end{figure}
 
 \begin{figure}[!b]
   \centering
-%  \includegraphics[width=10cm]{img/AMD-speedup.eps}
-  \includegraphics{img/AMD-speedup.eps}
+  \includegraphics[width=12cm]{img/AMD-speedup.eps}
   \caption{Resulting speedup of the proposed COPS implementation over HMMER ViterbiFilter, obtained on an AMD Opteron Bulldozer (16KB of L1D cache).}
   \label{speedups-aleph}
 \end{figure}

@@ -1,120 +1,108 @@
-\begin{figure*}
-[h!]
+\begin{figure}[h!]
   \centering
 %  \includegraphics[width=0.4\textwidth]{img/farrar-pattern.eps}
   \includegraphics{img/farrar-pattern.eps}
   \caption{Interleaved decomposition pattern proposed by Farrar~\cite{farrar}.}
   \label{farrar-pattern}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[h!]
+\begin{figure}[h!]
   \centering
 %  \includegraphics[width=0.4\textwidth]{img/rognes-pattern.eps}
   \includegraphics{img/rognes-pattern.eps}
   \caption{Decomposition pattern proposed by Rognes in SWIPE~\cite{rognes}.}
   \label{rognes-pattern}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[h!]
+\begin{figure}[h!]
   \centering
 %  \includegraphics[width=12cm]{img/krogh-haussler-model.eps}
   \includegraphics{img/krogh-haussler-model.eps}
   \caption{HMM for global alignment.}
   \label{krogh-haussler-model}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[h!]
+\begin{figure}[h!]
   \centering
 %  \includegraphics[width=10cm]{img/hmmer-model.eps}
   \includegraphics{img/hmmer-model.eps}
   \caption{Multihit HMMER3 model.}
   \label{hmmer-model}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=0.8\textwidth]{img/scores-loading-rognes.eps}
   \includegraphics{img/scores-loading-rognes.eps}
   \caption{Emission scores pre-processing using SSE2 unpack instructions. For illustrative purposes, only 4 sequences (denoted by letters \textsf{a}, \textsf{b}, \textsf{c} and \textsf{d}) were represented. The numeric suffix represents the corresponding index, within the sequence.}
   \label{scores-loading-rognes}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[h!]
+\begin{figure}[h!]
   \centering
 %  \includegraphics[scale=0.5]{img/partitions.eps}
   \includegraphics{img/partitions.eps}
   \caption{Processing pattern of the adopted partitioned model, with a batch of length 10. The numbers represent the processing order of each partition, while the arrows show the inter-partition dependencies.}
   \label{figure-partitions}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=10cm]{img/cache_np.eps}
   \includegraphics{img/cacheNp.eps}
   \caption{Cache usage results of HMMER ViterbiFilter and of a \textit{Non-Partitioned} COPS (NP) implementation on the Intel Core i7 with 32KB of L1D cache.}
   \label{cache-misses-nonpart}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=10cm]{img/cache.eps}
   \includegraphics{img/cache.eps}
   \caption{Cache usage results of HMMER ViterbiFilter and of the new partitioned COPS implementation on the Intel Core i7 with 32KB of L1D cache.}
   \label{cache-misses-part}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=10cm]{img/Intel-Perf.eps}
   \includegraphics{img/Intel-Perf.eps}
   \caption{Comparative performance results of the proposed COPS implementation and of HMMER ViterbiFilter, obtained on the Intel Core i7 (32KB of L1D cache).}
   \label{runtimes-liliana}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=10cm]{img/Intel-speedup.eps}
   \includegraphics{img/Intel-speedup.eps}
   \caption{Resulting speedup of the proposed COPS implementation over HMMER ViterbiFilter, obtained on the Intel Core i7 (32KB of L1D cache).}
   \label{speedups-liliana}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=10cm]{img/AMD-Perf.eps}
   \includegraphics{img/AMD-Perf.eps}
   \caption{Comparative performance results of the proposed COPS implementation and of HMMER ViterbiFilter, obtained on an AMD Opteron Bulldozer (16KB of L1D cache).}
   \label{runtimes-aleph}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
-\begin{figure*}
-[!b]
+\begin{figure}[!b]
   \centering
 %  \includegraphics[width=10cm]{img/AMD-speedup.eps}
   \includegraphics{img/AMD-speedup.eps}
   \caption{Resulting speedup of the proposed COPS implementation over HMMER ViterbiFilter, obtained on an AMD Opteron Bulldozer (16KB of L1D cache).}
   \label{speedups-aleph}
-\end{figure*}
+\end{figure}
 \efloatseparator
  
